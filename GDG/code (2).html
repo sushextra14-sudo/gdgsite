@@ -1,0 +1,748 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#6ddd81","on-tertiary":"#003914","outline":"#8d90a0","on-tertiary-fixed-variant":"#005320","surface-container-highest":"#343439","on-tertiary-fixed":"#002108","primary-container":"#648aff","on-surface-variant":"#c3c5d7","error":"#ffb4ab","surface-container-lowest":"#0d0e12","surface-container-high":"#292a2e","inverse-surface":"#e3e2e8","primary-fixed-dim":"#b5c4ff","on-error-container":"#ffdad6","on-primary-fixed":"#00164d","on-secondary-fixed-variant":"#5516be","on-primary-fixed-variant":"#003cac","primary-fixed":"#dbe1ff","surface-dim":"#121317","error-container":"#93000a","tertiary-container":"#30a550","inverse-on-surface":"#2f3035","on-secondary":"#3c0091","surface-bright":"#38393e","outline-variant":"#434654","on-tertiary-container":"#003210","on-primary":"#00297b","on-secondary-container":"#c4abff","on-primary-container":"#00236c","secondary-fixed":"#e9ddff","surface-container":"#1f1f24","inverse-primary":"#1953d6","on-error":"#690005","surface":"#121317","surface-variant":"#343439","on-background":"#e3e2e8","background":"#121317","surface-container-low":"#1a1b20","tertiary-fixed-dim":"#6ddd81","secondary":"#d0bcff","on-secondary-fixed":"#23005c","primary":"#b5c4ff","surface-tint":"#b5c4ff","secondary-fixed-dim":"#d0bcff","tertiary-fixed":"#89fa9b","secondary-container":"#571bc1","on-surface":"#e3e2e8"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"2.5rem","space-xs":"0.25rem","space-2xl":"4rem","gutter":"1.5rem","space-md":"1rem","space-sm":"0.5rem","margin":"3rem","gutter-mobile":"1rem","space-lg":"1.5rem","margin-mobile":"1.25rem"},fontFamily:{"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"label-code":["JetBrains Mono"]},fontSize:{"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"title-lg":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","fontWeight":"700"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"display-lg":["56px",{"lineHeight":"64px","fontWeight":"800"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"display-lg-mobile":["36px",{"lineHeight":"44px","fontWeight":"800"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"label-code":["13px",{"lineHeight":"18px","fontWeight":"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="GDG On Campus Logo" class="w-8 h-8 object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVY3ChXFQLLF3EVG4ijePDmc2HzTsLfBPHBl-tpul0_Iels63vJw21v5uAR9PEoBuRZnkiCb0xKE6b57mzCoOb-0J3YG1VA3zw1WOgqKzeqF2SG3jwyMPD2gYgJA8fmZvNdDhoNEK_vlz--YKt5LR7JiR5HuolgJ-0p2kGd7G9UBpAwGHtOyveq4SL-i28_pPmRytHvwV1-SdqR_hEQTpRcCs8r-PQrwhOwJ1NTzEOpxOqawakQMNdQw"><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-title-lg text-title-lg tracking-tight text-on-surface">GDG</span><span class="font-title-lg text-title-lg text-primary">On Campus</span></div><span class="font-label-code text-label-code text-on-surface-variant tracking-wider uppercase">ITER • Bhubaneswar</span></div></div><nav class="hidden md:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full px-4 py-2"><a class="px-4 py-2 text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="home" href="#">Home</a><a class="px-4 py-2 text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="about" href="#">About</a><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-semibold rounded-full px-4 py-2" data-path="team" href="#">Team</a><a class="px-4 py-2 text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-colors" data-path="events" href="#">Events</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-primary-container text-on-primary-container font-title-lg text-label-sm shadow-[0_0_18px_rgba(100,138,255,0.45)] hover:bg-primary hover:text-on-primary transition-all duration-300" data-path="join-community" href="#">Join Community</a><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_10px_rgba(181,196,255,0.3)]" src="https://lh3.googleusercontent.com/aida/AEtjO1UFTZntEV0lNeV7JSW6ej267gvRVdYysKBQuvvJSrR4YeGKOAI5S2VnsPE7kRiS5qf5EknkyewuJ5-41sY714cAkNTavE3jyQl5vz9ALqLSuJeDzRFbzRITB6wp7tG9aN7_mjJh3lb2ujyCONZ2UrSq1qqW13C3lRe_p3JcEohJsdJgnbKW_spLhWRPQbxjaCfZ80SXHRuaygHKj1N0uJG_no938DaTmK9J12GSLA0PMpskXiphQXb5II8"></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full relative">
+<!-- Atmospheric background layers -->
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+<div class="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-primary/10 blur-[130px]"></div>
+<div class="absolute top-[40%] -left-32 w-[500px] h-[500px] rounded-full bg-secondary-container/20 blur-[140px]"></div>
+<div class="absolute bottom-10 right-[15%] w-[550px] h-[550px] rounded-full bg-tertiary/10 blur-[150px]"></div>
+<div class="absolute inset-0 opacity-[0.035] bg-[radial-gradient(#b5c4ff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+</div>
+<!-- Header Section with Monospace Tag & Interactive Filter -->
+<section class="relative z-10 px-6 lg:px-12 pt-10 pb-12 max-w-7xl mx-auto w-full">
+<div class="flex flex-col gap-6">
+<!-- Monospace chapter badge -->
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container font-label-code text-label-code text-primary shadow-[0_0_12px_rgba(181,196,255,0.2)]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          // DIRECTORY // SOA ITER CHAPTER
+        </span>
+<span class="hidden sm:inline-block font-label-code text-label-code text-outline">// ACADEMIC_CYCLE_2025-26</span>
+</div>
+<!-- Main Heading + Subtitle -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+<div class="space-y-3 max-w-3xl">
+<h1 class="font-display-lg text-display-lg tracking-tight text-on-surface bg-gradient-to-r from-on-surface via-primary to-secondary bg-clip-text text-transparent">
+            Meet the minds behind GDG On Campus
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            The innovators, builders, and community leads driving technology and developer culture at ITER. Powered by Google technologies and peer collaboration.
+          </p>
+</div>
+<!-- Live Search Bar -->
+<div class="relative w-full sm:w-80 shrink-0">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px] pointer-events-none">search</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" id="member-search" placeholder="Search by name or node..." type="text">
+<span class="absolute right-3 font-label-code text-[11px] text-outline px-1.5 py-0.5 rounded bg-surface-container">⌘K</span>
+</div>
+</div>
+</div>
+<!-- Interactive Filter Pills Strip -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 pt-2 scrollbar-none"><button class="filter-pill group flex items-center gap-2 px-4 py-2 rounded-full font-label-code text-label-code transition-all duration-300 bg-primary text-on-primary shadow-[0_0_16px_rgba(181,196,255,0.4)]" data-filter="all">
+<span class="w-2 h-2 rounded-full bg-on-primary"></span>
+All Domains (55+)
+</button>
+<button class="filter-pill flex items-center gap-2 px-4 py-2 rounded-full font-label-code text-label-code bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all duration-300" data-filter="lead">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+Core Leads
+</button>
+<button class="filter-pill flex items-center gap-2 px-4 py-2 rounded-full font-label-code text-label-code bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all duration-300" data-filter="tech">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+Tech Team
+</button>
+<button class="filter-pill flex items-center gap-2 px-4 py-2 rounded-full font-label-code text-label-code bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all duration-300" data-filter="prmanagement">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+PR &amp; Management
+</button>
+<button class="filter-pill flex items-center gap-2 px-4 py-2 rounded-full font-label-code text-label-code bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all duration-300" data-filter="media">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+Media Team
+</button>
+<button class="filter-pill flex items-center gap-2 px-4 py-2 rounded-full font-label-code text-label-code bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all duration-300" data-filter="design">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+Design Team
+</button></div>
+</div>
+</section>
+<!-- Content Container -->
+<div class="relative z-10 px-6 lg:px-12 max-w-7xl mx-auto w-full pb-20 space-y-16">
+<!-- NODE_01: CORE LEADS SECTION -->
+<section class="domain-section space-y-6" data-domain-group="lead">
+<div class="flex items-center justify-between pb-3"><div class="flex items-center gap-3">
+<div class="w-2.5 h-6 rounded-full bg-error"></div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+Core Chapter Leads
+<span class="font-label-code text-label-sm text-outline px-2 py-0.5 rounded-full bg-surface-container">5 LEADS</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Direction, technical governance, and cross-functional leadership</p>
+</div>
+</div></div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+<!-- Mohammad Faiz -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_24px_rgba(255,180,171,0.2)]" data-category="lead" data-name="Mohammad Faiz" data-role="Chapter Lead">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest shadow-inner">
+<img alt="Mohammad Faiz" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAyblHjqnXqmuhzsIS_2CCvHa0ACBXNv5QsCQk5QUwwZPM3qBqc43PrJ_K13Bibc8DrpqCyE7oJ6eDTHjGzd0mJrfD1V2BoSA_GQ6HMEoXM4c42LRQQrcxqZOIPq7b6bAbUojidiPrX58_ZOnT4xBLXOE3zUKmd5k2YTL6e9HO3TKcaEPxwJxJtuyzYkRAZQug-QWKI-xdlSjA3fM7R9y_T9rFPeThKruNXD4BtOojYIufSdrB-R3_XA">
+</div>
+<div class="pt-3.5 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error/15 font-label-code text-[11px] text-error font-medium">Lead</span>
+<span class="material-symbols-outlined text-[18px] text-outline hover:text-on-surface transition-colors cursor-pointer">arrow_outward</span>
+</div>
+<h3 class="font-title-lg text-body-lg font-semibold text-on-surface tracking-tight truncate">Mohammad Faiz</h3>
+<p class="font-body-md text-label-sm text-on-surface-variant truncate">Chapter Lead</p>
+</div>
+</div>
+<!-- Kumar Rakshit -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_24px_rgba(181,196,255,0.2)]" data-category="lead" data-name="Kumar Rakshit" data-role="Tech Lead">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest shadow-inner">
+<img alt="Kumar Rakshit" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlWWcLMZkc1xAAnE_tAxdwUAbdP4zqdy3EY1UK5ngVJU1tIVvd6A8p47kv_ETkiM3gNPJmqRBfs-Ak_UDfbgPPWvZOq4vWJbhQqKmcFzBGrB5ThIu40IVo5YBlsXw23sXjbs_eZAwKOsgqTr3nsUXFtUiEQEVgAyXovhS5L3jUUofMFNK12Rqe0R_SHWWz9tS0DXY0V-lXOssBhMjS3YeTd-9Sdf80kqk9tyrGd7Fk3ZIamRXaCkljBg">
+</div>
+<div class="pt-3.5 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/15 font-label-code text-[11px] text-primary font-medium">Engineering</span>
+<span class="material-symbols-outlined text-[18px] text-outline hover:text-on-surface transition-colors cursor-pointer">arrow_outward</span>
+</div>
+<h3 class="font-title-lg text-body-lg font-semibold text-on-surface tracking-tight truncate">Kumar Rakshit</h3>
+<p class="font-body-md text-label-sm text-on-surface-variant truncate">Tech Lead</p>
+</div>
+</div>
+<!-- Harsh Kumar -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_24px_rgba(109,221,129,0.2)]" data-category="lead" data-name="Harsh Kumar" data-role="PR &amp; Management Lead">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest shadow-inner">
+<img alt="Harsh Kumar" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO-6f25kvTdpD8gi21Y2aW4YL8eoKa5y6A2EaeCx-104WD5ZgMfF4GduZu8fdR5L6lB5G_4pgxeRRHri8MOVbCZgSaaOuoQNpN6lWFB4NfNtSucYFwJ7MNQXD_JLariTxyRgt_xfbVnKQsWFV8i79qDaBF2T7HEWz1QFIYKT1DyAkzVl0CwUUE01XjjgquZXwX2vG3Tm6uJQn72GCOCZ35Z6ahyJfjZygPmDf8p2eiEDV007GttChHZQ">
+</div>
+<div class="pt-3.5 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary/15 font-label-code text-[11px] text-tertiary font-medium">Operations</span>
+<span class="material-symbols-outlined text-[18px] text-outline hover:text-on-surface transition-colors cursor-pointer">arrow_outward</span>
+</div>
+<h3 class="font-title-lg text-body-lg font-semibold text-on-surface tracking-tight truncate">Harsh Kumar</h3>
+<p class="font-body-md text-label-sm text-on-surface-variant truncate">PR &amp; Mgmt Lead</p>
+</div>
+</div>
+<!-- Mansa Siddhi -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_24px_rgba(208,188,255,0.2)]" data-category="lead" data-name="Mansa Siddhi" data-role="Media Lead">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest shadow-inner">
+<img alt="Mansa Siddhi" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjtMTMuOjHy6bQEzljX87sTwF2htIX844Mq9ingN5DlQBol3opVLk_1OMLxX4Rp4GRqr2EPAeUojVLUQ0QXLyqWnL88FcllboYsRMwUfxB6sYPIuahCtsHQdWUAMaTxFqf5trRFosvoFpKgS-hMO-Iop4Ha731RM0MG0PpepVu7SjDCd2BxYAFInDsBV06EaV6IM1xMVUmyVPLdo2V86exSIXxciG4jqaCv7W7LG7t9aiML9ocO4d84Q">
+</div>
+<div class="pt-3.5 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary/15 font-label-code text-[11px] text-secondary font-medium">Creative</span>
+<span class="material-symbols-outlined text-[18px] text-outline hover:text-on-surface transition-colors cursor-pointer">arrow_outward</span>
+</div>
+<h3 class="font-title-lg text-body-lg font-semibold text-on-surface tracking-tight truncate">Mansa Siddhi</h3>
+<p class="font-body-md text-label-sm text-on-surface-variant truncate">Media Lead</p>
+</div>
+</div>
+<!-- Rajana Durga Pavan Kumar -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_24px_rgba(181,196,255,0.2)]" data-category="lead" data-name="Rajana Durga Pavan Kumar" data-role="Design Lead">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest shadow-inner">
+<img alt="Rajana Durga Pavan Kumar" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIIrvnSJp-zHe6ODcSg8ZNZDWdnKG2Kx5FgTSoPIIR81r74lx5gz3V52wBBciXOWx_lSEYdql0GBYxoxOLk7xcAz2GboMiPZsyvcXnB9p4wr-EBvh569fF80uVXrQuiObN9pC2RXFu1V_04Iii8agfb5yJnUAmz7CtBDvzMEONp6uv7jPvZeYQKO6wHVfIaBb_ZzV2s6u8hkcaC6eLdLNfZNqrMoqFMs97Wt5i5BsapR1OJQwIukm72g">
+</div>
+<div class="pt-3.5 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/15 font-label-code text-[11px] text-primary font-medium">Design Sys</span>
+<span class="material-symbols-outlined text-[18px] text-outline hover:text-on-surface transition-colors cursor-pointer">arrow_outward</span>
+</div>
+<h3 class="font-title-lg text-body-lg font-semibold text-on-surface tracking-tight truncate">Rajana Durga Pavan</h3>
+<p class="font-body-md text-label-sm text-on-surface-variant truncate">Design Lead</p>
+</div>
+</div>
+</div>
+</section>
+<!-- NODE_02: TECH SECTION -->
+<section class="domain-section space-y-6" data-domain-group="tech">
+<div class="flex items-center justify-between pb-3"><div class="flex items-center gap-3">
+<div class="w-2.5 h-6 rounded-full bg-primary"></div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+Tech Team
+<span class="font-label-code text-label-sm text-outline px-2 py-0.5 rounded-full bg-surface-container">20 CONTRIBUTORS</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Cloud, Web, Android, AI/ML, and Open Source software architects</p>
+</div>
+</div></div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+<!-- Tech Member 1 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Nandish Sinha" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Nandish Sinha" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPR63WMn5E7mq43pVqFHlgOwCQn9296jIgvsPgAnUUZqWyQOryzW7bPb6OQdpm0TLdp8ntsrNgM2JE6nUZAJ7sWzvDXq59Gk9Mjl8PQC61uCxfH5V-PMi1YbGpv_pZ3tHRB1-bmXzwvFloruh2nlLX_oamUNZAEcNNLC5N2Nd6SalC0jjt9QbyvzL5F1b5_NZtDtSRzxxH5Njjgl1KJjj6WpSvrpAyerIv1LLfxAeC4O8xzQ45HrAdDA">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Nandish Sinha</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 2 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Omm Prakash Rout" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Omm Prakash Rout" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM8gvFQQ603RJRw325eZ-Gl1pgwegw8jdwOeEg0cm6QgsZErlN-1v4-oP6heE1dYfPZUMDYa6Pzut3Wb2-R7KD5HgN1qAswUH7H-wa1kIRj7p7XMh7iagRnxEux-G0l5kFqYkQr2f2ihM4RcZTdCjkC_vZc7joo_r-mahOo8JbEzRyVMVzE4hKVJlqFGQQcD-hn2ElXx5M0yI3tU8AqK3tD4ViWOIsSj_K53_dcQf42pusrcGNO2p_rw">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Omm Prakash Rout</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 3 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Rishav Singh" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Rishav Singh" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3VxclnuWeNtqeGTKXMMpVR7W04bmssVMwdF7QCMbm42m3Hf4k3j8mO7KpK4M092F3m2vZKYKTM3e6XDh7LqVEvPwQf5hhTd4TMsjQ2UTQHJtT5ttmI8xN9oWPKAUbfvAiNzQwvaVh6Z4-30EHo4EL6rDmRNo3mSYyC_tpnPyLVAfdnc-u-N6drk1kfGnQpOgP-PH_SMNiJy34wgre4JAgJZ8lpYoBhI3WX_3CQpUicx8kaxnlZ_mpDQ">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Rishav Singh</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 4 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Akash Pattanik" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Akash Pattanik" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSDtjc_jB1ObOy1w7lZwaDMCAJ-G2UXjZsYp71XmJclWYZv3ML7uan9yuY6Mq0TJVby0euW_8grSJ66QIoduwm0ZO4tw3gJOws7e7JNCexXYy4QkdHjYgSUk9PvnYq4C03msj2q5D7a6ZG05um39fQchsAKgfucVVhP9eV5cQNVVymaFmXuT68IyLvpQMA0yXtUxlv2XzgsrEKnFooPxF-ymY1B-i4S2NTU7e5w11TkZCP-NS8I3ozUA">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Akash Pattanik</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 5 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Kriti Sreyasha Parida" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Kriti Sreyasha Parida" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApSbtv49Ecx-c9Qq6ZR8CAgmUqjrT_jxjkGaMqAh7LXOMEa6_MXioUYal5_qmH3fgR3ladrjRKDbZJL7k6g1dIMqNCIoIB3Pyy_zI1smpsXXelKB61Z3ivJk-y1e1LDYAH48rNbaDd7rzZDoMSbXFX1NX_uJFP1Q0YxwzyX9hdeOlWXOJmWV7TyniNk8kIXei0_eZe8ImTSlC2z774a2clH48BcV9jxayOp9bfhRm-p1lyiHnLhraRVg">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Kriti Sreyasha Parida</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 6 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Ashutosh Padhi" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Ashutosh Padhi" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZSWjL5CmLJM0PKq9jUJnkUMzzYcVnUY0XOkYNYiGhmKhzJTk4k0mP1uUny97fznOqCqO1Kx17y0Gxpe6u8Hf22jFOcRjQKHeGpe1-PveJsikzAxxe8Pj8NYyltc_mx5F0gQfV6cRexHjMJotRmt-6eJH88HTvjv8Wa7n1Lr1i7d5lmQQOex0qFDaa_PciaXhgWjDKwqwOHJEmVGr7p2H58viTUwo8HnZ1as_sguzI_w0zhLj2W6UtYQ">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Ashutosh Padhi</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 7 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Jayita Mandal" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Jayita Mandal" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARweMpjgqEh4JJWSNJD7Ycu8c62UzeOkKPlR90QGJEth7fk12gm2Mh_T_vtrHZfixqIOIeXuA6YYI8CnCyxX8Cx5MVGtpqXHE1w2BJztIRABmIbHicvxpZP_fwGo6mXVbeKg-0NpnhXAcz51NNEJEw8XDbEwuhkFQbz0RNlXgoJUy1hDPf178NGQgzp_t57S-QiOm4QFJd0MYdBOHUvw_MvUseo1FuHUEAmP1AQ-EQwOLd6G37HHZZgA">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Jayita Mandal</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 8 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Nishant Kumar" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Nishant Kumar" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzfrFvoTFaYErsGmvR1i34vu3_Np0OweswS0asNc1PcPHe8AqvBxJO5cakVuVjAdOY4nCAfc5-VHnWAnsOeb_BDumyiLhMcLykr_jHQbMcuSbDcgb5hC3qM_fJB0UQ7fBlF1mrJ3sBLyoJ88AnB3xsGujf9xG6jMHcbCUt9--FZGlUSG7sNEVxCxX7gM-Nti1u0PiJmbY1Tsal1nrlfVMuURsd2T0Muq8fwyc_rsL77zZud7awMswPdQ">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Nishant Kumar</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 9 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Ritesh Kumar" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Ritesh Kumar" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQJjVpo8xnhbfa8E3ATPam6YrtTMfUEvcO_0u48-VWZLIYu6l1EvBFY5syLvp8R-h02ybN5DIoWpda01ghlq-BteuNr08kkzeG0WkQyZQz4XoNFO8RN8rGXTzfRUi1EyoZqOlHCdThTHDm2Z6wu2RIBNiZDlXsl-144mL4SD_DYIj9xvRCebuKfe19RIrqvgqoy8LMDQbHB95QxuH9zrTM9PNNKGEMKakCDefrsh5i6cOaSBzuPfJyWw">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Ritesh Kumar</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 10 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Siddhant Satyajeet Jena" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Siddhant Satyajeet Jena" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPsgtONsWlZa5saFELC8gqlZHXmcYFpSlBzVKD1wei_8tXYW2Pm6q2sibPZIlZd5eD6hKjItzuCLj6_S8ugBoWVMXYlpLVpGsjKq6on6c1AkN-BRuqqvObA9qZYQTDjMyeSYBfWe1mWQPRGiDVnkLHmetbojpqGpvKexpos2YoFovYtP084SVO_oCHKY9_zUCHK7F2k8BhrIKY3dMcLm2aig6i8-oBBtyXHDSRyMFRqiNAv7eTqcR0Vw">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Siddhant Jena</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 11 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Asmit Gupta" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Asmit Gupta" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKhz5KGWQRfXayeD44NvxgUoYDzNcYrzBaU7Nvn_HEn4Ee_mbXqB5AGcPIxOyEw_zL42AkgV9QKU-Vc6u5Wo0AqeDmeh-cJpT1h1ugJiGv3dCAFABtRnKYyRSPHm0keHMDrLbCaN4gkChgP_lrSxuy4NuwvSmq7tr9Eki70goAy1z36Nfn5GFkBRcTpCwMuRrlBxvSb5HF03C9VvBUNveJjdoie4u4bL8QlP_uLc8x5GgAyvfOoa6SHA">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Asmit Gupta</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 12 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Rashmi Anand" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Rashmi Anand" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsXVfUNhb-3tmFIqYaD8STJI-NhMi7RQ4nbQq4Xb0O6LafEhGejxTU6XcFVRfhMIEffsnz2EO2zuyFggeOOZXQXkeLEhb5JIZHfW1GOqxKpLVYuKtA8MvlUu_vc0Pb8n7zGAHzD1srSoSgtVNMt8je92zk1ot_vVp6d0OucaRM2Q8caIivkkGqXc3OfdMOGudBbmUaXfYbPX7dpOkkY_EdeegBXkCO1tFjDEGS921nTPwwA8_YkqRIZw">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Rashmi Anand</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 13 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Mrinall Samal" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Mrinall Samal" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALm8RCSpMovRqim4QD_kwBwY7ywl4YO4VMDtxQF8-V3fm-RIhCwrb1327hZWLVONnQBGY7bI07f2fAlb4z1F-y-uysoXfS4sMTIlEZgDtuNz6zGofZ8EoEDYbLGyYnegZS-ZI7zCxwL9-Bb0WG0wsJIdGQ1rrLkmOnYuikocWt_8dkLbviyZ7L5L8vNVD4BzfllfVkiVzO7vzgROMV6SngTHHYNO2RwJ4fRjdni-Uj7qcKr4XfzvfQ7w">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Mrinall Samal</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 14 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Jiru Pranita Krishna Reddy" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Jiru Pranita Krishna Reddy" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfrqoZ6WQgYow8hf9_DwaFCLr3jYyRn7-mIMGpDHsWQ2a4sByNoeooTmo3G3X6yOq5zWp65DfkBqbBhLV8SArMInCfJY-Y7XVqaJA6la4E8TNQ-LBVy-l_g8rBMBNgVLYLdUaYbPISaoiYimytz1aRkgqom14SB4n02NkuAAYFIZEhTs7BenahFoBrBTrTBCT1336KMAU3ySYzm8QCtFX3KQ1MWRJ_aNegVlsJveXA0_FIqzm50zcyRg">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Jiru Pranita</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 15 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Swayansh Prusty" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Swayansh Prusty" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvy_KUa6ERz3MdPBuflZRdmIrk_Z8P-HXI604sCkQyUN5XqTzHXc5QsTkvNFV3CsvDGxE-SWQEo9KX-W740iZ9aPGWxNDZOsc2f6kpy_PmJster9gEPCoIp9nVkqq2aNzFMpw6AxuF0Q0kfjFTXQ8X4J8ilJzWKZzrekKIffWdQJnuctoOfbCYzSP7BD532kCLRycro4zMcWKbkK0K-7MQ0AbpzWREzkmsu3i7IqAUqVTzR4y7EcTv6Q">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Swayansh Prusty</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 16 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="MD Kaif Raza Khan" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="MD Kaif Raza Khan" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6uy2_cxapMWLLHdd5-QISVOsd6EyRiQCRwM3rsEWxyMtrMmL4qDsO-oMNqnHnbz8aFCMWiDUoI--y8nvPwH97q7WuR_TYxuWAln6QOGRfuXAleAo_sh7u9sXIwd9X_oLcqGYH1cFJY0rpu2iVTo7g8Vp2vnfp8BAdNg_hb6639grQ1QhPfDq_52dFUfe2Ca01YyM8pyAWX2fEmcKX3Z0GKl4HIVS5H1tBlTGzQqz2_9-9BQ6aeUecwQ">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">MD Kaif Raza</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 17 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Kalyan Jyoti Mishra" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Kalyan Jyoti Mishra" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADDrLrTxA9bABUiCBNsm7MViByQy2WRAt38wqHz4hNmF7kfTTdCyQYeo-9qwInedOADSe75xbd6KE9UPd8e--1fp6ZY-6edrx8IgIU8IzjKFP0cw3D7TR35PjqtFK3rVwS05A2upR25gojdR4EIJ05werAm7ilNKi85aiuC9-lf9flcyOgJyBxiI_JNx27QibUqffPrIQuaBIMfREP5MGUKum0HshN43gKkMbZeg97c86UeJE0s2zn4w">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Kalyan J. Mishra</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 18 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Yash Agrawal" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Yash Agrawal" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzKJWihT84ZRWQqPbWEUca_PtUbMv-vEgw4_i4ZBKXAa1cl_gBgQDNHqn_nnj2Hfyztf2azCS4QH7mipl9_P2d1JG1yCURNyLrgmKVOK9NqYAmpfHRkAdAhEj0JfC0j_WalgJbiSgeme1E4JYzl6zDKsETPDW7dAFPVzJw-ii0j48wEMEk6E03tLZR_qDLBa3Q2czsX_3MJwp3c_gvJrgsm6QcxmaTp1aAC4x8vdJmZ7Hh6feOx0eatg">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Yash Agrawal</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 19 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Nirakar Patel" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Nirakar Patel" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWnAQFk4eT2Tz6O0ZCnZ9jQ489o7FGh3D-BP2jZo5iYcazQmCTlIJO5XaJSoBaA3tns6RBZMrjddEsKEjIPbYI8x0v9DktSwHH3Cc5sO3XLnFVVJCkOA30-CmB96pjIKHgrIKaMo64JxW25A-fMcsulHa-Tni12_vn5VjHYCvWhioB9SxUxjzinuFqhh4GmSUOepKuD7D-pvG47n6H4KZKsd_7IF4_jDqCpSjwZD6PD8inby-RT5ri1w">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Nirakar Patel</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+<!-- Tech Member 20 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(181,196,255,0.18)]" data-category="tech" data-name="Sanket Nayak" data-role="Tech">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Sanket Nayak" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM4SQdcb2ZoMRi-yFbiB7eJfwIvpkhkL7Zy0VNENL7aFngaIeqVky0HJ0huKdY95TCWUy0lPHiug-l7l-T5zP8zz4AqysTB3vDP2Zm6SvDmuwYIX_iVfKY51UDU6ahikV9q5Bcbj8k47QLJGcA_dj6iKAyllIxa9VEhdZ3Ly8_D1RxNrnrGAGTupAbkqwoDLrne90ZhD96guTDWA66nHndAc9tfee1fx1RCQDK_QF1mKfyUy7TkuI9hw">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-primary/10 font-label-code text-[11px] text-primary">Tech</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Sanket Nayak</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Tech Domain</p>
+</div>
+</div>
+</div>
+</section>
+<!-- NODE_03: PR & MANAGEMENT SECTION -->
+<section class="domain-section space-y-6" data-domain-group="prmanagement">
+<div class="flex items-center justify-between pb-3"><div class="flex items-center gap-3">
+<div class="w-2.5 h-6 rounded-full bg-tertiary"></div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+PR &amp; Management Team
+<span class="font-label-code text-label-sm text-outline px-2 py-0.5 rounded-full bg-surface-container">9 MEMBERS</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Sponsorship outreach, community engagement, event operations, and university logistics</p>
+</div>
+</div></div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+<!-- PR 1 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(109,221,129,0.18)]" data-category="prmanagement" data-name="Debasis Das" data-role="PR &amp; Management">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Debasis Das" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOunG8Sn1rufwsKnrHijlZ3SPXo7neTJkzrf5dsX6l2ZXPZs6m2N2iIn3EjAj7BnoNJW-O_LJ-GKPo0TpP2YD9O3RMudZO-MNt2AUXKUYBEdn_KPbJ41eP68LykKkFIu6ZDPKst3npQ2dzqqrtj1FZE2jO2TWw9Jn_yNKBzlpndIWI-prDtdoRK3ybnuUVEumodwlDEEkW6ryzhADNQ_POQ8_Z5ISVS0-eJVRxCo5zPvfvStJ7EEx6Tw">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-tertiary/10 font-label-code text-[11px] text-tertiary">PR &amp; Mgmt</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Debasis Das</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">PR &amp; Mgmt</p>
+</div>
+</div>
+<!-- PR 2 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(109,221,129,0.18)]" data-category="prmanagement" data-name="Sushruta Kar" data-role="PR &amp; Management">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Sushruta Kar" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsbZQjFJCNpLBK6ZiqE3T6mUv-FPDuOJ8tqXCMP4Ka2LtoFI7_wmndVTsMvYv1eC6U8hv0FfwUlH5rUtvcXfZMqIv2tKaA9xOjJ8mmUW5_aIyS3Jrr0vgunnBS8EwrTPrh4jq88FCavoE2Zmccld2PgVQkgtt5OMhSc1N7kkc9VQtYq6l5veTGmMz9gl82tX5C1GyMgWsxYp4GgQoPhJhVXbJr8ekItvieQCsqPV81j2v60-cePrpmig">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-tertiary/10 font-label-code text-[11px] text-tertiary">PR &amp; Mgmt</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Sushruta Kar</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">PR &amp; Mgmt</p>
+</div>
+</div>
+<!-- PR 3 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(109,221,129,0.18)]" data-category="prmanagement" data-name="Anil Kumar Jena" data-role="PR &amp; Management">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Anil Kumar Jena" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGU0JewNNdQU35b-U-nXMQJzo7gPWzIgwa-342woX0UGCfjD_wJpXaP5AuJdo_F5IxRx3a4kBBmyhvlrvm-7P4f71z8FH4HEiDyC3jSoEQxhi7JToqgi0jk0djSoL2ZWYOR6Ri9OGc4ReeaEl301FquYjResBniUXRASMWzUhf_e0uQZPEwdpIu_eDyUu3V5PrPttR2HFMeM8xAjZVqo7QMy8N4lR7ekOu7j8oB4YPNJbb-dVhWCWCLA">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-tertiary/10 font-label-code text-[11px] text-tertiary">PR &amp; Mgmt</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Anil Kumar Jena</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">PR &amp; Mgmt</p>
+</div>
+</div>
+<!-- PR 4 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(109,221,129,0.18)]" data-category="prmanagement" data-name="Ankita Mohapatra" data-role="PR &amp; Management">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Ankita Mohapatra" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgAXYx8EG7lQPWcOZ-_RghkiilW9Ft29K9M0JqaBl5QoS0_kg0wGGtuIXEAKUB1AWW8J43CLG8dbvxFYATV6FGj9vAJUzjlEJulrcQ0O1rpjiLYR0Qaei3u6_xE2qYLHa-NEFZjVG8SM6dxv_JyDvgBPEy8pXs2QOUTYQGp-gu5t7VQecY7nB8q-RYCTgEkK8R4495txAVQdFeWmsz2Ho10dbw5PrSUec8xsANpOvfPjcIxMss9w4QYw">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-tertiary/10 font-label-code text-[11px] text-tertiary">PR &amp; Mgmt</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Ankita Mohapatra</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">PR &amp; Mgmt</p>
+</div>
+</div>
+<!-- PR 5 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(109,221,129,0.18)]" data-category="prmanagement" data-name="Riddhima Singh" data-role="PR &amp; Management">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Riddhima Singh" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQsBil5e0Zo1yJlC27QoCTucI_OSweigABs7xVGJ-oYwlZtJvOHxfypN7PjCLxmsSnLdaDiLLVc9wKvdtmggDryWOvdvnaQnNYKcvrD-aHsuugQzrzSk7igwJ9lPf3kArnedEhekdhJ7Mydmi41e8UJqyTH5LBNGOq2fEeITFKzjWJycPNAlD79JZblQ3xFKQowWvPYXI0-ykCzsiWGa-gcHqYoN36xl9pYVNUty0rHGeT_taesULaEA">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-tertiary/10 font-label-code text-[11px] text-tertiary">PR &amp; Mgmt</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Riddhima Singh</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">PR &amp; Mgmt</p>
+</div>
+</div>
+<!-- PR 6 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(109,221,129,0.18)]" data-category="prmanagement" data-name="Rounak Kumar Mahato" data-role="PR &amp; Management">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Rounak Kumar Mahato" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZvW_iqS8iErjHv6e7m2VFHI44fyTCB28PtXtqvhSoBZ55k2nH4e3DB57ojOF89dsGPf9HF4HdXakR0y2iTdUGd9YWi63ccL_XDvW6RI2AT1ryXblMWwPJGNLAprMBhE5O9XiCfzmlEsdV0UtNKDU09zypmjplmOODIuCfku4xECe4bkAhdoGsBfeCx1_Iz8-aKZSoM_qpwgGZZ93qu04Vg7jtCyctCn9sxLm-AiFOG3zG0Bhjb2FO0w">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-tertiary/10 font-label-code text-[11px] text-tertiary">PR &amp; Mgmt</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Rounak Mahato</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">PR &amp; Mgmt</p>
+</div>
+</div>
+<!-- PR 7 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(109,221,129,0.18)]" data-category="prmanagement" data-name="Bharat Bhusan Mohanta" data-role="PR &amp; Management">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Bharat Bhusan Mohanta" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlm6Pyq1NYgznO7I0jWs-LkmPwWF1KrJ8BuR9T6evijn7ZQlSCUwBUqD1zM41YQEGYB2eh4uqQER2oBM1YdFEftyAAdktvCvRSTpeVBqVPCtUzhOTeE9tN-PDgMjrWwbxOM4bprlyrUQal1qrusgELM1o-ABORyx0k95U6-OuzvWxoMectN-twPHcIJdkkRGFC65BlXO3Bb9SQPLkmscgXhebsiXXkCzxDiDpy-tp8L8HwqckjFX49Rw">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-tertiary/10 font-label-code text-[11px] text-tertiary">PR &amp; Mgmt</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Bharat Mohanta</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">PR &amp; Mgmt</p>
+</div>
+</div>
+<!-- PR 8 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(109,221,129,0.18)]" data-category="prmanagement" data-name="Priyanshu Chandra" data-role="PR &amp; Management">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Priyanshu Chandra" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0APIYIGUNxpJgVF9jzDSUpRSo0SuXPoKxHrIJFhWDabrfo0bX-QdIV81_-XPgny7zb0hudtJ91crHiffjm2jHpk6R0yTvNQnOZ6A3o_OOzEEU6sVo4Zm1lNHnbCdkZOTmiYOqM1ebRwYwu43H0xhVL51ybZs7xXS2b7s4w45Q_iiAP8C94oXvj4sfXN3wTcGos_sIzMgcZ5DnT9RP9GlxXmU7emBzy1xSaMo9cSfDoron560mnEZ-Kg">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-tertiary/10 font-label-code text-[11px] text-tertiary">PR &amp; Mgmt</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Priyanshu Chandra</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">PR &amp; Mgmt</p>
+</div>
+</div>
+<!-- PR 9 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(109,221,129,0.18)]" data-category="prmanagement" data-name="Sashwat Mishra" data-role="PR &amp; Management">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Sashwat Mishra" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfDXz9GTJnbkQQ8USmUJMdYwIyTnqn9OkLWHbcFW8mtFKbl3IjI4zRlQk4vqGAvCAA0ev9D5NgR8vESfBgXKXyjrOpvNhlnQ9MkstPQcVWKqlPro7KEX_-kU53mE6wL9X96jwHb7JOGyxzJTrdx2nwKqI384cGA4lHELBt-oV5zZP1zShZbQrsmiRzRQ-o1rie4LrXsvzq4DEIY9W9dmtIn8rkqc_dRbusUhujBIRmKa9eqNzyQTdXDw">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-tertiary/10 font-label-code text-[11px] text-tertiary">PR &amp; Mgmt</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Sashwat Mishra</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">PR &amp; Mgmt</p>
+</div>
+</div>
+</div>
+</section>
+<!-- NODE_04: MEDIA SECTION -->
+<section class="domain-section space-y-6" data-domain-group="media">
+<div class="flex items-center justify-between pb-3"><div class="flex items-center gap-3">
+<div class="w-2.5 h-6 rounded-full bg-secondary"></div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+Media Team
+<span class="font-label-code text-label-sm text-outline px-2 py-0.5 rounded-full bg-surface-container">9 CREATIVES</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Cinematography, social broadcasting, photo essays, and chapter branding</p>
+</div>
+</div></div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+<!-- Media 1 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(208,188,255,0.18)]" data-category="media" data-name="Ayush Kumar Singh" data-role="Media">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Ayush Kumar Singh" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzJ3MtMJ5hDaz_OAie879KAH41Tz8nbGL4tbBeawTIVltNEpZ4y0zpnBDdAcQpr4BzZSE51riWWZgt5_BaAGIHQ5Pp_ObNDtznT3Mh8AHdSnQRyvw1zq0hZ9yJm7N3qdkqBQ3eyIuCKXAWhpQIHtHZ4zrALSEHiafabUa1xa8wQoAjSoSSe4X6EhSQik_jbmmHXLoE0M0T14rsnagtkbgwxbUE7tytyOFeQoXWVFyiD_opWAIjd_4MFQ">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-secondary/10 font-label-code text-[11px] text-secondary">Media</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Ayush Kumar Singh</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Media Domain</p>
+</div>
+</div>
+<!-- Media 2 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(208,188,255,0.18)]" data-category="media" data-name="Mili Gupta" data-role="Media">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Mili Gupta" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyhjaLuDfgtQTjfCfWEDUtsa8qMHVX0N9a1vEWq31Xuv66Ix-7fXkMHP-zCC5DConAYJmXm4v4v5PuxRQyWTbnHPxKEacg_tIv2R_QW6Y6i0rPfyFHXX01eC7oEJjdxtb3PlH4Iod8k12ev1PujPiJQEowAWOO78TywsQmADe-YoYsDc76ZIaPAgCw8Ibk-PEar4WsEH1b5MfuzTQs5fq1BVMtHf56f5UM2EnHFknLqOEOqgGfuBZTVA">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-secondary/10 font-label-code text-[11px] text-secondary">Media</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Mili Gupta</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Media Domain</p>
+</div>
+</div>
+<!-- Media 3 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(208,188,255,0.18)]" data-category="media" data-name="Shreya Patel" data-role="Media">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Shreya Patel" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmlTAm5tsTY8zgEkD0Ktpwo4Wdov5Pz_2PMi8J6vbnTxPdrM8FH6eXvaIOEcUGHoS-powZzlR2hcYpLe_LMi8j_qBVWV-2F9tpMcAnw-ewhc60lSZTqbYeNT5LoUZL6NUD5lzjoXlhVC0PDKu9CGY52GQR9Q3FNk_6W3T-HsQmenSZ9J6mWfURT1Ve4pfeQRwPOOU-EgX_LlYB-QEcPyeAYw-vNJjUsH28aF-bBtyYRZjXyTlctbMvUg">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-secondary/10 font-label-code text-[11px] text-secondary">Media</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Shreya Patel</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Media Domain</p>
+</div>
+</div>
+<!-- Media 4 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(208,188,255,0.18)]" data-category="media" data-name="Rajshree Balsamant" data-role="Media">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Rajshree Balsamant" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLbbPz6syTklgG-gNB0R7hOppH8jLacxFoOOQ_8UcHONSVN9WbiMUuRkgzN2R_NeA1OnLNLaA_Dm7kOiXGcUeNaPDS136J_bjBEOSSNLFPvOd--We7ObACcOlEoz0O3TwVPXb3TFTV_GTaUGPNKRzw0Ct8toNSupGwyd4Y2LnaWkxppFhaD2B9v7KwXFxsLk2UmyHxvTCToCUqlxPDasglbK-5QxqzKrikhY1LxiMdmLgVXSCRxftDwQ">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-secondary/10 font-label-code text-[11px] text-secondary">Media</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Rajshree Balsamant</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Media Domain</p>
+</div>
+</div>
+<!-- Media 5 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(208,188,255,0.18)]" data-category="media" data-name="Anish Sahoo" data-role="Media">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Anish Sahoo" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVrs66kVnvtkgbsgEDhJRUizn5lMDMW3WFkYoXwfwHjux0ijFYBjLSxDP2Ddcs3GprtncJ_K_KG7rKKjKznU51lb68JE1WXW4oL6KJ2As3u6pbpEmggJvVs-ex_e2LBoaie8pzoTMJd7YSvaP1ukuc0-KaAgZduPB1dIOIL_bN6VQpwlO5ilMiad50Q1TtPlmhLq0Uy6CW2gTOW2wQPErmu_djivddu__dZS8y1HdWErs3Mv0CkLW2yg">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-secondary/10 font-label-code text-[11px] text-secondary">Media</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Anish Sahoo</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Media Domain</p>
+</div>
+</div>
+<!-- Media 6 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(208,188,255,0.18)]" data-category="media" data-name="Amrit Arya" data-role="Media">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Amrit Arya" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLnAP_7T8I7BTGgxzINpl_vDFAqVZkbSuFoYWntgvRAAleh66qEBaEfHyG1wxxdB_WELXcJwCENpbKdV5s7oZMFUvwPN8R98ryLkC4PnszGHhPxxczUQOZD2cErhFYgUVoyN0-6Yt13u3LRXWCHpn0NbCdTsDGHb6JPlUT8ETHF3T0WncL4vX_0YaYgYlwWJyBT57V1wo9dUG309WLAo0xCQa3FCrUtul3qE0im6yFQ17f0OFyPCngwQ">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-secondary/10 font-label-code text-[11px] text-secondary">Media</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Amrit Arya</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Media Domain</p>
+</div>
+</div>
+<!-- Media 7 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(208,188,255,0.18)]" data-category="media" data-name="Miraj Patra" data-role="Media">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Miraj Patra" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBiJqq_meSn-vdYJtgQUdSRX2MmLqWSplJEJXio26SwESCdkEraJCx6v488JkS5poSDDJbbILm4L1c5jC6xeVRpiZPVL6E6Whrihx-ubdp1Y1xmYTcGZa5HaSntKeyiN-S7yCh2FoXPv1xQ_LzGyVQfzpZYB2v6wgPOxFPuYEvEuAIVbZzbs1H5dbj3IUwrGvuOh9YyK5TTRs8z5qInM_4OTl0odY48uhLA_MFKHTDYzvQh4JeOM6r5Q">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-secondary/10 font-label-code text-[11px] text-secondary">Media</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Miraj Patra</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Media Domain</p>
+</div>
+</div>
+<!-- Media 8 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(208,188,255,0.18)]" data-category="media" data-name="Sritam Das" data-role="Media">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Sritam Das" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_e82lSCzGWaC1sIGzBvlv2CH7-UQnToljZwFQA-0EWr_Quxz0du_Z7P6mXYeqxKsd-_TASxqmcypJ8viXjoqGrviVBwZDjPfI8eR_uYzEPYiKtN1MfE0enQkwqUcQ_x5-jJTapJxlSvhRAPQs5n87YnmZC8FdPZ_zPhCet78stYru5MY1HSrRa-HW3bA-NjdGTmR0dGEMoixBdR73tbA_93-Kv7LLVRVx7l6GdH8AooA9SL5FkOGSHQ">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-secondary/10 font-label-code text-[11px] text-secondary">Media</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Sritam Das</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Media Domain</p>
+</div>
+</div>
+<!-- Media 9 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(208,188,255,0.18)]" data-category="media" data-name="Sayak Mondal" data-role="Media">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Sayak Mondal" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-DUhiiIW5oBH9x-9S3TxMCsHtKDEnKe0TbtCA3eFY7-AB34mbgLUrE7xfsgt9vaAOx30o9jByNuoy7rvKCezZxvVjqm1LEiH437DBy46Sh96ue5IcRlY9IHReXfn5rm0UswZallNJbnPKt5JM_x2Mm-ni37goyTnj5F22DMJxwG_qa0taSWqUnPu3YgdxDEx-A4BWmNQobsO-o__nQuNgSPUQURbTPAwWYa61w8f4gGAPXA-QFoEfFQ">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-secondary/10 font-label-code text-[11px] text-secondary">Media</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Sayak Mondal</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Media Domain</p>
+</div>
+</div>
+</div>
+</section>
+<!-- NODE_05: DESIGN SECTION -->
+<section class="domain-section space-y-6" data-domain-group="design">
+<div class="flex items-center justify-between pb-3"><div class="flex items-center gap-3">
+<div class="w-2.5 h-6 rounded-full bg-secondary-fixed"></div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+Design Team
+<span class="font-label-code text-label-sm text-outline px-2 py-0.5 rounded-full bg-surface-container">PRODUCT &amp; UI/UX</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Interface design, visual design languages, and user experience research</p>
+</div>
+</div></div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+<!-- Design 1 -->
+<div class="member-card group flex flex-col p-3 rounded-2xl bg-surface-container-low backdrop-blur-md hover:bg-surface-container transition-all duration-300 hover:shadow-[0_0_20px_rgba(233,221,255,0.2)]" data-category="design" data-name="Arpit Kumar Maurya" data-role="Design">
+<div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Arpit Kumar Maurya" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDmcXD0-tJiyQLcUJpfEpx72yUmEo6-wjv6S_bmGjxeMZ9yy9J8SsPrSBIaSGVuiIrrffjBRJolkkH3_Z4qY4I3NKBZf8rfkJhfgKG6Fc4T-Ce9iiv7qdwaaddda9r717tYuVMb5B6933_Rszekc65fCl6Me5el51tass-SQRRYHwob8WzPnzv_ph4xVu2iaIDvUyPz2ZoxuAL3IHLI6DxKAWGsXHjJPz3cevOpXBhS9cvDmPEe_Og1w">
+</div>
+<div class="pt-3 flex flex-col gap-1">
+<span class="inline-flex items-center self-start px-2 py-0.5 rounded-full bg-secondary-fixed/15 font-label-code text-[11px] text-secondary-fixed">Design</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface tracking-tight truncate">Arpit Kumar Maurya</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">UI/UX Designer</p>
+</div>
+</div>
+</div>
+</section>
+<!-- RECRUITMENT CALLOUT BANNER -->
+<section class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-lowest p-8 sm:p-12 shadow-2xl">
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-0 right-0 w-64 h-64 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-secondary/15 via-transparent to-transparent pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+<div class="space-y-3 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 font-label-code text-label-sm text-primary">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+            APPLICATIONS ROLLING // SPRING COHORT
+          </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+            Ready to shape the future of student tech?
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Join the core developer circles at Siksha 'O' Anusandhan. Work on open source, lead workshops for 1,000+ peers, and represent ITER globally.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 shrink-0 w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-primary-container text-on-primary-container font-title-lg text-label-sm font-semibold shadow-[0_0_24px_rgba(100,138,255,0.45)] hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="">Apply for Next Cohort</span>
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-surface-container-highest text-on-surface font-title-lg text-label-sm hover:bg-surface-bright transition-all duration-300" href="#">
+<span class="">View Syllabus</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  (function() {
+    const searchInput = document.getElementById('member-search');
+    const filterPills = document.querySelectorAll('.filter-pill');
+    const memberCards = document.querySelectorAll('.member-card');
+    const sections = document.querySelectorAll('.domain-section');
+
+    let currentFilter = 'all';
+    let searchQuery = '';
+
+    function applyFilters() {
+      memberCards.forEach(card => {
+        const name = (card.getAttribute('data-name') || '').toLowerCase();
+        const role = (card.getAttribute('data-role') || '').toLowerCase();
+        const category = card.getAttribute('data-category') || '';
+
+        const matchesSearch = !searchQuery || name.includes(searchQuery) || role.includes(searchQuery);
+        const matchesCategory = (currentFilter === 'all') || (category === currentFilter);
+
+        if (matchesSearch && matchesCategory) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Update section visibility
+      sections.forEach(sec => {
+        const group = sec.getAttribute('data-domain-group');
+        const visibleChildren = sec.querySelectorAll('.member-card:not(.hidden)');
+        if (visibleChildren.length === 0) {
+          sec.classList.add('hidden');
+        } else {
+          sec.classList.remove('hidden');
+        }
+      });
+    }
+
+    // Filter pill click
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        currentFilter = pill.getAttribute('data-filter');
+
+        // Reset pill styles
+        filterPills.forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary', 'shadow-[0_0_16px_rgba(181,196,255,0.4)]');
+          p.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+
+        // Activate clicked
+        pill.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        pill.classList.add('bg-primary', 'text-on-primary', 'shadow-[0_0_16px_rgba(181,196,255,0.4)]');
+
+        applyFilters();
+      });
+    });
+
+    // Search input typing
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        applyFilters();
+      });
+
+      // Shortcut ⌘K / Ctrl+K
+      window.addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          e.preventDefault();
+          searchInput.focus();
+        }
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-xs"><img alt="GDG On Campus Logo" class="w-7 h-7 object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDiiUIccIOGzi7UHrB0EOAAq0vQ0TiYQy00lCt2LfOXulM7xZAtxstGKu61xfIqGUJkFwftx01nNJNGHYAazAzdpCFkKTMUqw9o99rW9BEJJBPyeZvJnlm_ihBYVTs32huuP_jNlI5QiK2vOMGb2lU-Ms1Jv4tGa2tQb8OxNRP3759lt4kjjmjRm2scyWqGljNt8ADNFOxxXXTETbzvUndStU9E8nHbVFzHVefxGyPKzYmfwWwZnmn5g"><span class="font-title-lg text-title-lg text-on-surface ml-space-xs">GDG On Campus</span></div><p class="font-body-md text-body-md text-on-surface-variant">The university developer chapter at Institute of Technical Education and Research (ITER), Siksha 'O' Anusandhan, empowering aspiring engineers through Google technologies.</p><div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container font-label-code text-label-code text-tertiary"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>Bhubaneswar, Odisha, IN</div></div><div class="space-y-space-md"><h4 class="font-title-lg text-title-lg text-on-surface">Community</h4><ul class="space-y-space-sm font-body-md text-body-md"><li class=""><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home Feed</a></li><li class=""><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About Chapter</a></li><li class=""><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="team" href="#">Core Team &amp; Leads</a></li><li class=""><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="events" href="#">Upcoming Events</a></li><li class=""><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="join-community" href="#">Membership Portal</a></li></ul></div><div class="space-y-space-md"><h4 class="font-title-lg text-title-lg text-on-surface">Social Ecosystem</h4><p class="font-body-md text-body-md text-on-surface-variant">Stay synced with workshops, open-source initiatives, and live hackathons.</p><div class="flex flex-wrap gap-space-sm"><a class="px-3 py-1.5 rounded-lg bg-surface-container font-label-code text-label-code text-on-surface hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[16px]">smart_display</span>YouTube</a><a class="px-3 py-1.5 rounded-lg bg-surface-container font-label-code text-label-code text-on-surface hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[16px]">terminal</span>GitHub</a><a class="px-3 py-1.5 rounded-lg bg-surface-container font-label-code text-label-code text-on-surface hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[16px]">photo_camera</span>Instagram</a><a class="px-3 py-1.5 rounded-lg bg-surface-container font-label-code text-label-code text-on-surface hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[16px]">work</span>LinkedIn</a></div></div><div class="space-y-space-md"><h4 class="font-title-lg text-title-lg text-on-surface">Contact &amp; Campus</h4><div class="space-y-space-sm font-body-md text-body-md text-on-surface-variant"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5">location_on</span><span class="">ITER, Siksha 'O' Anusandhan Deemed to be University, Jagamara, Khandagiri, Bhubaneswar, 751030</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px]">mail</span><a class="hover:text-on-surface transition-colors" href="mailto:gdg@soa.ac.in">gdg@soa.ac.in</a></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[20px]">domain</span><span class="">Campus Sector - Block D Labs</span></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="font-label-code text-label-code text-on-surface-variant text-center md:text-left">© 2025 GDG on Campus ITER • Siksha 'O' Anusandhan (SOA ITER). All rights reserved.</div><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant"><a class="hover:text-on-surface transition-colors" href="#">Community Guidelines</a><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a></div></div></div></footer>
+
+</body></html>

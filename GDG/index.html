@@ -1,0 +1,2259 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDG ITER - Google Developer Group on Campus SOA ITER (gdgociter.in)</title>
+  <meta name="description" content="Official website of Google Developer Group on Campus at SOA ITER, Bhubaneswar (gdgociter.in). Join our student tech community for workshops, hackathons, and Google Cloud, AI/ML, Web & Android projects.">
+  <meta name="keywords" content="gdgociter.in,gdgociter,GDG ITER,GDG SOA ITER,Google Developer Group SOA ITER,GDG on Campus ITER,GDG Bhubaneswar,SOA ITER Bhubaneswar,tech events ITER,hackathons Bhubaneswar,student developers">
+  <link rel="canonical" href="https://gdgociter.in">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="GDG ITER - Google Developer Group on Campus SOA ITER (gdgociter.in)">
+  <meta property="og:description" content="Join Google Developer Group on Campus SOA ITER (gdgociter.in). Workshops, tech events, and developer community in Bhubaneswar.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gdgociter.in">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@gdg_iter">
+  
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  
+  <!-- Instant Theme Bootstrap (Prevents Flash of Wrong Theme) -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('gdg_theme_mode') || 'dark';
+      if (savedTheme === 'light') {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+      } else {
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+
+  <!-- Tailwind CSS CDN with custom config bound to CSS variable engine -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'surface': 'rgb(var(--surface-rgb) / <alpha-value>)',
+            'surface-dim': 'rgb(var(--surface-dim-rgb) / <alpha-value>)',
+            'surface-bright': 'rgb(var(--surface-bright-rgb) / <alpha-value>)',
+            'surface-container-lowest': 'rgb(var(--surface-container-lowest-rgb) / <alpha-value>)',
+            'surface-container-low': 'rgb(var(--surface-container-low-rgb) / <alpha-value>)',
+            'surface-container': 'rgb(var(--surface-container-rgb) / <alpha-value>)',
+            'surface-container-high': 'rgb(var(--surface-container-high-rgb) / <alpha-value>)',
+            'surface-container-highest': 'rgb(var(--surface-container-highest-rgb) / <alpha-value>)',
+            'on-surface': 'rgb(var(--on-surface-rgb) / <alpha-value>)',
+            'on-surface-variant': 'rgb(var(--on-surface-variant-rgb) / <alpha-value>)',
+            'outline': 'rgb(var(--outline-rgb) / <alpha-value>)',
+            'outline-variant': 'rgb(var(--outline-variant-rgb) / <alpha-value>)',
+            'primary': 'rgb(var(--primary-rgb) / <alpha-value>)',
+            'on-primary': 'rgb(var(--on-primary-rgb) / <alpha-value>)',
+            'primary-container': 'rgb(var(--primary-container-rgb) / <alpha-value>)',
+            'on-primary-container': 'rgb(var(--on-primary-container-rgb) / <alpha-value>)',
+            'secondary': 'rgb(var(--secondary-rgb) / <alpha-value>)',
+            'secondary-container': 'rgb(var(--secondary-container-rgb) / <alpha-value>)',
+            'tertiary': 'rgb(var(--tertiary-rgb) / <alpha-value>)',
+            'tertiary-container': 'rgb(var(--tertiary-container-rgb) / <alpha-value>)',
+            'error': 'rgb(var(--error-rgb) / <alpha-value>)',
+            'google-blue': '#4285F4',
+            'google-red': '#EA4335',
+            'google-yellow': '#FBBC04',
+            'google-green': '#34A853'
+          },
+          fontFamily: {
+            'display': ['Plus Jakarta Sans', 'sans-serif'],
+            'body': ['Inter', 'sans-serif'],
+            'mono': ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+  
+  <!-- Custom DevGlow Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-surface font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container transition-colors duration-300">
+
+  <!-- Top Real-Time Scroll Progress Indicator -->
+  <div id="scroll-progress-bar"></div>
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR WITH DYNAMIC THEME SWITCHER
+       ======================================================================== -->
+  <header class="fixed top-0 left-0 right-0 w-full z-50 nav-glass">
+    <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4">
+      
+      <!-- Official Client Header Logo & Name -->
+      <a class="flex items-center gap-3 group" href="#hero" title="GDG on Campus SOA ITER">
+        <div class="h-11 px-3 py-1 rounded-xl bg-white/95 flex items-center justify-center border border-white/20 shadow-[0_0_20px_rgba(255,255,255,0.12)] group-hover:scale-105 transition-transform">
+          <img src="assets/images/header-logo.png" alt="GDG on Campus SOA ITER" class="h-7 w-auto object-contain">
+        </div>
+        <div class="hidden sm:flex flex-col">
+          <div class="flex items-center gap-1.5">
+            <span class="font-display font-extrabold text-base tracking-tight text-on-surface group-hover:text-primary transition-colors">GDG ITER</span>
+            <span class="px-1.5 py-0.2 rounded bg-primary/10 text-primary font-mono text-[10px] font-semibold">CAMPUS</span>
+          </div>
+          <span class="font-mono text-[10px] text-on-surface-variant tracking-wider uppercase">SOA University • gdgociter.in</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-surface-container-highest/60">
+        <a class="px-4 py-1.5 rounded-full text-xs font-semibold text-primary bg-surface-container-high transition-colors" href="#hero">Home</a>
+        <a class="px-4 py-1.5 rounded-full text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#about">About</a>
+        <a class="px-4 py-1.5 rounded-full text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#timeline">Roadmap</a>
+        <a class="px-4 py-1.5 rounded-full text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#tracks">Tracks</a>
+        <a class="px-4 py-1.5 rounded-full text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#events">Events</a>
+        <a class="px-4 py-1.5 rounded-full text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="team.html">Team</a>
+        <a class="px-4 py-1.5 rounded-full text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#impact">Highlights</a>
+      </nav>
+
+      <!-- CTA Actions & Theme Switcher -->
+      <div class="flex items-center gap-2.5">
+        
+        <!-- Light / Dark Theme Switcher Button -->
+        <button class="theme-toggle-trigger p-2.5 rounded-xl bg-surface-container border border-surface-container-highest text-on-surface hover:text-primary hover:border-primary/40 transition-all flex items-center justify-center shadow-sm" title="Toggle Light / Dark Mode" aria-label="Toggle Theme">
+          <span class="material-symbols-outlined theme-toggle-icon text-[20px]">light_mode</span>
+        </button>
+
+        <!-- Join Us WhatsApp CTA -->
+        <a class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold text-white bg-gradient-to-r from-primary-container to-secondary-container shadow-[0_0_20px_rgba(100,138,255,0.45)] hover:shadow-[0_0_28px_rgba(139,92,246,0.65)] hover:scale-105 transition-all btn-magnetic" href="https://chat.whatsapp.com/HsvMXSnPBqx7w7RLJCtUc8?mode=wwt" target="_blank" rel="noopener noreferrer">
+          <span>Join Us</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" class="lg:hidden p-2.5 rounded-xl bg-surface-container border border-surface-container-highest text-on-surface hover:text-primary transition-colors" aria-label="Toggle Navigation">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Slide Drawer -->
+    <div id="mobile-drawer" class="hidden lg:hidden border-t border-surface-container-highest/60 bg-surface-container-low/95 backdrop-blur-2xl px-6 py-6 space-y-3">
+      <!-- Mobile Theme Customizer Strip -->
+      <div class="p-3 rounded-2xl bg-surface-container border border-surface-container-highest flex items-center justify-between mb-2">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-[20px]">dark_mode</span>
+          <span class="text-xs font-mono font-medium text-on-surface">Appearance</span>
+        </div>
+        <button class="theme-toggle-trigger px-3 py-1.5 rounded-lg bg-surface-container-high border border-surface-container-highest text-xs font-mono flex items-center gap-1.5 text-on-surface">
+          <span class="material-symbols-outlined theme-toggle-icon text-[16px]">light_mode</span>
+          <span class="theme-toggle-label">Theme</span>
+        </button>
+      </div>
+      
+      <a class="mobile-drawer-link block px-4 py-2.5 rounded-xl text-sm font-medium text-primary bg-surface-container" href="#hero">Home</a>
+      <a class="mobile-drawer-link block px-4 py-2.5 rounded-xl text-sm font-medium text-on-surface-variant hover:bg-surface-container" href="#about">About</a>
+      <a class="mobile-drawer-link block px-4 py-2.5 rounded-xl text-sm font-medium text-on-surface-variant hover:bg-surface-container" href="#timeline">Roadmap & Timeline</a>
+      <a class="mobile-drawer-link block px-4 py-2.5 rounded-xl text-sm font-medium text-on-surface-variant hover:bg-surface-container" href="#tracks">Tech Tracks</a>
+      <a class="mobile-drawer-link block px-4 py-2.5 rounded-xl text-sm font-medium text-on-surface-variant hover:bg-surface-container" href="#events">Upcoming & Past Events</a>
+      <a class="mobile-drawer-link block px-4 py-2.5 rounded-xl text-sm font-medium text-on-surface-variant hover:bg-surface-container" href="team.html">Directory & Leads</a>
+      <a class="mobile-drawer-link block px-4 py-2.5 rounded-xl text-sm font-medium text-on-surface-variant hover:bg-surface-container" href="#impact">Campus Chronicles</a>
+      <a class="mobile-drawer-link block px-4 py-3 rounded-full text-center text-sm font-bold text-white bg-gradient-to-r from-primary-container to-secondary-container shadow-lg" href="https://chat.whatsapp.com/HsvMXSnPBqx7w7RLJCtUc8?mode=wwt" target="_blank" rel="noopener noreferrer">Join Us (WhatsApp Community)</a>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION — HIGHLY DYNAMIC WITH COOL ANIMATIONS
+       ======================================================================== -->
+  <section id="hero-section" class="relative w-full min-h-screen pt-32 pb-24 flex flex-col justify-center items-center overflow-hidden bg-surface-container-lowest">
+    
+    <!-- 1. Interactive HTML5 Canvas Particle Constellation Layer -->
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- 2. Cybernetic Grid Texture & Gradient Vignettes -->
+    <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+      <!-- Radial Spotlight -->
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_15%,rgba(100,138,255,0.18),transparent_70%)]"></div>
+      
+      <!-- Tech Matrix Grid with Radial Fade Mask -->
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#43465415_1px,transparent_1px),linear-gradient(to_bottom,#43465415_1px,transparent_1px)] bg-[size:36px_36px] [mask-image:radial-gradient(ellipse_65%_55%_at_50%_35%,#000_50%,transparent_100%)]"></div>
+      
+      <!-- Shifting Ambient Aurora Behind Card -->
+      <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[340px] aurora-halo opacity-60 pointer-events-none"></div>
+      
+      <!-- Bottom Seamless Blending Gradient -->
+      <div class="absolute bottom-0 inset-x-0 h-36 bg-gradient-to-t from-surface to-transparent"></div>
+    </div>
+
+    <!-- Floating Holographic Orbiting Tech Pills in Parallax Space (Surrounding Hero) -->
+    <div class="hidden xl:block absolute top-36 left-12 floating-pill pill-float-a px-4 py-2 rounded-full bg-surface-container-high/90 border border-primary/30 text-xs font-mono text-primary flex items-center gap-2 shadow-lg">
+      <span class="w-2 h-2 rounded-full bg-google-blue animate-pulse"></span>
+      <span>☁️ Google Cloud & Firebase</span>
+    </div>
+    <div class="hidden xl:block absolute top-40 right-12 floating-pill pill-float-b px-4 py-2 rounded-full bg-surface-container-high/90 border border-secondary/30 text-xs font-mono text-secondary flex items-center gap-2 shadow-lg">
+      <span class="w-2 h-2 rounded-full bg-google-red animate-pulse"></span>
+      <span>🤖 Gemini 1.5 & AI Agents</span>
+    </div>
+    <div class="hidden xl:block absolute bottom-32 left-16 floating-pill pill-float-c px-4 py-2 rounded-full bg-surface-container-high/90 border border-google-yellow/30 text-xs font-mono text-google-yellow flex items-center gap-2 shadow-lg">
+      <span class="w-2 h-2 rounded-full bg-google-yellow animate-ping"></span>
+      <span>📱 Android Jetpack Compose</span>
+    </div>
+    <div class="hidden xl:block absolute bottom-36 right-16 floating-pill pill-float-d px-4 py-2 rounded-full bg-surface-container-high/90 border border-tertiary/30 text-xs font-mono text-tertiary flex items-center gap-2 shadow-lg">
+      <span class="w-2 h-2 rounded-full bg-google-green animate-pulse"></span>
+      <span>⚡ Open Source & DevOps</span>
+    </div>
+
+    <!-- HERO CONTENT WRAPPER -->
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-12 flex flex-col items-center text-center z-10 w-full">
+      
+      <!-- Live Campus Status Pill -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high/85 border border-surface-container-highest backdrop-blur-xl shadow-lg mb-6 group cursor-default">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span>
+        </span>
+        <span class="font-mono text-xs text-primary font-semibold tracking-wide">SOA University • Official Campus Chapter</span>
+        <span class="text-outline-variant">|</span>
+        <span class="font-mono text-[11px] text-on-surface-variant uppercase tracking-wider">Academic Cycle 2025-26</span>
+      </div>
+
+      <!-- ====================================================================
+           3D VOLUMETRIC HOLOGRAPHIC GDG EMBLEM RIG
+           ==================================================================== -->
+      <div class="relative my-4 flex flex-col items-center justify-center hero-3d-scene w-full max-w-2xl">
+        <div id="hero-emblem-3d-wrapper" class="relative p-2 select-none cursor-pointer" title="Click to trigger celebrations!">
+          
+          <!-- Emissive 4-Color Ambient Aurora Light -->
+          <div class="absolute inset-0 -inset-x-12 bg-gradient-to-r from-google-blue/30 via-google-red/25 via-google-yellow/25 to-google-green/30 blur-2xl rounded-full opacity-70 pointer-events-none animate-pulse"></div>
+
+          <!-- 3D Transform Card Rig (Rotates with Gyroscopic Physics & Smooth Lerp) -->
+          <div id="hero-emblem-card" class="relative flex flex-col md:flex-row items-center gap-6 md:gap-8 px-8 py-6 md:px-12 md:py-8 rounded-3xl border border-surface-container-highest/80 backdrop-blur-2xl transition-shadow duration-300 ease-out group"
+               style="transform-style: preserve-3d; background: linear-gradient(135deg, rgba(31, 31, 36, 0.95) 0%, rgba(20, 20, 24, 0.97) 50%, rgba(26, 27, 32, 0.93) 100%); box-shadow: 0 25px 60px -12px rgba(0,0,0,0.85), 0 0 40px 2px rgba(66,133,244,0.25), inset 0 1px 1px 0 rgba(255,255,255,0.2);">
+            
+            <!-- Dynamic Glare Reflection Overlay Following Cursor -->
+            <div id="hero-emblem-glare" class="absolute inset-0 rounded-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="transform: translateZ(15px);"></div>
+
+            <!-- 3D Volumetric Google Brackets Logo < > -->
+            <div class="relative flex items-center justify-center shrink-0" style="transform-style: preserve-3d; transform: translateZ(48px);">
+              
+              <!-- 4-Color Neon Orbiting Satellite Dots -->
+              <span class="absolute -top-3 -left-3 w-3 h-3 rounded-full bg-google-red shadow-[0_0_12px_#EA4335] orbit-dot-1"></span>
+              <span class="absolute -bottom-3 -left-2 w-3 h-3 rounded-full bg-google-blue shadow-[0_0_12px_#4285F4] orbit-dot-2"></span>
+              <span class="absolute -top-2 -right-3 w-3 h-3 rounded-full bg-google-green shadow-[0_0_12px_#34A853] orbit-dot-3"></span>
+              <span class="absolute -bottom-3 -right-2 w-3 h-3 rounded-full bg-google-yellow shadow-[0_0_12px_#FBBC04] orbit-dot-4"></span>
+
+              <!-- SVG Brackets with Layered Volumetric Shadows -->
+              <div class="relative w-20 h-20 md:w-24 md:h-24 flex items-center justify-center" style="filter: drop-shadow(0 14px 20px rgba(0,0,0,0.7)) drop-shadow(0 0 18px rgba(66,133,244,0.45)); transform: translateZ(35px);">
+                <svg viewBox="0 0 160 160" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="bracket-red-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#FF5252"></stop>
+                      <stop offset="100%" stop-color="#D93025"></stop>
+                    </linearGradient>
+                    <linearGradient id="bracket-blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#4285F4"></stop>
+                      <stop offset="100%" stop-color="#1A73E8"></stop>
+                    </linearGradient>
+                    <linearGradient id="bracket-green-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#34A853"></stop>
+                      <stop offset="100%" stop-color="#188038"></stop>
+                    </linearGradient>
+                    <linearGradient id="bracket-yellow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#FBBC04"></stop>
+                      <stop offset="100%" stop-color="#F29900"></stop>
+                    </linearGradient>
+                  </defs>
+                  <!-- Base Gradient Paths -->
+                  <g>
+                    <path d="M68 36 L24 80 L68 124" stroke="url(#bracket-blue-grad)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M68 36 L44 60" stroke="url(#bracket-red-grad)" stroke-width="18" stroke-linecap="round"></path>
+                    <path d="M92 36 L136 80 L92 124" stroke="url(#bracket-yellow-grad)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M92 36 L116 60" stroke="url(#bracket-green-grad)" stroke-width="18" stroke-linecap="round"></path>
+                  </g>
+                  <!-- Specular Edge Shimmer -->
+                  <path d="M68 36 L24 80 L68 124" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.45"></path>
+                  <path d="M92 36 L136 80 L92 124" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.45"></path>
+                </svg>
+              </div>
+            </div>
+
+            <!-- 3D Layered Typography Rig -->
+            <div class="flex flex-col items-center md:items-start text-center md:text-left" style="transform-style: preserve-3d; transform: translateZ(32px);">
+              <!-- Category Header Tag -->
+              <div class="flex items-center gap-2 mb-2" style="transform: translateZ(12px);">
+                <div class="flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-surface-container-highest/90 border border-surface-container-highest shadow-sm">
+                  <span class="w-2 h-2 rounded-full bg-google-blue"></span>
+                  <span class="w-2 h-2 rounded-full bg-google-red"></span>
+                  <span class="w-2 h-2 rounded-full bg-google-yellow"></span>
+                  <span class="w-2 h-2 rounded-full bg-google-green"></span>
+                  <span class="font-mono text-[11px] text-primary-fixed uppercase tracking-wider font-semibold ml-1">Google Developer Groups</span>
+                </div>
+              </div>
+
+              <!-- Main Chapter Title -->
+              <div class="flex items-center gap-2" style="transform: translateZ(28px); text-shadow: 0 4px 18px rgba(0,0,0,0.7);">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-on-surface tracking-tight font-display">
+                  Google Developer Group
+                </h2>
+              </div>
+
+              <!-- Subtitle & Campus Tagging -->
+              <div class="flex flex-wrap items-center justify-center md:justify-start gap-2.5 mt-2" style="transform: translateZ(20px);">
+                <span class="font-mono text-xs px-2.5 py-0.5 rounded-full bg-primary-container/20 border border-primary/40 text-primary font-bold shadow-[0_0_12px_rgba(100,138,255,0.3)]">
+                  On Campus
+                </span>
+                <span class="font-mono text-xs md:text-sm text-on-surface-variant font-medium tracking-wide">
+                  Institute of Technical Education and Research
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Headline with Google Quad-Color Typography -->
+      <h1 class="mt-8 font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-on-surface tracking-tight max-w-5xl leading-[0.98]">
+        WHERE CAMPUS MEETS <br>
+        <span class="inline-flex tracking-normal">
+          <span class="text-[#4285F4]">G</span><span class="text-[#EA4335]">O</span><span class="text-[#FBBC05]">O</span><span class="text-[#4285F4]">G</span><span class="text-[#34A853]">L</span><span class="text-[#EA4335]">E</span>
+        </span>
+      </h1>
+
+      <!-- Dynamic Kinetic Typewriter Ticker -->
+      <div class="mt-4 flex items-center justify-center gap-2 font-mono text-sm sm:text-base md:text-lg text-primary bg-surface-container/60 px-4 py-1.5 rounded-full border border-surface-container-highest/60 backdrop-blur-md">
+        <span class="material-symbols-outlined text-[18px] text-tertiary">terminal</span>
+        <span id="hero-typewriter">WHERE CAMPUS MEETS GOOGLE</span>
+        <span class="w-2 h-5 bg-primary animate-pulse inline-block"></span>
+      </div>
+
+      <!-- Hero Subtitle with Official Chapter dev.community Link -->
+      <p class="mt-5 font-body text-base md:text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+        The bridge between theory and impact. <a href="https://gdg.community.dev/gdg-on-campus-institute-of-technical-education-research-bhubaneswar-india/" target="_blank" rel="noopener noreferrer" class="font-semibold text-primary border-b border-primary/40 hover:border-primary transition-colors">GDG on Campus ITER | SOA University Bhubaneswar</a>'s premier developer ecosystem.
+      </p>
+
+      <!-- Action Buttons with Magnetic Pull & Emissive Glow -->
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <a class="btn-magnetic inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm font-bold text-white bg-gradient-to-r from-primary-container via-[#5764F6] to-secondary-container shadow-[0_0_25px_rgba(100,138,255,0.45)] hover:shadow-[0_0_35px_rgba(100,138,255,0.7)] transition-all hover:scale-105" href="#events">
+          <span class="material-symbols-outlined text-[20px]">event_available</span>
+          <span>Explore Events</span>
+        </a>
+        <a class="btn-magnetic inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold text-on-surface bg-surface-container-high/90 hover:bg-surface-container-highest border border-surface-container-highest backdrop-blur-md hover:border-primary/40 transition-all hover:scale-105" href="team.html">
+          <span class="material-symbols-outlined text-[20px]">badge</span>
+          <span>Meet the Team & Leads</span>
+        </a>
+        <a class="btn-magnetic inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-[#25D366] to-[#128C7E] shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-all hover:scale-105" href="https://chat.whatsapp.com/HsvMXSnPBqx7w7RLJCtUc8?mode=wwt" target="_blank" rel="noopener noreferrer">
+          <span class="material-symbols-outlined text-[20px]">chat</span>
+          <span>Join WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Quick Interactive Hero Bento (Terminal & Previous Event Highlight) -->
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-4xl text-left">
+        <!-- Interactive Code Snippet -->
+        <div class="p-5 rounded-2xl bg-surface-container-low/90 border border-surface-container-highest/70 backdrop-blur-md relative overflow-hidden group">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="w-3 h-3 rounded-full bg-google-red/80"></span>
+            <span class="w-3 h-3 rounded-full bg-google-yellow/80"></span>
+            <span class="w-3 h-3 rounded-full bg-google-green/80"></span>
+            <span class="font-mono text-[11px] text-outline ml-2">// developer-ecosystem.ts</span>
+          </div>
+          <div class="font-mono text-xs text-on-surface-variant space-y-1">
+            <p><span class="text-[#d0bcff]">const</span> <span class="text-primary">future</span> = <span class="text-google-yellow">init</span>();</p>
+            <p><span class="text-[#d0bcff]">await</span> future.<span class="text-tertiary">build</span>();</p>
+            <div class="flex items-center gap-2 mt-3 text-on-surface">
+              <span class="text-tertiary">➜</span>
+              <span class="text-xs text-primary font-bold">Campus developers shipping real-world impact</span>
+              <span class="animate-pulse inline-block w-1.5 h-3.5 bg-primary"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured / Previous Event Highlight -->
+        <div class="p-5 rounded-2xl bg-gradient-to-br from-[#1a237e]/40 to-[#0d47a1]/30 border border-primary/30 backdrop-blur-md relative overflow-hidden group">
+          <div class="flex items-center justify-between mb-2">
+            <span class="px-2.5 py-0.5 rounded-full bg-primary/20 text-primary font-mono text-[10px] font-bold uppercase tracking-wider">Previous Flagship Event</span>
+            <span class="text-xs font-mono text-primary font-semibold">May 15, 2026</span>
+          </div>
+          <h4 class="font-display text-lg font-bold text-white group-hover:text-primary transition-colors">Decode the Tech</h4>
+          <p class="text-xs text-on-surface-variant mt-1 line-clamp-2">Technical Trivia, Logic & Cognitive Agility testing technical problem solving across algorithms and tech culture.</p>
+          <a href="#events" class="inline-flex items-center gap-1 font-mono text-xs text-primary hover:underline mt-3">View Event Archive <span class="material-symbols-outlined text-[14px]">arrow_forward</span></a>
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           LIVE ANIMATED METRICS COUNTER BAR (EXACT STATS FROM gdgociter.in)
+           ==================================================================== -->
+      <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-5xl">
+        
+        <!-- Stat 1: Members -->
+        <div class="glow-card flex flex-col items-center p-6 rounded-2xl relative overflow-hidden group">
+          <div class="absolute top-0 inset-x-0 h-1 bg-google-blue opacity-80 group-hover:opacity-100 transition-opacity"></div>
+          <span class="counter-stat font-display text-3xl md:text-5xl font-black text-google-blue" data-target="500" data-suffix="+">0</span>
+          <span class="text-xs text-on-surface mt-1.5 uppercase font-mono tracking-wider font-semibold">Community Members</span>
+          <span class="text-[11px] text-outline font-mono mt-0.5">Across SOA Campuses</span>
+        </div>
+
+        <!-- Stat 2: Events -->
+        <div class="glow-card flex flex-col items-center p-6 rounded-2xl relative overflow-hidden group">
+          <div class="absolute top-0 inset-x-0 h-1 bg-google-red opacity-80 group-hover:opacity-100 transition-opacity"></div>
+          <span class="counter-stat font-display text-3xl md:text-5xl font-black text-google-red" data-target="30" data-suffix="+">0</span>
+          <span class="text-xs text-on-surface mt-1.5 uppercase font-mono tracking-wider font-semibold">Events Hosted</span>
+          <span class="text-[11px] text-outline font-mono mt-0.5">Keynotes & Sprints</span>
+        </div>
+
+        <!-- Stat 3: Workshops -->
+        <div class="glow-card flex flex-col items-center p-6 rounded-2xl relative overflow-hidden group">
+          <div class="absolute top-0 inset-x-0 h-1 bg-google-yellow opacity-80 group-hover:opacity-100 transition-opacity"></div>
+          <span class="counter-stat font-display text-3xl md:text-5xl font-black text-google-yellow" data-target="15" data-suffix="+">0</span>
+          <span class="text-xs text-on-surface mt-1.5 uppercase font-mono tracking-wider font-semibold">Workshops Run</span>
+          <span class="text-[11px] text-outline font-mono mt-0.5">Hands-on Labs</span>
+        </div>
+
+        <!-- Stat 4: Years Active -->
+        <div class="glow-card flex flex-col items-center p-6 rounded-2xl relative overflow-hidden group">
+          <div class="absolute top-0 inset-x-0 h-1 bg-google-green opacity-80 group-hover:opacity-100 transition-opacity"></div>
+          <span class="counter-stat font-display text-3xl md:text-5xl font-black text-google-green" data-target="5" data-suffix="+">0</span>
+          <span class="text-xs text-on-surface mt-1.5 uppercase font-mono tracking-wider font-semibold">Years Active</span>
+          <span class="text-[11px] text-outline font-mono mt-0.5">Continuous Innovation</span>
+        </div>
+
+      </div>
+
+      <!-- ====================================================================
+           INTERACTIVE DEVELOPER CLI TERMINAL WIDGET (gdg-iter-cli)
+           ==================================================================== -->
+      <div class="mt-14 w-full max-w-4xl text-left">
+        <div class="terminal-window">
+          <!-- Terminal Header with Mac-style controls -->
+          <div class="terminal-header">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-[#EA4335] inline-block cursor-pointer hover:opacity-80" onclick="document.getElementById('terminal-output').innerHTML='<div class=\'text-outline text-xs\'>Session cleared. Type \'help\' for commands.</div>';"></span>
+              <span class="w-3 h-3 rounded-full bg-[#FBBC04] inline-block cursor-pointer hover:opacity-80" onclick="window.setGdgTheme(document.documentElement.classList.contains('dark')?'light':'dark');"></span>
+              <span class="w-3 h-3 rounded-full bg-[#34A853] inline-block cursor-pointer hover:opacity-80" title="GDG Active"></span>
+              <span class="text-xs font-mono text-outline ml-2">// gdg-iter-cli — bash — 80x24</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-[11px] font-mono text-primary font-semibold hidden sm:inline-block">SOA ITER • v2.6.0</span>
+              <span class="px-2 py-0.5 rounded-full bg-surface-container font-mono text-[10px] text-tertiary">ONLINE</span>
+            </div>
+          </div>
+
+          <!-- Quick Command Chips Strip -->
+          <div id="terminal-chips" class="px-4 py-2 bg-white/5 border-b border-white/5 flex flex-wrap items-center gap-2 overflow-x-auto text-[11px] font-mono text-outline">
+            <span class="text-on-surface-variant font-semibold">Quick commands:</span>
+            <button class="terminal-chip px-2.5 py-0.5 rounded-full bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all cursor-pointer" data-cmd="help">help</button>
+            <button class="terminal-chip px-2.5 py-0.5 rounded-full bg-surface-container text-google-blue hover:bg-google-blue hover:text-white transition-all cursor-pointer" data-cmd="events">events</button>
+            <button class="terminal-chip px-2.5 py-0.5 rounded-full bg-surface-container text-google-green hover:bg-google-green hover:text-white transition-all cursor-pointer" data-cmd="tracks">tracks</button>
+            <button class="terminal-chip px-2.5 py-0.5 rounded-full bg-surface-container text-google-red hover:bg-google-red hover:text-white transition-all cursor-pointer" data-cmd="team">team</button>
+            <button class="terminal-chip px-2.5 py-0.5 rounded-full bg-surface-container text-google-yellow hover:bg-google-yellow hover:text-black transition-all cursor-pointer" data-cmd="quote">quote</button>
+            <button class="terminal-chip px-2.5 py-0.5 rounded-full bg-surface-container text-secondary hover:bg-secondary hover:text-black transition-all cursor-pointer" data-cmd="party">party 🎉</button>
+            <button class="terminal-chip px-2.5 py-0.5 rounded-full bg-surface-container text-outline hover:text-on-surface transition-all cursor-pointer" data-cmd="clear">clear</button>
+          </div>
+
+          <!-- Terminal Output Log -->
+          <div id="terminal-output" class="terminal-body space-y-1">
+            <div class="text-outline text-xs">Connected to Google Developer Group on Campus - ITER Chapter (gdgociter.in).</div>
+            <div class="text-on-surface text-xs">Type <span class="text-primary font-bold">'help'</span> or click the buttons above to interact with the chapter terminal!</div>
+          </div>
+
+          <!-- Terminal Prompt Input -->
+          <div class="terminal-input-row">
+            <span class="text-tertiary font-bold text-xs">visitor@gdg-iter:~$</span>
+            <input id="terminal-input" type="text" placeholder="type a command (e.g. 'events', 'tracks', 'theme', 'party') and press Enter..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       INFINITE BRAND MARQUEE TICKER (FROM CLIENT SITE)
+       ======================================================================== -->
+  <div class="w-full py-4 border-y border-surface-container-highest/50 bg-surface-container-lowest/90 overflow-hidden backdrop-blur-md">
+    <div class="marquee-container">
+      <div class="marquee-track flex items-center gap-8 font-mono text-xs uppercase tracking-widest text-on-surface-variant">
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Google Developer Group</span><span class="text-google-blue font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Machine Learning</span><span class="text-google-red font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Cloud Computing</span><span class="text-google-yellow font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Android Development</span><span class="text-google-green font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Web Technologies</span><span class="text-google-blue font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Open Source</span><span class="text-google-red font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">AI / ML & Gemini</span><span class="text-google-yellow font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Flutter</span><span class="text-google-green font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Firebase</span><span class="text-google-blue font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">SOA | ITER Bhubaneswar</span><span class="text-google-red font-bold">✦</span></span>
+        <!-- Duplicated track for continuous infinite loop -->
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Google Developer Group</span><span class="text-google-blue font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Machine Learning</span><span class="text-google-red font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Cloud Computing</span><span class="text-google-yellow font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Android Development</span><span class="text-google-green font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Web Technologies</span><span class="text-google-blue font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Open Source</span><span class="text-google-red font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">AI / ML & Gemini</span><span class="text-google-yellow font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Flutter</span><span class="text-google-green font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">Firebase</span><span class="text-google-blue font-bold">✦</span></span>
+        <span class="flex items-center gap-8 shrink-0"><span class="text-on-surface font-bold">SOA | ITER Bhubaneswar</span><span class="text-google-red font-bold">✦</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       ABOUT GDG ITER SECTION
+       ======================================================================== -->
+  <section class="w-full py-24 bg-surface relative" id="about">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-container-high text-primary font-mono text-xs mb-3 border border-surface-container-highest">
+          <span class="w-2 h-2 rounded-full bg-google-blue animate-pulse"></span>
+          <span>CHAPTER MISSION & ARCHITECTURE</span>
+        </div>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-on-surface uppercase tracking-tight mb-4 font-display">
+          What is GDG on Campus?
+        </h2>
+        <p class="text-base md:text-lg text-on-surface-variant leading-relaxed">
+          At GDG on Campus ITER, we are more than just a tech society — we are a movement of dreamers, builders, and innovators. Powered by Google Developers, we bridge academia and the modern tech industry, bringing together students who dare to think beyond the ordinary.
+        </p>
+      </div>
+
+      <!-- 3 Key Value Pillars Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        
+        <!-- Pillar 1: Workshops -->
+        <div class="glow-card p-8 rounded-2xl relative overflow-hidden group">
+          <div class="w-14 h-14 rounded-2xl bg-primary-container/20 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(100,138,255,0.25)]">
+            <span class="material-symbols-outlined text-[32px]">terminal</span>
+          </div>
+          <h3 class="text-xl font-bold text-on-surface mb-2 font-display">Hands-On Workshops</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            Practical, project-based bootcamps across Web Development, Android Compose, Google Cloud architecture, and Multimodal Generative AI using Gemini.
+          </p>
+        </div>
+
+        <!-- Pillar 2: Community -->
+        <div class="glow-card p-8 rounded-2xl relative overflow-hidden group">
+          <div class="w-14 h-14 rounded-2xl bg-error/20 flex items-center justify-center text-error mb-6 group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(234,67,53,0.25)]">
+            <span class="material-symbols-outlined text-[32px]">groups</span>
+          </div>
+          <h3 class="text-xl font-bold text-on-surface mb-2 font-display">Vibrant Community</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            Connect with 1,500+ peers, participate in open hack nights, find project co-founders, and build long-lasting professional connections.
+          </p>
+        </div>
+
+        <!-- Pillar 3: Projects -->
+        <div class="glow-card p-8 rounded-2xl relative overflow-hidden group">
+          <div class="w-14 h-14 rounded-2xl bg-tertiary-container/30 flex items-center justify-center text-tertiary mb-6 group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(109,221,129,0.25)]">
+            <span class="material-symbols-outlined text-[32px]">rocket_launch</span>
+          </div>
+          <h3 class="text-xl font-bold text-on-surface mb-2 font-display">Real-World Projects</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            Apply engineering concepts to solve real campus and societal challenges. Submit solutions to the global Google Solution Challenge and showcase your impact.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Why Join Us Feature Banner with Real Photo -->
+      <div class="p-8 md:p-12 rounded-3xl bg-surface-container-low border border-surface-container-highest/70 shadow-2xl relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary font-mono text-xs">
+              <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+              <span>MEMBERSHIP ADVANTAGES</span>
+            </div>
+            <h3 class="text-2xl md:text-4xl font-extrabold text-on-surface font-display">
+              Why Join GDG ITER?
+            </h3>
+            <p class="text-sm md:text-base text-on-surface-variant leading-relaxed">
+              Accelerate your engineering journey with mentorship from certified Google Cloud practitioners, exclusive Google swag, and priority invitations to regional DevFests.
+            </p>
+            <ul class="space-y-3 pt-2">
+              <li class="flex items-center gap-3">
+                <span class="w-6 h-6 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[16px]">check</span>
+                </span>
+                <span class="text-sm text-on-surface font-medium">Full access to Google Developer tools, Qwiklabs credits, and resources</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-6 h-6 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[16px]">check</span>
+                </span>
+                <span class="text-sm text-on-surface font-medium">Hands-on coding sprints with senior peer mentors</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-6 h-6 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[16px]">check</span>
+                </span>
+                <span class="text-sm text-on-surface font-medium">Internship pathways, career growth, and technical mock interviews</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-6 h-6 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-[16px]">check</span>
+                </span>
+                <span class="text-sm text-on-surface font-medium">Official certification of participation in Google Solution Challenge</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="relative rounded-2xl overflow-hidden bg-surface-container border border-surface-container-highest/60 aspect-video w-full shadow-2xl group">
+              <img alt="GDG ITER Community Group Photo" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoI0qonvG_YMd3OCUWsjE8E2fgI9hwuGtSx3Sk2enPxr2zz8cQLyMW_Qc9W23F00pSPIgWTQD_fC7TgXSMaZP4lZQmkWuGh7XrVrhfNnyXAaNlt59pCtjcHxN11zWl0yqeNrTlzSfX2YFLzBENHeQIi-mBiqu_fXcC0SUThKOVxGZTh1UyNG_Wo1_cgqlzKXpEJ-uG36zpR4zzxeBAkUpIUtKRIWUoeoCg19--gUMUacoX8NvhceCLfA">
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/95 via-surface-container-lowest/30 to-transparent flex items-end p-6">
+                <div>
+                  <span class="font-mono text-xs text-primary font-bold uppercase tracking-wider block">OFFICIAL CHAPTER LAUNCH</span>
+                  <p class="text-xs text-on-surface-variant mt-0.5">SOA ITER Auditorium • Student Developer Delegation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4-STEP ZIG-ZAG ROADMAP & TIMELINE WITH 3D GDG LOGO RUNNER
+       ======================================================================== -->
+  <section class="relative w-full py-24 bg-surface border-y border-surface-container-highest/40 overflow-hidden" id="timeline">
+    <div class="absolute top-1/4 -left-40 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-1/4 -right-40 w-96 h-96 bg-tertiary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+      
+      <div class="text-center mb-20">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high font-mono text-xs text-primary uppercase tracking-widest mb-3">
+          <span class="w-2 h-2 rounded-full bg-google-blue animate-ping"></span>
+          <span>Community Roadmap & Milestones</span>
+        </div>
+        <h2 class="text-4xl md:text-6xl font-extrabold text-on-surface uppercase tracking-widest font-display">TIMELINE</h2>
+        <div class="h-1.5 w-24 mx-auto mt-3 bg-gradient-to-r from-google-blue via-google-red via-google-yellow to-google-green rounded-full"></div>
+      </div>
+
+      <!-- Timeline Interactive Container -->
+      <div class="relative w-full max-w-5xl mx-auto" id="timeline-flow-wrapper" style="min-height: 1400px;">
+        
+        <!-- Responsive SVG Zig-Zag Trace Path -->
+        <svg id="timeline-svg-canvas" class="absolute inset-0 w-full h-full pointer-events-none hidden md:block" viewBox="0 0 900 1450" preserveAspectRatio="none" fill="none">
+          <defs>
+            <linearGradient id="solidTraceGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#4285F4"></stop>
+              <stop offset="33%" stop-color="#EA4335"></stop>
+              <stop offset="66%" stop-color="#FBBC04"></stop>
+              <stop offset="100%" stop-color="#34A853"></stop>
+            </linearGradient>
+          </defs>
+
+          <!-- Guide dashed path -->
+          <path id="timeline-guide-path" d="M 140 100 C 140 240, 260 380, 480 390 C 720 400, 780 500, 780 620 C 780 750, 480 780, 240 850 C 100 900, 120 1060, 240 1160 C 360 1260, 680 1220, 780 1340" stroke="#434654" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 12" stroke-opacity="0.4" fill="none"></path>
+
+          <!-- Active Traced Glowing Path (unfurls on scroll) -->
+          <path id="timeline-active-path" d="M 140 100 C 140 240, 260 380, 480 390 C 720 400, 780 500, 780 620 C 780 750, 480 780, 240 850 C 100 900, 120 1060, 240 1160 C 360 1260, 680 1220, 780 1340" stroke="url(#solidTraceGradient)" stroke-width="5" stroke-linecap="round" fill="none" style="filter: drop-shadow(0 0 12px rgba(66, 133, 244, 0.6));"></path>
+        </svg>
+
+        <!-- 3D FLOATING GDG LOGO RUNNER PUCK (Tilts & banks on scroll) -->
+        <div id="gdg-runner-puck" class="hidden md:flex absolute z-30 top-0 left-0 items-center justify-center pointer-events-none will-change-transform" style="perspective: 800px;">
+          <div id="gdg-puck-card" class="relative flex items-center justify-center p-3 rounded-2xl bg-surface-container-highest/95 border-2 border-primary/70 backdrop-blur-xl shadow-[0_12px_32px_rgba(0,0,0,0.8),0_0_24px_rgba(66,133,244,0.6)] transform transition-transform duration-75">
+            <div class="w-9 h-9 flex items-center justify-center">
+              <img src="assets/images/logo.png" alt="GDG Logo" class="w-full h-full object-contain">
+            </div>
+            <span class="absolute -bottom-1 -right-1 w-3 h-3 rounded-full bg-google-green shadow-[0_0_10px_#34A853] animate-pulse"></span>
+          </div>
+        </div>
+
+        <!-- MILESTONE 1: Tech Adoption -->
+        <div class="relative py-12 md:py-16 timeline-step z-10 opacity-100 transition-opacity duration-300" data-step="1">
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12">
+            <div class="flex items-center gap-4 shrink-0">
+              <span class="text-[80px] md:text-[120px] font-extrabold text-google-blue leading-none select-none tracking-tighter font-display">1</span>
+            </div>
+            <div class="flex-1 max-w-2xl bg-surface-container-low/90 md:bg-transparent p-6 md:p-0 rounded-2xl border md:border-none border-surface-container-highest/60 backdrop-blur-sm">
+              <h3 class="text-2xl md:text-4xl font-bold text-on-surface tracking-tight mb-2 font-display">Tech Adoption</h3>
+              <div class="w-full border-b border-dashed border-outline-variant/70 mb-3"></div>
+              <div class="text-base md:text-lg text-google-blue font-semibold tracking-wide mb-2 font-mono">Google Technologies • Community Penetration</div>
+              <p class="text-sm md:text-base text-on-surface-variant leading-relaxed">
+                Increase awareness and hands-on adoption of Google Cloud, Android, Modern Web, and AI/ML technologies across the student community.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 2: Skill Building -->
+        <div class="relative py-12 md:py-20 timeline-step z-10 opacity-70 transition-opacity duration-300" data-step="2">
+          <div class="flex flex-col md:flex-row items-start md:items-center justify-end gap-6 md:gap-12">
+            <div class="md:ml-auto flex flex-col md:flex-row-reverse items-start md:items-center gap-6 md:gap-10">
+              <div class="flex items-center gap-4 shrink-0">
+                <span class="text-[80px] md:text-[120px] font-extrabold text-google-red leading-none select-none tracking-tighter font-display">2</span>
+              </div>
+              <div class="max-w-xl bg-surface-container-low/90 md:bg-transparent p-6 md:p-0 rounded-2xl border md:border-none border-surface-container-highest/60 backdrop-blur-sm">
+                <h3 class="text-2xl md:text-4xl font-bold text-on-surface tracking-tight mb-2 font-display">Skill Building</h3>
+                <div class="w-full border-b border-dashed border-outline-variant/70 mb-3"></div>
+                <div class="text-base md:text-lg text-google-red font-semibold tracking-wide mb-2 font-mono">Workshops • Projects • Hackathons</div>
+                <p class="text-sm md:text-base text-on-surface-variant leading-relaxed">
+                  Equip students with practical, industry-relevant skills through guided workshops, study jams, real-world projects, and competitive hackathons.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 3: Community Growth -->
+        <div class="relative py-12 md:py-20 timeline-step z-10 opacity-70 transition-opacity duration-300" data-step="3">
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12">
+            <div class="flex items-center gap-4 shrink-0">
+              <span class="text-[80px] md:text-[120px] font-extrabold text-google-yellow leading-none select-none tracking-tighter font-display">3</span>
+            </div>
+            <div class="flex-1 max-w-2xl bg-surface-container-low/90 md:bg-transparent p-6 md:p-0 rounded-2xl border md:border-none border-surface-container-highest/60 backdrop-blur-sm">
+              <h3 class="text-2xl md:text-4xl font-bold text-on-surface tracking-tight mb-2 font-display">Community & Network Growth</h3>
+              <div class="w-full border-b border-dashed border-outline-variant/70 mb-3"></div>
+              <div class="text-base md:text-lg text-google-yellow font-semibold tracking-wide mb-2 font-mono">Alumni • Industry • Students</div>
+              <p class="text-sm md:text-base text-on-surface-variant leading-relaxed">
+                Build a strong ecosystem connecting students with alumni, industry mentors, and tech leaders to foster collaboration, mentorship, and long-term opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MILESTONE 4: Official Impact -->
+        <div class="relative py-12 md:py-20 timeline-step z-10 opacity-70 transition-opacity duration-300" data-step="4">
+          <div class="flex flex-col md:flex-row items-start md:items-center justify-end gap-6 md:gap-12">
+            <div class="md:ml-auto flex flex-col md:flex-row-reverse items-start md:items-center gap-6 md:gap-10">
+              <div class="flex items-center gap-4 shrink-0">
+                <span class="text-[80px] md:text-[120px] font-extrabold text-google-green leading-none select-none tracking-tighter font-display">4</span>
+              </div>
+              <div class="max-w-xl bg-surface-container-low/90 md:bg-transparent p-6 md:p-0 rounded-2xl border md:border-none border-surface-container-highest/60 backdrop-blur-sm">
+                <h3 class="text-2xl md:text-4xl font-bold text-on-surface tracking-tight mb-2 font-display">Official Recognition & Impact</h3>
+                <div class="w-full border-b border-dashed border-outline-variant/70 mb-3"></div>
+                <div class="text-base md:text-lg text-google-green font-semibold tracking-wide mb-2 font-mono">Institutional Value • Innovation Culture</div>
+                <p class="text-sm md:text-base text-on-surface-variant leading-relaxed">
+                  Establish GDG on Campus – ITER as a leading, innovation-driven community recognized for impactful events, developer growth, and contributions to campus tech culture.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       COMMUNITY VOICES & STUDENT STORIES (BRIDGING THE ROADMAP & TRACKS GAP)
+       ======================================================================== -->
+  <section class="w-full py-20 bg-surface border-b border-surface-container-highest/40 relative overflow-hidden" id="community-voices">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container font-mono text-xs text-primary mb-3 border border-surface-container-highest">
+            <span class="w-2 h-2 rounded-full bg-google-yellow animate-pulse"></span>
+            <span>COMMUNITY VOICES // REAL IMPACT</span>
+          </div>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-on-surface font-display tracking-tight">
+            Built by Students, for Students
+          </h2>
+        </div>
+        <p class="text-sm md:text-base text-on-surface-variant max-w-md">
+          Hear how GDG on Campus ITER has catalyzed careers, technical growth, and hackathon wins for our engineers.
+        </p>
+      </div>
+
+      <!-- 3-Column Glass Testimonial Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Testimonial 1 -->
+        <div class="glow-card p-7 rounded-3xl relative flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-1 text-google-yellow text-sm">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full bg-google-blue/15 text-google-blue font-mono text-[11px] font-semibold">Cloud Track</span>
+            </div>
+            <p class="text-sm text-on-surface-variant leading-relaxed">
+              "GDG on Campus ITER gave me the hands-on lab access, peer mentors, and motivation to master Google Cloud and build production microservices. The collaborative vibe is truly unmatched!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3.5 pt-6 mt-6 border-t border-surface-container-highest/60">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-google-blue to-primary flex items-center justify-center font-display font-bold text-white shadow-md">
+              AP
+            </div>
+            <div>
+              <h4 class="font-display text-sm font-bold text-on-surface">Aryan Panda</h4>
+              <p class="text-[11px] font-mono text-on-surface-variant">3rd Year CSE • Cloud & DevOps</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="glow-card p-7 rounded-3xl relative flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-1 text-google-yellow text-sm">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full bg-google-green/15 text-google-green font-mono text-[11px] font-semibold">Web & Solutions</span>
+            </div>
+            <p class="text-sm text-on-surface-variant leading-relaxed">
+              "From our campus hackathons to shipping open-source tools for SOA ITER students, GDG helped me build a standout portfolio and crack my software engineering interviews with confidence!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3.5 pt-6 mt-6 border-t border-surface-container-highest/60">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-google-green to-tertiary flex items-center justify-center font-display font-bold text-white shadow-md">
+              SM
+            </div>
+            <div>
+              <h4 class="font-display text-sm font-bold text-on-surface">Sneha Mohanty</h4>
+              <p class="text-[11px] font-mono text-on-surface-variant">4th Year IT • Software Engineer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="glow-card p-7 rounded-3xl relative flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-1 text-google-yellow text-sm">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full bg-error/15 text-google-red font-mono text-[11px] font-semibold">AI & Gemini</span>
+            </div>
+            <p class="text-sm text-on-surface-variant leading-relaxed">
+              "The Gemini 1.5 API workshops demystified multimodal agents and prompt engineering. We built and demoed an automated student study companion in 48 hours right here in ITER labs!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3.5 pt-6 mt-6 border-t border-surface-container-highest/60">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-google-red to-google-yellow flex items-center justify-center font-display font-bold text-white shadow-md">
+              RS
+            </div>
+            <div>
+              <h4 class="font-display text-sm font-bold text-on-surface">Rohan Sahoo</h4>
+              <p class="text-[11px] font-mono text-on-surface-variant">2nd Year CS&IT • AI/ML Explorer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TECH TRACKS & SPECIALIZATIONS
+       ======================================================================== -->
+  <section class="w-full py-24 bg-surface-container-lowest" id="tracks">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div>
+          <span class="font-mono text-xs text-primary uppercase tracking-widest block mb-2">ARCHITECTURAL DOMAINS</span>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-on-surface font-display">Tech Tracks & Specializations</h2>
+        </div>
+        <p class="text-sm md:text-base text-on-surface-variant max-w-md">
+          Structured learning pathways guided by senior student engineers and Google technologies.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Track 1 -->
+        <div class="glow-card p-6 rounded-2xl relative group">
+          <span class="w-3.5 h-3.5 rounded-full bg-google-blue inline-block mb-4 shadow-[0_0_12px_#4285F4]"></span>
+          <h3 class="text-lg font-bold text-on-surface mb-2 font-display">Web & Cloud Systems</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+            Scalable serverless microservices, Firebase authentication, Next.js, and high-throughput GCP architecture.
+          </p>
+          <div class="flex flex-wrap gap-1.5 pt-2 border-t border-surface-container-highest/60">
+            <span class="px-2 py-0.5 rounded bg-surface-container font-mono text-[11px] text-primary">GCP</span>
+            <span class="px-2 py-0.5 rounded bg-surface-container font-mono text-[11px] text-primary">Firebase</span>
+            <span class="px-2 py-0.5 rounded bg-surface-container font-mono text-[11px] text-primary">Next.js</span>
+          </div>
+        </div>
+
+        <!-- Track 2 -->
+        <div class="glow-card p-6 rounded-2xl relative group">
+          <span class="w-3.5 h-3.5 rounded-full bg-google-green inline-block mb-4 shadow-[0_0_12px_#34A853]"></span>
+          <h3 class="text-lg font-bold text-on-surface mb-2 font-display">Mobile Engineering</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+            Crafting fluid native and multi-platform experiences with Android Jetpack Compose, Flutter, and Material 3 design.
+          </p>
+          <div class="flex flex-wrap gap-1.5 pt-2 border-t border-surface-container-highest/60">
+            <span class="px-2 py-0.5 rounded bg-surface-container font-mono text-[11px] text-tertiary">Kotlin</span>
+            <span class="px-2 py-0.5 rounded bg-surface-container font-mono text-[11px] text-tertiary">Compose</span>
+            <span class="px-2 py-0.5 rounded bg-surface-container font-mono text-[11px] text-tertiary">Flutter</span>
+          </div>
+        </div>
+
+        <!-- Track 3 -->
+        <div class="glow-card p-6 rounded-2xl relative group">
+          <span class="w-3.5 h-3.5 rounded-full bg-google-red inline-block mb-4 shadow-[0_0_12px_#EA4335]"></span>
+          <h3 class="text-lg font-bold text-on-surface mb-2 font-display">AI & Machine Learning</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+            Fine-tuning generative multimodal agents via Gemini API, TensorFlow, Keras, and local neural network pipelines.
+          </p>
+          <div class="flex flex-wrap gap-1.5 pt-2 border-t border-surface-container-highest/60">
+            <span class="px-2 py-0.5 rounded bg-surface-container font-mono text-[11px] text-error">Gemini 1.5</span>
+            <span class="px-2 py-0.5 rounded bg-surface-container font-mono text-[11px] text-error">TensorFlow</span>
+            <span class="px-2 py-0.5 rounded bg-surface-container font-mono text-[11px] text-error">Python</span>
+          </div>
+        </div>
+
+        <!-- Track 4 -->
+        <div class="glow-card p-6 rounded-2xl relative group">
+          <span class="w-3.5 h-3.5 rounded-full bg-google-yellow inline-block mb-4 shadow-[0_0_12px_#FBBC04]"></span>
+          <h3 class="text-lg font-bold text-on-surface mb-2 font-display">Open Source & DevOps</h3>
+          <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+            Mastering distributed Git workflows, Docker containerization, Kubernetes clusters, and automated CI/CD pipelines.
+          </p>
+          <div class="flex flex-wrap gap-1.5 pt-2 border-t border-surface-container-highest/60">
+            <span class="px-2 py-0.5 rounded bg-surface-container font-mono text-[11px] text-google-yellow">Git</span>
+            <span class="px-2 py-0.5 rounded bg-surface-container font-mono text-[11px] text-google-yellow">Docker</span>
+            <span class="px-2 py-0.5 rounded bg-surface-container font-mono text-[11px] text-google-yellow">K8s</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ====================================================================
+           STUDENT INNOVATION SPOTLIGHT // GOOGLE SOLUTION CHALLENGE
+           ==================================================================== -->
+      <div class="mt-20 pt-16 border-t border-surface-container-highest/60">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-xs font-mono text-primary mb-3">
+              <span class="w-2 h-2 rounded-full bg-google-green animate-pulse"></span>
+              <span>GOOGLE SOLUTION CHALLENGE // ITER BUILDS</span>
+            </div>
+            <h3 class="text-2xl md:text-4xl font-extrabold text-on-surface font-display">Student Innovations & Flagship Projects</h3>
+          </div>
+          <p class="text-xs md:text-sm text-on-surface-variant max-w-md">
+            Production-grade systems designed and shipped by GDG ITER campus engineers using Gemini API, Flutter, and Google Cloud Run.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Project 1 (16:9 Widescreen Presentation) -->
+          <div class="glow-card rounded-3xl overflow-hidden flex flex-col group border border-surface-container-highest/70 hover:border-primary/50 transition-all duration-300 relative">
+            <div class="w-full aspect-video relative overflow-hidden bg-surface-container-high">
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent z-10"></div>
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="AgriSense AI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-3 right-3 z-20 flex gap-1.5">
+                <span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-[10px] font-mono text-google-green font-bold border border-google-green/30">AI / Cloud</span>
+              </div>
+              <div class="absolute bottom-3 left-4 z-20">
+                <span class="px-2 py-0.5 rounded-full bg-google-blue/20 text-google-blue font-mono text-[10px] font-bold">Solution Challenge 2026</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="text-lg font-bold text-on-surface font-display group-hover:text-primary transition-colors mb-2">AgriSense AI</h4>
+                <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                  Multimodal crop pathology detector powered by Gemini 1.5 Flash and Google Cloud Run, empowering regional farmers in Odisha to diagnose crop blights in under 3 seconds.
+                </p>
+              </div>
+              <div class="flex items-center justify-between pt-4 border-t border-surface-container-highest/50 text-xs font-mono">
+                <div class="flex gap-2 text-primary font-semibold">
+                  <span>Gemini API</span> • <span>Cloud Run</span>
+                </div>
+                <a href="https://github.com/gdgociter" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant hover:text-primary flex items-center gap-1 transition-colors">
+                  <span>Code</span>
+                  <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 (16:9 Widescreen Presentation) -->
+          <div class="glow-card rounded-3xl overflow-hidden flex flex-col group border border-surface-container-highest/70 hover:border-primary/50 transition-all duration-300 relative">
+            <div class="w-full aspect-video relative overflow-hidden bg-surface-container-high">
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent z-10"></div>
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="CampusPulse ITER" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-3 right-3 z-20 flex gap-1.5">
+                <span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-[10px] font-mono text-google-blue font-bold border border-google-blue/30">Mobile & IoT</span>
+              </div>
+              <div class="absolute bottom-3 left-4 z-20">
+                <span class="px-2 py-0.5 rounded-full bg-google-green/20 text-google-green font-mono text-[10px] font-bold">Campus Utility</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="text-lg font-bold text-on-surface font-display group-hover:text-primary transition-colors mb-2">CampusPulse ITER</h4>
+                <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                  Unified student utility app featuring indoor department navigation, real-time university bus tracking, and Firebase Cloud Messaging for urgent academic updates.
+                </p>
+              </div>
+              <div class="flex items-center justify-between pt-4 border-t border-surface-container-highest/50 text-xs font-mono">
+                <div class="flex gap-2 text-primary font-semibold">
+                  <span>Flutter</span> • <span>Firebase</span>
+                </div>
+                <a href="https://github.com/gdgociter" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant hover:text-primary flex items-center gap-1 transition-colors">
+                  <span>Code</span>
+                  <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 (16:9 Widescreen Presentation) -->
+          <div class="glow-card rounded-3xl overflow-hidden flex flex-col group border border-surface-container-highest/70 hover:border-primary/50 transition-all duration-300 relative">
+            <div class="w-full aspect-video relative overflow-hidden bg-surface-container-high">
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent z-10"></div>
+              <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="DevVault ZeroTrust" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-3 right-3 z-20 flex gap-1.5">
+                <span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-[10px] font-mono text-google-red font-bold border border-google-red/30">DevOps & Sec</span>
+              </div>
+              <div class="absolute bottom-3 left-4 z-20">
+                <span class="px-2 py-0.5 rounded-full bg-google-red/20 text-google-red font-mono text-[10px] font-bold">Open Source</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="text-lg font-bold text-on-surface font-display group-hover:text-primary transition-colors mb-2">DevVault ZeroTrust</h4>
+                <p class="text-xs text-on-surface-variant leading-relaxed mb-4">
+                  Lightweight pre-commit secret entropy scanner preventing credential leakage in student repositories, verified with Google Cloud Key Management Service.
+                </p>
+              </div>
+              <div class="flex items-center justify-between pt-4 border-t border-surface-container-highest/50 text-xs font-mono">
+                <div class="flex gap-2 text-primary font-semibold">
+                  <span>Go</span> • <span>Docker</span> • <span>KMS</span>
+                </div>
+                <a href="https://github.com/gdgociter" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant hover:text-primary flex items-center gap-1 transition-colors">
+                  <span>Code</span>
+                  <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       INTERACTIVE EVENTS CALENDAR & PAST RECORDS
+       ======================================================================== -->
+  <section class="w-full py-24 bg-surface" id="events">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div>
+          <span class="font-mono text-xs text-primary uppercase tracking-widest block mb-2">EVENT HUB & SCHEDULE</span>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-on-surface font-display">Interactive Calendar & All Events</h2>
+        </div>
+        <p class="text-sm md:text-base text-on-surface-variant max-w-md">
+          Explore campus workshops, hackathons, and our authenticated past records. Click any event for full details!
+        </p>
+      </div>
+
+      <!-- Flagship Active Event Card with Digital HUD Countdown -->
+      <div class="mb-10 bg-surface-container-low border border-surface-container-highest/70 rounded-3xl p-6 md:p-8 shadow-2xl relative overflow-hidden group">
+        <div class="absolute top-0 right-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-surface-container-highest/50">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-[28px]">calendar_month</span>
+            <div>
+              <span class="text-xl md:text-2xl font-bold text-on-surface font-display">May 2026 Schedule</span>
+              <span class="block text-xs font-mono text-outline">SOA ITER Auditorium & Google Bevy Hub</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="px-3.5 py-1 rounded-full bg-primary-container/20 border border-primary/30 text-primary font-mono text-xs font-semibold flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-google-green animate-pulse"></span>
+              <span>Next Flagship Event Live</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Live Digital HUD Event Countdown Bar -->
+        <div class="my-6 p-4 md:p-6 rounded-2xl bg-surface-container-lowest/80 border border-surface-container-highest/70 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-3 text-left">
+            <div class="w-10 h-10 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[24px]">timer</span>
+            </div>
+            <div>
+              <h5 class="font-display text-sm font-bold text-on-surface">COUNTDOWN TO DEV SPRINT</h5>
+              <p class="text-xs text-on-surface-variant font-mono">Decode the Tech • Flagship Engineering Trivia & Logic</p>
+            </div>
+          </div>
+
+          <!-- Countdown Boxes -->
+          <div class="flex items-center gap-2 sm:gap-3">
+            <div class="countdown-box">
+              <span id="countdown-days" class="countdown-num">00</span>
+              <span class="countdown-label">Days</span>
+            </div>
+            <span class="text-primary font-bold text-xl">:</span>
+            <div class="countdown-box">
+              <span id="countdown-hours" class="countdown-num">00</span>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <span class="text-primary font-bold text-xl">:</span>
+            <div class="countdown-box">
+              <span id="countdown-minutes" class="countdown-num">00</span>
+              <span class="countdown-label">Mins</span>
+            </div>
+            <span class="text-primary font-bold text-xl">:</span>
+            <div class="countdown-box">
+              <span id="countdown-seconds" class="countdown-num">00</span>
+              <span class="countdown-label">Secs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 p-6 rounded-2xl bg-surface-container/80 border border-surface-container-highest/60 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 cursor-pointer event-card-trigger group"
+             data-title="Decode the Tech"
+             data-date="May 15, 2026"
+             data-track="Technical Trivia & Logic"
+             data-img="assets/images/decode_the_tech.png"
+             data-desc="Technical Trivia, Logic & Cognitive Agility testing technical problem solving across algorithms, system architecture, and tech culture.">
+          <div class="flex items-center gap-4">
+            <div class="w-24 aspect-video rounded-xl overflow-hidden bg-google-blue shrink-0 shadow-[0_0_20px_rgba(66,133,244,0.4)] border border-primary/30">
+              <img src="assets/images/decode_the_tech.png" alt="Decode the Tech Poster" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 rounded bg-google-blue/20 text-google-blue font-mono text-[10px] font-bold uppercase">FLAGSHIP</span>
+                <span class="text-xs font-mono text-outline">May 15, 2026</span>
+              </div>
+              <h4 class="text-lg md:text-xl font-bold text-on-surface font-display group-hover:text-primary transition-colors">Decode the Tech</h4>
+              <p class="text-xs md:text-sm text-on-surface-variant mt-0.5">Technical Trivia, Logic & Cognitive Agility testing technical problem solving.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface text-xs font-mono">On Bevy Platform</span>
+            <button class="px-4 py-2 rounded-full bg-primary-container text-white font-mono text-xs font-semibold shadow hover:scale-105 transition-all">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Events List (All with 16:9 Aspect Ratio) -->
+      <div class="space-y-4">
+        
+        <!-- Event 1: Decode the Tech -->
+        <div class="flex flex-col md:flex-row rounded-2xl overflow-hidden bg-surface-container-lowest border border-surface-container-highest/60 shadow-lg hover:border-google-blue/40 transition-all cursor-pointer event-card-trigger group"
+             data-title="Decode the Tech"
+             data-date="May 15, 2026"
+             data-track="Tech Trivia & Problem Solving"
+             data-img="assets/images/decode_the_tech.png"
+             data-desc="Flagship Technical Trivia, Logic & Cognitive Agility testing technical knowledge and problem solving. Hosted on the official Google Developer platform.">
+          <div class="w-full md:w-64 aspect-video bg-[#2962ff] relative overflow-hidden shrink-0 flex items-center justify-center">
+            <img src="assets/images/decode_the_tech.png" alt="Decode the Tech" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-transparent to-surface-container-lowest/80"></div>
+            <div class="absolute bottom-2 left-3 z-10 md:hidden">
+              <span class="px-2 py-0.5 rounded bg-black/60 font-mono text-[10px] text-white">May 15, 2026</span>
+            </div>
+          </div>
+          <div class="flex-1 p-6 bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-mono text-google-blue font-bold uppercase">PAST EVENT</span>
+                <span class="text-outline-variant">•</span>
+                <span class="text-xs font-mono text-on-surface-variant">May 15, 2026</span>
+              </div>
+              <h4 class="text-lg md:text-xl font-bold text-on-surface font-display group-hover:text-primary transition-colors">Decode the Tech</h4>
+              <p class="text-xs md:text-sm text-on-surface-variant mt-1">Technical Trivia, Logic & Cognitive Agility testing technical knowledge and problem solving.</p>
+            </div>
+            <span class="px-3.5 py-1 rounded-full bg-primary-container/20 text-primary font-mono text-xs font-semibold shrink-0 self-start md:self-center">Tech Trivia</span>
+          </div>
+        </div>
+
+        <!-- Event 2: MayaVyuh -->
+        <div class="flex flex-col md:flex-row rounded-2xl overflow-hidden bg-surface-container-lowest border border-surface-container-highest/60 shadow-lg hover:border-google-red/40 transition-all cursor-pointer event-card-trigger group"
+             data-title="MayaVyuh: The Prompt War"
+             data-date="Apr 5, 2026"
+             data-track="Generative AI & Multimodal LLMs"
+             data-img="assets/images/maya_vyuh.jpeg"
+             data-desc="Generative AI & Advanced Prompt Engineering competition. Students built real LLM agent workflows using Gemini 1.5 API with latency benchmarks.">
+          <div class="w-full md:w-64 aspect-video bg-[#d93025] relative overflow-hidden shrink-0 flex items-center justify-center">
+            <img src="assets/images/maya_vyuh.jpeg" alt="MayaVyuh" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-transparent to-surface-container-lowest/80"></div>
+            <div class="absolute bottom-2 left-3 z-10 md:hidden">
+              <span class="px-2 py-0.5 rounded bg-black/60 font-mono text-[10px] text-white">Apr 5, 2026</span>
+            </div>
+          </div>
+          <div class="flex-1 p-6 bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-mono text-google-red font-bold uppercase">PAST EVENT</span>
+                <span class="text-outline-variant">•</span>
+                <span class="text-xs font-mono text-on-surface-variant">Apr 5, 2026</span>
+              </div>
+              <h4 class="text-lg md:text-xl font-bold text-on-surface font-display group-hover:text-google-red transition-colors">MayaVyuh: The Prompt War</h4>
+              <p class="text-xs md:text-sm text-on-surface-variant mt-1">Generative AI & Advanced Prompt Engineering competition with real-time model judging.</p>
+            </div>
+            <span class="px-3.5 py-1 rounded-full bg-error/20 text-google-red font-mono text-xs font-semibold shrink-0 self-start md:self-center">GenAI</span>
+          </div>
+        </div>
+
+        <!-- Event 3: AI Treasure Hunt -->
+        <div class="flex flex-col md:flex-row rounded-2xl overflow-hidden bg-surface-container-lowest border border-surface-container-highest/60 shadow-lg hover:border-google-yellow/40 transition-all cursor-pointer event-card-trigger group"
+             data-title="AI Treasure Hunt"
+             data-date="Apr 4, 2026"
+             data-track="AI & Campus Exploration"
+             data-img="assets/images/ai_treasure_hunt.jpeg"
+             data-desc="Flagship interactive campus event combining teamwork, algorithmic clues, QR verification, and real-time problem solving across SOA ITER.">
+          <div class="w-full md:w-64 aspect-video bg-[#f9ab00] relative overflow-hidden shrink-0 flex items-center justify-center">
+            <img src="assets/images/ai_treasure_hunt.jpeg" alt="AI Treasure Hunt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-transparent to-surface-container-lowest/80"></div>
+            <div class="absolute bottom-2 left-3 z-10 md:hidden">
+              <span class="px-2 py-0.5 rounded bg-black/60 font-mono text-[10px] text-white">Apr 4, 2026</span>
+            </div>
+          </div>
+          <div class="flex-1 p-6 bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-mono text-google-yellow font-bold uppercase">PAST EVENT</span>
+                <span class="text-outline-variant">•</span>
+                <span class="text-xs font-mono text-on-surface-variant">Apr 4, 2026</span>
+              </div>
+              <h4 class="text-lg md:text-xl font-bold text-on-surface font-display group-hover:text-google-yellow transition-colors">AI Treasure Hunt</h4>
+              <p class="text-xs md:text-sm text-on-surface-variant mt-1">Flagship fun event combining teamwork, campus exploration, and AI-assisted clues.</p>
+            </div>
+            <span class="px-3.5 py-1 rounded-full bg-google-yellow/20 text-google-yellow font-mono text-xs font-semibold shrink-0 self-start md:self-center">AI & Campus</span>
+          </div>
+        </div>
+
+        <!-- Event 4: Algorithm Arena -->
+        <div class="flex flex-col md:flex-row rounded-2xl overflow-hidden bg-surface-container-lowest border border-surface-container-highest/60 shadow-lg hover:border-google-green/40 transition-all cursor-pointer event-card-trigger group"
+             data-title="Algorithm Arena - DSA Series"
+             data-date="Dec 20, 2025"
+             data-track="Data Structures & Algorithms"
+             data-img="assets/images/algorithm_arena.webp"
+             data-desc="Mastering Data Structures and Algorithms with live competitive programming challenges, code walkthroughs, and optimization strategies.">
+          <div class="w-full md:w-64 aspect-video bg-[#1e8e3e] relative overflow-hidden shrink-0 flex items-center justify-center">
+            <img src="assets/images/algorithm_arena.webp" alt="Algorithm Arena" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-transparent to-surface-container-lowest/80"></div>
+            <div class="absolute bottom-2 left-3 z-10 md:hidden">
+              <span class="px-2 py-0.5 rounded bg-black/60 font-mono text-[10px] text-white">Dec 20, 2025</span>
+            </div>
+          </div>
+          <div class="flex-1 p-6 bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-mono text-google-green font-bold uppercase">PAST EVENT</span>
+                <span class="text-outline-variant">•</span>
+                <span class="text-xs font-mono text-on-surface-variant">Dec 20, 2025</span>
+              </div>
+              <h4 class="text-lg md:text-xl font-bold text-on-surface font-display group-hover:text-google-green transition-colors">Algorithm Arena - DSA Series</h4>
+              <p class="text-xs md:text-sm text-on-surface-variant mt-1">Master Data Structures and Algorithms with hands-on problem solving and competitive challenges.</p>
+            </div>
+            <span class="px-3.5 py-1 rounded-full bg-tertiary-container/30 text-google-green font-mono text-xs font-semibold shrink-0 self-start md:self-center">DSA / CP</span>
+          </div>
+        </div>
+
+        <!-- Event 5: Orientation -->
+        <div class="flex flex-col md:flex-row rounded-2xl overflow-hidden bg-surface-container-lowest border border-surface-container-highest/60 shadow-lg hover:border-google-blue/40 transition-all cursor-pointer event-card-trigger group"
+             data-title="Orientation - Reigniting the Sparks"
+             data-date="Oct 23, 2025"
+             data-track="Community Onboarding"
+             data-img="assets/images/logo.png"
+             data-desc="Reigniting the developers! Marks the official beginning of the academic chapter with lead announcements and roadmap reveals.">
+          <div class="w-full md:w-64 aspect-video bg-[#2962ff] relative overflow-hidden shrink-0 flex items-center justify-center p-4">
+            <img src="assets/images/logo.png" alt="GDG Logo" class="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-transparent to-surface-container-lowest/80"></div>
+          </div>
+          <div class="flex-1 p-6 bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-mono text-primary font-bold uppercase">PAST EVENT</span>
+                <span class="text-outline-variant">•</span>
+                <span class="text-xs font-mono text-on-surface-variant">Oct 23, 2025</span>
+              </div>
+              <h4 class="text-lg md:text-xl font-bold text-on-surface font-display group-hover:text-primary transition-colors">Orientation - Reigniting the Sparks</h4>
+              <p class="text-xs md:text-sm text-on-surface-variant mt-1">Reigniting the developers. Marks the beginning of an inspiring chapter in the GDGoC journey.</p>
+            </div>
+            <span class="px-3.5 py-1 rounded-full bg-primary-container/20 text-primary font-mono text-xs font-semibold shrink-0 self-start md:self-center">Community</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       INTEGRATED FULL TEAM & LEADS DIRECTORY
+       ======================================================================== -->
+  <section class="w-full py-24 bg-surface-container-lowest relative" id="team">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <!-- Team Header & Controls -->
+      <div class="flex flex-col gap-6 mb-12">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container font-mono text-xs text-primary shadow-[0_0_12px_rgba(181,196,255,0.2)]">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            // DIRECTORY // SOA ITER CHAPTER
+          </span>
+          <span class="hidden sm:inline-block font-mono text-xs text-outline">// 44 VERIFIED MEMBERS // 2025-26</span>
+          <span id="visible-member-count" class="font-mono text-xs text-tertiary px-2 py-0.5 rounded bg-surface-container">44 Members</span>
+        </div>
+
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <div class="space-y-2 max-w-3xl">
+            <h2 class="font-display text-3xl md:text-5xl font-extrabold text-on-surface tracking-tight">
+              Meet the minds behind GDG On Campus
+            </h2>
+            <p class="text-sm md:text-base text-on-surface-variant max-w-2xl">
+              The innovators, builders, and community leads driving technology and developer culture at ITER. Powered by Google technologies and peer collaboration.
+            </p>
+          </div>
+
+          <!-- Real-Time Search Bar -->
+          <div class="relative w-full sm:w-80 shrink-0">
+            <div class="relative flex items-center">
+              <span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px] pointer-events-none">search</span>
+              <input id="member-search" class="w-full pl-11 pr-12 py-2.5 rounded-xl bg-surface-container-low text-on-surface text-sm placeholder:text-outline border border-surface-container-highest focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" placeholder="Search by name or role..." type="text">
+              <span class="absolute right-3 font-mono text-[11px] text-outline px-1.5 py-0.5 rounded bg-surface-container">⌘K</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Domain Filter Buttons Strip -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-2 pt-2 scrollbar-none">
+          <button class="filter-pill group flex items-center gap-2 px-4 py-2 rounded-full font-mono text-xs transition-all duration-300 bg-primary text-on-primary shadow-[0_0_16px_rgba(181,196,255,0.4)]" data-filter="all">
+            <span class="w-2 h-2 rounded-full bg-on-primary"></span>
+            All Domains (44)
+          </button>
+          <button class="filter-pill flex items-center gap-2 px-4 py-2 rounded-full font-mono text-xs bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all duration-300" data-filter="lead">
+            <span class="w-2 h-2 rounded-full bg-google-red"></span>
+            Core Leads (5)
+          </button>
+          <button class="filter-pill flex items-center gap-2 px-4 py-2 rounded-full font-mono text-xs bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all duration-300" data-filter="tech">
+            <span class="w-2 h-2 rounded-full bg-google-blue"></span>
+            Tech Team (20)
+          </button>
+          <button class="filter-pill flex items-center gap-2 px-4 py-2 rounded-full font-mono text-xs bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all duration-300" data-filter="prmanagement">
+            <span class="w-2 h-2 rounded-full bg-google-green"></span>
+            PR & Management (9)
+          </button>
+          <button class="filter-pill flex items-center gap-2 px-4 py-2 rounded-full font-mono text-xs bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all duration-300" data-filter="media">
+            <span class="w-2 h-2 rounded-full bg-secondary"></span>
+            Media Team (9)
+          </button>
+          <button class="filter-pill flex items-center gap-2 px-4 py-2 rounded-full font-mono text-xs bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all duration-300" data-filter="design">
+            <span class="w-2 h-2 rounded-full bg-google-yellow"></span>
+            Design Team (1)
+          </button>
+        </div>
+
+      </div>
+
+      <!-- MEMBER DOMAIN SECTIONS -->
+      <div class="space-y-16">
+        
+        <!-- SECTION 1: CORE LEADS -->
+        <section class="domain-section space-y-6" data-domain-group="lead">
+          <div class="flex items-center gap-3 pb-2 border-b border-surface-container-highest/50">
+            <div class="w-2.5 h-6 rounded-full bg-google-red"></div>
+            <div>
+              <h3 class="font-display text-xl font-bold text-on-surface flex items-center gap-2">
+                Core Chapter Leads
+                <span class="font-mono text-xs text-outline px-2 py-0.5 rounded-full bg-surface-container">5 LEADS</span>
+              </h3>
+              <p class="text-xs text-on-surface-variant">Direction, technical governance, and cross-functional leadership</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+            
+            <!-- Lead 1: Mohammad Faiz -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="lead" data-name="Mohammad Faiz" data-role="Chapter Lead">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest shadow-inner">
+                <img alt="Mohammad Faiz" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAyblHjqnXqmuhzsIS_2CCvHa0ACBXNv5QsCQk5QUwwZPM3qBqc43PrJ_K13Bibc8DrpqCyE7oJ6eDTHjGzd0mJrfD1V2BoSA_GQ6HMEoXM4c42LRQQrcxqZOIPq7b6bAbUojidiPrX58_ZOnT4xBLXOE3zUKmd5k2YTL6e9HO3TKcaEPxwJxJtuyzYkRAZQug-QWKI-xdlSjA3fM7R9y_T9rFPeThKruNXD4BtOojYIufSdrB-R3_XA">
+              </div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm md:text-base font-bold text-on-surface truncate group-hover:text-primary transition-colors">Mohammad Faiz</h4></div>
+            </div>
+
+            <!-- Lead 2: Kumar Rakshit -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="lead" data-name="Kumar Rakshit" data-role="Tech Lead">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest shadow-inner">
+                <img alt="Kumar Rakshit" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlWWcLMZkc1xAAnE_tAxdwUAbdP4zqdy3EY1UK5ngVJU1tIVvd6A8p47kv_ETkiM3gNPJmqRBfs-Ak_UDfbgPPWvZOq4vWJbhQqKmcFzBGrB5ThIu40IVo5YBlsXw23sXjbs_eZAwKOsgqTr3nsUXFtUiEQEVgAyXovhS5L3jUUofMFNK12Rqe0R_SHWWz9tS0DXY0V-lXOssBhMjS3YeTd-9Sdf80kqk9tyrGd7Fk3ZIamRXaCkljBg">
+              </div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm md:text-base font-bold text-on-surface truncate group-hover:text-primary transition-colors">Kumar Rakshit</h4></div>
+            </div>
+
+            <!-- Lead 3: Harsh Kumar -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="lead" data-name="Harsh Kumar" data-role="PR & Management Lead">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest shadow-inner">
+                <img alt="Harsh Kumar" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO-6f25kvTdpD8gi21Y2aW4YL8eoKa5y6A2EaeCx-104WD5ZgMfF4GduZu8fdR5L6lB5G_4pgxeRRHri8MOVbCZgSaaOuoQNpN6lWFB4NfNtSucYFwJ7MNQXD_JLariTxyRgt_xfbVnKQsWFV8i79qDaBF2T7HEWz1QFIYKT1DyAkzVl0CwUUE01XjjgquZXwX2vG3Tm6uJQn72GCOCZ35Z6ahyJfjZygPmDf8p2eiEDV007GttChHZQ">
+              </div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm md:text-base font-bold text-on-surface truncate group-hover:text-primary transition-colors">Harsh Kumar</h4></div>
+            </div>
+
+            <!-- Lead 4: Mansa Siddhi -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="lead" data-name="Mansa Siddhi" data-role="Media Lead">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest shadow-inner">
+                <img alt="Mansa Siddhi" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjtMTMuOjHy6bQEzljX87sTwF2htIX844Mq9ingN5DlQBol3opVLk_1OMLxX4Rp4GRqr2EPAeUojVLUQ0QXLyqWnL88FcllboYsRMwUfxB6sYPIuahCtsHQdWUAMaTxFqf5trRFosvoFpKgS-hMO-Iop4Ha731RM0MG0PpepVu7SjDCd2BxYAFInDsBV06EaV6IM1xMVUmyVPLdo2V86exSIXxciG4jqaCv7W7LG7t9aiML9ocO4d84Q">
+              </div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm md:text-base font-bold text-on-surface truncate group-hover:text-primary transition-colors">Mansa Siddhi</h4></div>
+            </div>
+
+            <!-- Lead 5: Rajana Durga Pavan Kumar -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="lead" data-name="Rajana Durga Pavan Kumar" data-role="Design Lead">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest shadow-inner">
+                <img alt="Rajana Durga Pavan Kumar" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIIrvnSJp-zHe6ODcSg8ZNZDWdnKG2Kx5FgTSoPIIR81r74lx5gz3V52wBBciXOWx_lSEYdql0GBYxoxOLk7xcAz2GboMiPZsyvcXnB9p4wr-EBvh569fF80uVXrQuiObN9pC2RXFu1V_04Iii8agfb5yJnUAmz7CtBDvzMEONp6uv7jPvZeYQKO6wHVfIaBb_ZzV2s6u8hkcaC6eLdLNfZNqrMoqFMs97Wt5i5BsapR1OJQwIukm72g">
+              </div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm md:text-base font-bold text-on-surface truncate group-hover:text-primary transition-colors">Rajana Durga Pavan</h4></div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- SECTION 2: TECH TEAM (20 CONTRIBUTORS) -->
+        <section class="domain-section space-y-6" data-domain-group="tech">
+          <div class="flex items-center gap-3 pb-2 border-b border-surface-container-highest/50">
+            <div class="w-2.5 h-6 rounded-full bg-google-blue"></div>
+            <div>
+              <h3 class="font-display text-xl font-bold text-on-surface flex items-center gap-2">
+                Tech Team
+                <span class="font-mono text-xs text-outline px-2 py-0.5 rounded-full bg-surface-container">20 CONTRIBUTORS</span>
+              </h3>
+              <p class="text-xs text-on-surface-variant">Cloud, Web, Android, AI/ML, and Open Source software architects</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+            
+            <!-- Tech 1: Nandish Sinha -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Nandish Sinha" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Nandish Sinha" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPR63WMn5E7mq43pVqFHlgOwCQn9296jIgvsPgAnUUZqWyQOryzW7bPb6OQdpm0TLdp8ntsrNgM2JE6nUZAJ7sWzvDXq59Gk9Mjl8PQC61uCxfH5V-PMi1YbGpv_pZ3tHRB1-bmXzwvFloruh2nlLX_oamUNZAEcNNLC5N2Nd6SalC0jjt9QbyvzL5F1b5_NZtDtSRzxxH5Njjgl1KJjj6WpSvrpAyerIv1LLfxAeC4O8xzQ45HrAdDA"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Nandish Sinha</h4></div>
+            </div>
+
+            <!-- Tech 2: Omm Prakash Rout -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Omm Prakash Rout" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Omm Prakash Rout" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM8gvFQQ603RJRw325eZ-Gl1pgwegw8jdwOeEg0cm6QgsZErlN-1v4-oP6heE1dYfPZUMDYa6Pzut3Wb2-R7KD5HgN1qAswUH7H-wa1kIRj7p7XMh7iagRnxEux-G0l5kFqYkQr2f2ihM4RcZTdCjkC_vZc7joo_r-mahOo8JbEzRyVMVzE4hKVJlqFGQQcD-hn2ElXx5M0yI3tU8AqK3tD4ViWOIsSj_K53_dcQf42pusrcGNO2p_rw"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Omm Prakash Rout</h4></div>
+            </div>
+
+            <!-- Tech 3: Rishav Singh -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Rishav Singh" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Rishav Singh" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3VxclnuWeNtqeGTKXMMpVR7W04bmssVMwdF7QCMbm42m3Hf4k3j8mO7KpK4M092F3m2vZKYKTM3e6XDh7LqVEvPwQf5hhTd4TMsjQ2UTQHJtT5ttmI8xN9oWPKAUbfvAiNzQwvaVh6Z4-30EHo4EL6rDmRNo3mSYyC_tpnPyLVAfdnc-u-N6drk1kfGnQpOgP-PH_SMNiJy34wgre4JAgJZ8lpYoBhI3WX_3CQpUicx8kaxnlZ_mpDQ"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Rishav Singh</h4></div>
+            </div>
+
+            <!-- Tech 4: Akash Pattanik -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Akash Pattanik" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Akash Pattanik" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSDtjc_jB1ObOy1w7lZwaDMCAJ-G2UXjZsYp71XmJclWYZv3ML7uan9yuY6Mq0TJVby0euW_8grSJ66QIoduwm0ZO4tw3gJOws7e7JNCexXYy4QkdHjYgSUk9PvnYq4C03msj2q5D7a6ZG05um39fQchsAKgfucVVhP9eV5cQNVVymaFmXuT68IyLvpQMA0yXtUxlv2XzgsrEKnFooPxF-ymY1B-i4S2NTU7e5w11TkZCP-NS8I3ozUA"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Akash Pattanik</h4></div>
+            </div>
+
+            <!-- Tech 5: Kriti Sreyasha Parida -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Kriti Sreyasha Parida" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Kriti Sreyasha Parida" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApSbtv49Ecx-c9Qq6ZR8CAgmUqjrT_jxjkGaMqAh7LXOMEa6_MXioUYal5_qmH3fgR3ladrjRKDbZJL7k6g1dIMqNCIoIB3Pyy_zI1smpsXXelKB61Z3ivJk-y1e1LDYAH48rNbaDd7rzZDoMSbXFX1NX_uJFP1Q0YxwzyX9hdeOlWXOJmWV7TyniNk8kIXei0_eZe8ImTSlC2z774a2clH48BcV9jxayOp9bfhRm-p1lyiHnLhraRVg"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Kriti Sreyasha</h4></div>
+            </div>
+
+            <!-- Tech 6: Ashutosh Padhi -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Ashutosh Padhi" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Ashutosh Padhi" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZSWjL5CmLJM0PKq9jUJnkUMzzYcVnUY0XOkYNYiGhmKhzJTk4k0mP1uUny97fznOqCqO1Kx17y0Gxpe6u8Hf22jFOcRjQKHeGpe1-PveJsikzAxxe8Pj8NYyltc_mx5F0gQfV6cRexHjMJotRmt-6eJH88HTvjv8Wa7n1Lr1i7d5lmQQOex0qFDaa_PciaXhgWjDKwqwOHJEmVGr7p2H58viTUwo8HnZ1as_sguzI_w0zhLj2W6UtYQ"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Ashutosh Padhi</h4></div>
+            </div>
+
+            <!-- Tech 7: Jayita Mandal -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Jayita Mandal" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Jayita Mandal" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARweMpjgqEh4JJWSNJD7Ycu8c62UzeOkKPlR90QGJEth7fk12gm2Mh_T_vtrHZfixqIOIeXuA6YYI8CnCyxX8Cx5MVGtpqXHE1w2BJztIRABmIbHicvxpZP_fwGo6mXVbeKg-0NpnhXAcz51NNEJEw8XDbEwuhkFQbz0RNlXgoJUy1hDPf178NGQgzp_t57S-QiOm4QFJd0MYdBOHUvw_MvUseo1FuHUEAmP1AQ-EQwOLd6G37HHZZgA"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Jayita Mandal</h4></div>
+            </div>
+
+            <!-- Tech 8: Nishant Kumar -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Nishant Kumar" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Nishant Kumar" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzfrFvoTFaYErsGmvR1i34vu3_Np0OweswS0asNc1PcPHe8AqvBxJO5cakVuVjAdOY4nCAfc5-VHnWAnsOeb_BDumyiLhMcLykr_jHQbMcuSbDcgb5hC3qM_fJB0UQ7fBlF1mrJ3sBLyoJ88AnB3xsGujf9xG6jMHcbCUt9--FZGlUSG7sNEVxCxX7gM-Nti1u0PiJmbY1Tsal1nrlfVMuURsd2T0Muq8fwyc_rsL77zZud7awMswPdQ"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Nishant Kumar</h4></div>
+            </div>
+
+            <!-- Tech 9: Ritesh Kumar -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Ritesh Kumar" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Ritesh Kumar" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQJjVpo8xnhbfa8E3ATPam6YrtTMfUEvcO_0u48-VWZLIYu6l1EvBFY5syLvp8R-h02ybN5DIoWpda01ghlq-BteuNr08kkzeG0WkQyZQz4XoNFO8RN8rGXTzfRUi1EyoZqOlHCdThTHDm2Z6wu2RIBNiZDlXsl-144mL4SD_DYIj9xvRCebuKfe19RIrqvgqoy8LMDQbHB95QxuH9zrTM9PNNKGEMKakCDefrsh5i6cOaSBzuPfJyWw"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Ritesh Kumar</h4></div>
+            </div>
+
+            <!-- Tech 10: Siddhant Jena -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Siddhant Satyajeet Jena" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Siddhant Satyajeet Jena" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPsgtONsWlZa5saFELC8gqlZHXmcYFpSlBzVKD1wei_8tXYW2Pm6q2sibPZIlZd5eD6hKjItzuCLj6_S8ugBoWVMXYlpLVpGsjKq6on6c1AkN-BRuqqvObA9qZYQTDjMyeSYBfWe1mWQPRGiDVnkLHmetbojpqGpvKexpos2YoFovYtP084SVO_oCHKY9_zUCHK7F2k8BhrIKY3dMcLm2aig6i8-oBBtyXHDSRyMFRqiNAv7eTqcR0Vw"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Siddhant Jena</h4></div>
+            </div>
+
+            <!-- Tech 11: Asmit Gupta -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Asmit Gupta" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Asmit Gupta" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKhz5KGWQRfXayeD44NvxgUoYDzNcYrzBaU7Nvn_HEn4Ee_mbXqB5AGcPIxOyEw_zL42AkgV9QKU-Vc6u5Wo0AqeDmeh-cJpT1h1ugJiGv3dCAFABtRnKYyRSPHm0keHMDrLbCaN4gkChgP_lrSxuy4NuwvSmq7tr9Eki70goAy1z36Nfn5GFkBRcTpCwMuRrlBxvSb5HF03C9VvBUNveJjdoie4u4bL8QlP_uLc8x5GgAyvfOoa6SHA"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Asmit Gupta</h4></div>
+            </div>
+
+            <!-- Tech 12: Rashmi Anand -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Rashmi Anand" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Rashmi Anand" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsXVfUNhb-3tmFIqYaD8STJI-NhMi7RQ4nbQq4Xb0O6LafEhGejxTU6XcFVRfhMIEffsnz2EO2zuyFggeOOZXQXkeLEhb5JIZHfW1GOqxKpLVYuKtA8MvlUu_vc0Pb8n7zGAHzD1srSoSgtVNMt8je92zk1ot_vVp6d0OucaRM2Q8caIivkkGqXc3OfdMOGudBbmUaXfYbPX7dpOkkY_EdeegBXkCO1tFjDEGS921nTPwwA8_YkqRIZw"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Rashmi Anand</h4></div>
+            </div>
+
+            <!-- Tech 13: Mrinall Samal -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Mrinall Samal" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Mrinall Samal" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALm8RCSpMovRqim4QD_kwBwY7ywl4YO4VMDtxQF8-V3fm-RIhCwrb1327hZWLVONnQBGY7bI07f2fAlb4z1F-y-uysoXfS4sMTIlEZgDtuNz6zGofZ8EoEDYbLGyYnegZS-ZI7zCxwL9-Bb0WG0wsJIdGQ1rrLkmOnYuikocWt_8dkLbviyZ7L5L8vNVD4BzfllfVkiVzO7vzgROMV6SngTHHYNO2RwJ4fRjdni-Uj7qcKr4XfzvfQ7w"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Mrinall Samal</h4></div>
+            </div>
+
+            <!-- Tech 14: Jiru Pranita -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Jiru Pranita Krishna Reddy" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Jiru Pranita Krishna Reddy" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfrqoZ6WQgYow8hf9_DwaFCLr3jYyRn7-mIMGpDHsWQ2a4sByNoeooTmo3G3X6yOq5zWp65DfkBqbBhLV8SArMInCfJY-Y7XVqaJA6la4E8TNQ-LBVy-l_g8rBMBNgVLYLdUaYbPISaoiYimytz1aRkgqom14SB4n02NkuAAYFIZEhTs7BenahFoBrBTrTBCT1336KMAU3ySYzm8QCtFX3KQ1MWRJ_aNegVlsJveXA0_FIqzm50zcyRg"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Jiru Pranita</h4></div>
+            </div>
+
+            <!-- Tech 15: Swayansh Prusty -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Swayansh Prusty" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Swayansh Prusty" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvy_KUa6ERz3MdPBuflZRdmIrk_Z8P-HXI604sCkQyUN5XqTzHXc5QsTkvNFV3CsvDGxE-SWQEo9KX-W740iZ9aPGWxNDZOsc2f6kpy_PmJster9gEPCoIp9nVkqq2aNzFMpw6AxuF0Q0kfjFTXQ8X4J8ilJzWKZzrekKIffWdQJnuctoOfbCYzSP7BD532kCLRycro4zMcWKbkK0K-7MQ0AbpzWREzkmsu3i7IqAUqVTzR4y7EcTv6Q"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Swayansh Prusty</h4></div>
+            </div>
+
+            <!-- Tech 16: MD Kaif Raza -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="MD Kaif Raza Khan" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="MD Kaif Raza Khan" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6uy2_cxapMWLLHdd5-QISVOsd6EyRiQCRwM3rsEWxyMtrMmL4qDsO-oMNqnHnbz8aFCMWiDUoI--y8nvPwH97q7WuR_TYxuWAln6QOGRfuXAleAo_sh7u9sXIwd9X_oLcqGYH1cFJY0rpu2iVTo7g8Vp2vnfp8BAdNg_hb6639grQ1QhPfDq_52dFUfe2Ca01YyM8pyAWX2fEmcKX3Z0GKl4HIVS5H1tBlTGzQqz2_9-9BQ6aeUecwQ"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">MD Kaif Raza</h4></div>
+            </div>
+
+            <!-- Tech 17: Kalyan J. Mishra -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Kalyan Jyoti Mishra" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Kalyan Jyoti Mishra" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADDrLrTxA9bABUiCBNsm7MViByQy2WRAt38wqHz4hNmF7kfTTdCyQYeo-9qwInedOADSe75xbd6KE9UPd8e--1fp6ZY-6edrx8IgIU8IzjKFP0cw3D7TR35PjqtFK3rVwS05A2upR25gojdR4EIJ05werAm7ilNKi85aiuC9-lf9flcyOgJyBxiI_JNx27QibUqffPrIQuaBIMfREP5MGUKum0HshN43gKkMbZeg97c86UeJE0s2zn4w"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Kalyan J. Mishra</h4></div>
+            </div>
+
+            <!-- Tech 18: Yash Agrawal -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Yash Agrawal" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Yash Agrawal" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzKJWihT84ZRWQqPbWEUca_PtUbMv-vEgw4_i4ZBKXAa1cl_gBgQDNHqn_nnj2Hfyztf2azCS4QH7mipl9_P2d1JG1yCURNyLrgmKVOK9NqYAmpfHRkAdAhEj0JfC0j_WalgJbiSgeme1E4JYzl6zDKsETPDW7dAFPVzJw-ii0j48wEMEk6E03tLZR_qDLBa3Q2czsX_3MJwp3c_gvJrgsm6QcxmaTp1aAC4x8vdJmZ7Hh6feOx0eatg"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Yash Agrawal</h4></div>
+            </div>
+
+            <!-- Tech 19: Nirakar Patel -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Nirakar Patel" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Nirakar Patel" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWnAQFk4eT2Tz6O0ZCnZ9jQ489o7FGh3D-BP2jZo5iYcazQmCTlIJO5XaJSoBaA3tns6RBZMrjddEsKEjIPbYI8x0v9DktSwHH3Cc5sO3XLnFVVJCkOA30-CmB96pjIKHgrIKaMo64JxW25A-fMcsulHa-Tni12_vn5VjHYCvWhioB9SxUxjzinuFqhh4GmSUOepKuD7D-pvG47n6H4KZKsd_7IF4_jDqCpSjwZD6PD8inby-RT5ri1w"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Nirakar Patel</h4></div>
+            </div>
+
+            <!-- Tech 20: Sanket Nayak -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="tech" data-name="Sanket Nayak" data-role="Tech Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Sanket Nayak" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM4SQdcb2ZoMRi-yFbiB7eJfwIvpkhkL7Zy0VNENL7aFngaIeqVky0HJ0huKdY95TCWUy0lPHiug-l7l-T5zP8zz4AqysTB3vDP2Zm6SvDmuwYIX_iVfKY51UDU6ahikV9q5Bcbj8k47QLJGcA_dj6iKAyllIxa9VEhdZ3Ly8_D1RxNrnrGAGTupAbkqwoDLrne90ZhD96guTDWA66nHndAc9tfee1fx1RCQDK_QF1mKfyUy7TkuI9hw"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Sanket Nayak</h4></div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- SECTION 3: PR & MANAGEMENT TEAM (9 MEMBERS) -->
+        <section class="domain-section space-y-6" data-domain-group="prmanagement">
+          <div class="flex items-center gap-3 pb-2 border-b border-surface-container-highest/50">
+            <div class="w-2.5 h-6 rounded-full bg-google-green"></div>
+            <div>
+              <h3 class="font-display text-xl font-bold text-on-surface flex items-center gap-2">
+                PR & Management Team
+                <span class="font-mono text-xs text-outline px-2 py-0.5 rounded-full bg-surface-container">9 MEMBERS</span>
+              </h3>
+              <p class="text-xs text-on-surface-variant">Sponsorship outreach, community engagement, event operations, and university logistics</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+            
+            <!-- PR 1 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="prmanagement" data-name="Debasis Das" data-role="PR & Management">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Debasis Das" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOunG8Sn1rufwsKnrHijlZ3SPXo7neTJkzrf5dsX6l2ZXPZs6m2N2iIn3EjAj7BnoNJW-O_LJ-GKPo0TpP2YD9O3RMudZO-MNt2AUXKUYBEdn_KPbJ41eP68LykKkFIu6ZDPKst3npQ2dzqqrtj1FZE2jO2TWw9Jn_yNKBzlpndIWI-prDtdoRK3ybnuUVEumodwlDEEkW6ryzhADNQ_POQ8_Z5ISVS0-eJVRxCo5zPvfvStJ7EEx6Tw"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Debasis Das</h4></div>
+            </div>
+
+            <!-- PR 2 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="prmanagement" data-name="Sushruta Kar" data-role="PR & Management">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Sushruta Kar" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsbZQjFJCNpLBK6ZiqE3T6mUv-FPDuOJ8tqXCMP4Ka2LtoFI7_wmndVTsMvYv1eC6U8hv0FfwUlH5rUtvcXfZMqIv2tKaA9xOjJ8mmUW5_aIyS3Jrr0vgunnBS8EwrTPrh4jq88FCavoE2Zmccld2PgVQkgtt5OMhSc1N7kkc9VQtYq6l5veTGmMz9gl82tX5C1GyMgWsxYp4GgQoPhJhVXbJr8ekItvieQCsqPV81j2v60-cePrpmig"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Sushruta Kar</h4></div>
+            </div>
+
+            <!-- PR 3 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="prmanagement" data-name="Anil Kumar Jena" data-role="PR & Management">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Anil Kumar Jena" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGU0JewNNdQU35b-U-nXMQJzo7gPWzIgwa-342woX0UGCfjD_wJpXaP5AuJdo_F5IxRx3a4kBBmyhvlrvm-7P4f71z8FH4HEiDyC3jSoEQxhi7JToqgi0jk0djSoL2ZWYOR6Ri9OGc4ReeaEl301FquYjResBniUXRASMWzUhf_e0uQZPEwdpIu_eDyUu3V5PrPttR2HFMeM8xAjZVqo7QMy8N4lR7ekOu7j8oB4YPNJbb-dVhWCWCLA"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Anil Kumar Jena</h4></div>
+            </div>
+
+            <!-- PR 4 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="prmanagement" data-name="Ankita Mohapatra" data-role="PR & Management">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Ankita Mohapatra" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgAXYx8EG7lQPWcOZ-_RghkiilW9Ft29K9M0JqaBl5QoS0_kg0wGGtuIXEAKUB1AWW8J43CLG8dbvxFYATV6FGj9vAJUzjlEJulrcQ0O1rpjiLYR0Qaei3u6_xE2qYLHa-NEFZjVG8SM6dxv_JyDvgBPEy8pXs2QOUTYQGp-gu5t7VQecY7nB8q-RYCTgEkK8R4495txAVQdFeWmsz2Ho10dbw5PrSUec8xsANpOvfPjcIxMss9w4QYw"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Ankita Mohapatra</h4></div>
+            </div>
+
+            <!-- PR 5 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="prmanagement" data-name="Riddhima Singh" data-role="PR & Management">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Riddhima Singh" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQsBil5e0Zo1yJlC27QoCTucI_OSweigABs7xVGJ-oYwlZtJvOHxfypN7PjCLxmsSnLdaDiLLVc9wKvdtmggDryWOvdvnaQnNYKcvrD-aHsuugQzrzSk7igwJ9lPf3kArnedEhekdhJ7Mydmi41e8UJqyTH5LBNGOq2fEeITFKzjWJycPNAlD79JZblQ3xFKQowWvPYXI0-ykCzsiWGa-gcHqYoN36xl9pYVNUty0rHGeT_taesULaEA"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Riddhima Singh</h4></div>
+            </div>
+
+            <!-- PR 6 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="prmanagement" data-name="Rounak Kumar Mahato" data-role="PR & Management">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Rounak Kumar Mahato" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZvW_iqS8iErjHv6e7m2VFHI44fyTCB28PtXtqvhSoBZ55k2nH4e3DB57ojOF89dsGPf9HF4HdXakR0y2iTdUGd9YWi63ccL_XDvW6RI2AT1ryXblMWwPJGNLAprMBhE5O9XiCfzmlEsdV0UtNKDU09zypmjplmOODIuCfku4xECe4bkAhdoGsBfeCx1_Iz8-aKZSoM_qpwgGZZ93qu04Vg7jtCyctCn9sxLm-AiFOG3zG0Bhjb2FO0w"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Rounak Mahato</h4></div>
+            </div>
+
+            <!-- PR 7 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="prmanagement" data-name="Bharat Bhusan Mohanta" data-role="PR & Management">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Bharat Bhusan Mohanta" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlm6Pyq1NYgznO7I0jWs-LkmPwWF1KrJ8BuR9T6evijn7ZQlSCUwBUqD1zM41YQEGYB2eh4uqQER2oBM1YdFEftyAAdktvCvRSTpeVBqVPCtUzhOTeE9tN-PDgMjrWwbxOM4bprlyrUQal1qrusgELM1o-ABORyx0k95U6-OuzvWxoMectN-twPHcIJdkkRGFC65BlXO3Bb9SQPLkmscgXhebsiXXkCzxDiDpy-tp8L8HwqckjFX49Rw"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Bharat Mohanta</h4></div>
+            </div>
+
+            <!-- PR 8 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="prmanagement" data-name="Priyanshu Chandra" data-role="PR & Management">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Priyanshu Chandra" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0APIYIGUNxpJgVF9jzDSUpRSo0SuXPoKxHrIJFhWDabrfo0bX-QdIV81_-XPgny7zb0hudtJ91crHiffjm2jHpk6R0yTvNQnOZ6A3o_OOzEEU6sVo4Zm1lNHnbCdkZOTmiYOqM1ebRwYwu43H0xhVL51ybZs7xXS2b7s4w45Q_iiAP8C94oXvj4sfXN3wTcGos_sIzMgcZ5DnT9RP9GlxXmU7emBzy1xSaMo9cSfDoron560mnEZ-Kg"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Priyanshu Chandra</h4></div>
+            </div>
+
+            <!-- PR 9 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="prmanagement" data-name="Sashwat Mishra" data-role="PR & Management">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Sashwat Mishra" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfDXz9GTJnbkQQ8USmUJMdYwIyTnqn9OkLWHbcFW8mtFKbl3IjI4zRlQk4vqGAvCAA0ev9D5NgR8vESfBgXKXyjrOpvNhlnQ9MkstPQcVWKqlPro7KEX_-kU53mE6wL9X96jwHb7JOGyxzJTrdx2nwKqI384cGA4lHELBt-oV5zZP1zShZbQrsmiRzRQ-o1rie4LrXsvzq4DEIY9W9dmtIn8rkqc_dRbusUhujBIRmKa9eqNzyQTdXDw"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Sashwat Mishra</h4></div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- SECTION 4: MEDIA TEAM (9 CREATIVES) -->
+        <section class="domain-section space-y-6" data-domain-group="media">
+          <div class="flex items-center gap-3 pb-2 border-b border-surface-container-highest/50">
+            <div class="w-2.5 h-6 rounded-full bg-secondary"></div>
+            <div>
+              <h3 class="font-display text-xl font-bold text-on-surface flex items-center gap-2">
+                Media Team
+                <span class="font-mono text-xs text-outline px-2 py-0.5 rounded-full bg-surface-container">9 CREATIVES</span>
+              </h3>
+              <p class="text-xs text-on-surface-variant">Cinematography, social broadcasting, photo essays, and chapter branding</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+            
+            <!-- Media 1 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="media" data-name="Ayush Kumar Singh" data-role="Media Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Ayush Kumar Singh" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzJ3MtMJ5hDaz_OAie879KAH41Tz8nbGL4tbBeawTIVltNEpZ4y0zpnBDdAcQpr4BzZSE51riWWZgt5_BaAGIHQ5Pp_ObNDtznT3Mh8AHdSnQRyvw1zq0hZ9yJm7N3qdkqBQ3eyIuCKXAWhpQIHtHZ4zrALSEHiafabUa1xa8wQoAjSoSSe4X6EhSQik_jbmmHXLoE0M0T14rsnagtkbgwxbUE7tytyOFeQoXWVFyiD_opWAIjd_4MFQ"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Ayush Kumar Singh</h4></div>
+            </div>
+
+            <!-- Media 2 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="media" data-name="Mili Gupta" data-role="Media Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Mili Gupta" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyhjaLuDfgtQTjfCfWEDUtsa8qMHVX0N9a1vEWq31Xuv66Ix-7fXkMHP-zCC5DConAYJmXm4v4v5PuxRQyWTbnHPxKEacg_tIv2R_QW6Y6i0rPfyFHXX01eC7oEJjdxtb3PlH4Iod8k12ev1PujPiJQEowAWOO78TywsQmADe-YoYsDc76ZIaPAgCw8Ibk-PEar4WsEH1b5MfuzTQs5fq1BVMtHf56f5UM2EnHFknLqOEOqgGfuBZTVA"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Mili Gupta</h4></div>
+            </div>
+
+            <!-- Media 3 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="media" data-name="Shreya Patel" data-role="Media Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Shreya Patel" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmlTAm5tsTY8zgEkD0Ktpwo4Wdov5Pz_2PMi8J6vbnTxPdrM8FH6eXvaIOEcUGHoS-powZzlR2hcYpLe_LMi8j_qBVWV-2F9tpMcAnw-ewhc60lSZTqbYeNT5LoUZL6NUD5lzjoXlhVC0PDKu9CGY52GQR9Q3FNk_6W3T-HsQmenSZ9J6mWfURT1Ve4pfeQRwPOOU-EgX_LlYB-QEcPyeAYw-vNJjUsH28aF-bBtyYRZjXyTlctbMvUg"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Shreya Patel</h4></div>
+            </div>
+
+            <!-- Media 4 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="media" data-name="Rajshree Balsamant" data-role="Media Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Rajshree Balsamant" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLbbPz6syTklgG-gNB0R7hOppH8jLacxFoOOQ_8UcHONSVN9WbiMUuRkgzN2R_NeA1OnLNLaA_Dm7kOiXGcUeNaPDS136J_bjBEOSSNLFPvOd--We7ObACcOlEoz0O3TwVPXb3TFTV_GTaUGPNKRzw0Ct8toNSupGwyd4Y2LnaWkxppFhaD2B9v7KwXFxsLk2UmyHxvTCToCUqlxPDasglbK-5QxqzKrikhY1LxiMdmLgVXSCRxftDwQ"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Rajshree Balsamant</h4></div>
+            </div>
+
+            <!-- Media 5 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="media" data-name="Anish Sahoo" data-role="Media Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Anish Sahoo" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVrs66kVnvtkgbsgEDhJRUizn5lMDMW3WFkYoXwfwHjux0ijFYBjLSxDP2Ddcs3GprtncJ_K_KG7rKKjKznU51lb68JE1WXW4oL6KJ2As3u6pbpEmggJvVs-ex_e2LBoaie8pzoTMJd7YSvaP1ukuc0-KaAgZduPB1dIOIL_bN6VQpwlO5ilMiad50Q1TtPlmhLq0Uy6CW2gTOW2wQPErmu_djivddu__dZS8y1HdWErs3Mv0CkLW2yg"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Anish Sahoo</h4></div>
+            </div>
+
+            <!-- Media 6 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="media" data-name="Amrit Arya" data-role="Media Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Amrit Arya" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLnAP_7T8I7BTGgxzINpl_vDFAqVZkbSuFoYWntgvRAAleh66qEBaEfHyG1wxxdB_WELXcJwCENpbKdV5s7oZMFUvwPN8R98ryLkC4PnszGHhPxxczUQOZD2cErhFYgUVoyN0-6Yt13u3LRXWCHpn0NbCdTsDGHb6JPlUT8ETHF3T0WncL4vX_0YaYgYlwWJyBT57V1wo9dUG309WLAo0xCQa3FCrUtul3qE0im6yFQ17f0OFyPCngwQ"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Amrit Arya</h4></div>
+            </div>
+
+            <!-- Media 7 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="media" data-name="Miraj Patra" data-role="Media Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Miraj Patra" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBiJqq_meSn-vdYJtgQUdSRX2MmLqWSplJEJXio26SwESCdkEraJCx6v488JkS5poSDDJbbILm4L1c5jC6xeVRpiZPVL6E6Whrihx-ubdp1Y1xmYTcGZa5HaSntKeyiN-S7yCh2FoXPv1xQ_LzGyVQfzpZYB2v6wgPOxFPuYEvEuAIVbZzbs1H5dbj3IUwrGvuOh9YyK5TTRs8z5qInM_4OTl0odY48uhLA_MFKHTDYzvQh4JeOM6r5Q"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Miraj Patra</h4></div>
+            </div>
+
+            <!-- Media 8 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="media" data-name="Sritam Das" data-role="Media Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Sritam Das" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_e82lSCzGWaC1sIGzBvlv2CH7-UQnToljZwFQA-0EWr_Quxz0du_Z7P6mXYeqxKsd-_TASxqmcypJ8viXjoqGrviVBwZDjPfI8eR_uYzEPYiKtN1MfE0enQkwqUcQ_x5-jJTapJxlSvhRAPQs5n87YnmZC8FdPZ_zPhCet78stYru5MY1HSrRa-HW3bA-NjdGTmR0dGEMoixBdR73tbA_93-Kv7LLVRVx7l6GdH8AooA9SL5FkOGSHQ"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Sritam Das</h4></div>
+            </div>
+
+            <!-- Media 9 -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="media" data-name="Sayak Mondal" data-role="Media Domain">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Sayak Mondal" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-DUhiiIW5oBH9x-9S3TxMCsHtKDEnKe0TbtCA3eFY7-AB34mbgLUrE7xfsgt9vaAOx30o9jByNuoy7rvKCezZxvVjqm1LEiH437DBy46Sh96ue5IcRlY9IHReXfn5rm0UswZallNJbnPKt5JM_x2Mm-ni37goyTnj5F22DMJxwG_qa0taSWqUnPu3YgdxDEx-A4BWmNQobsO-o__nQuNgSPUQURbTPAwWYa61w8f4gGAPXA-QFoEfFQ"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Sayak Mondal</h4></div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- SECTION 5: DESIGN TEAM (1 DESIGNER) -->
+        <section class="domain-section space-y-6" data-domain-group="design">
+          <div class="flex items-center gap-3 pb-2 border-b border-surface-container-highest/50">
+            <div class="w-2.5 h-6 rounded-full bg-google-yellow"></div>
+            <div>
+              <h3 class="font-display text-xl font-bold text-on-surface flex items-center gap-2">
+                Design Team
+                <span class="font-mono text-xs text-outline px-2 py-0.5 rounded-full bg-surface-container">PRODUCT & UI/UX</span>
+              </h3>
+              <p class="text-xs text-on-surface-variant">Interface design, visual design languages, and user experience research</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+            
+            <!-- Design 1: Arpit Kumar Maurya -->
+            <div class="member-card glow-card group flex flex-col p-3 rounded-2xl cursor-pointer" data-category="design" data-name="Arpit Kumar Maurya" data-role="UI/UX Designer">
+              <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container-highest"><img alt="Arpit Kumar Maurya" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDmcXD0-tJiyQLcUJpfEpx72yUmEo6-wjv6S_bmGjxeMZ9yy9J8SsPrSBIaSGVuiIrrffjBRJolkkH3_Z4qY4I3NKBZf8rfkJhfgKG6Fc4T-Ce9iiv7qdwaaddda9r717tYuVMb5B6933_Rszekc65fCl6Me5el51tass-SQRRYHwob8WzPnzv_ph4xVu2iaIDvUyPz2ZoxuAL3IHLI6DxKAWGsXHjJPz3cevOpXBhS9cvDmPEe_Og1w"></div>
+              <div class="pt-2.5 text-center"><h4 class="font-display text-sm font-bold text-on-surface truncate group-hover:text-primary transition-colors">Arpit Kumar Maurya</h4></div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CAMPUS CHRONICLES & IMPACT GALLERY (AUTHENTIC 2026 EVENT PHOTOS)
+       ======================================================================== -->
+  <section class="w-full py-24 bg-surface" id="impact">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div>
+          <span class="font-mono text-xs text-primary uppercase tracking-widest block mb-2">CAMPUS CHRONICLES</span>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-on-surface font-display">How's the Journey So Far</h2>
+          <p class="text-sm md:text-base text-on-surface-variant mt-2 max-w-xl">
+            Over time, GDG on Campus has brought together hundreds of learners, empowering innovators through collaborative sessions, peer mentorship, and real tech builds. Click any photo to expand!
+          </p>
+        </div>
+        <div class="hidden sm:flex items-center gap-2 font-mono text-xs text-outline">
+          <span class="w-2 h-2 rounded-full bg-google-green animate-pulse"></span>
+          <span>Verified SOA ITER Moments</span>
+        </div>
+      </div>
+
+      <!-- 6-Photo Responsive Grid from gdgociter.in (Strict 16:9 Cinematic Aspect Ratio) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Photo 1 -->
+        <div class="gallery-card-trigger relative rounded-2xl overflow-hidden bg-surface-container aspect-video w-full group cursor-pointer shadow-xl border border-surface-container-highest/60">
+          <img alt="Chapter Keynote & Flagship Sessions" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/gallery_1.webp">
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/95 via-surface-container-lowest/30 to-transparent flex flex-col justify-end p-6">
+            <span class="font-mono text-xs text-google-blue font-bold tracking-wider">KEYNOTE & ONBOARDING</span>
+            <h4 class="text-lg font-bold text-on-surface font-display mt-0.5">Chapter Keynote Gathering</h4>
+            <p class="text-xs text-on-surface-variant mt-1">Full delegation of ITER engineers welcoming Google developer community initiatives.</p>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="gallery-card-trigger relative rounded-2xl overflow-hidden bg-surface-container aspect-video w-full group cursor-pointer shadow-xl border border-surface-container-highest/60">
+          <img alt="Hands-on Code Sprints" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/gallery_2.webp">
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/95 via-surface-container-lowest/30 to-transparent flex flex-col justify-end p-6">
+            <span class="font-mono text-xs text-google-green font-bold tracking-wider">DEV WORKSHOPS</span>
+            <h4 class="text-lg font-bold text-on-surface font-display mt-0.5">Hands-on Code Sprints</h4>
+            <p class="text-xs text-on-surface-variant mt-1">Deep dives into Google Cloud architecture, Gemini agents, and Android Compose.</p>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="gallery-card-trigger relative rounded-2xl overflow-hidden bg-surface-container aspect-video w-full group cursor-pointer shadow-xl border border-surface-container-highest/60">
+          <img alt="Community Team Discussions" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/gallery_3.webp">
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/95 via-surface-container-lowest/30 to-transparent flex flex-col justify-end p-6">
+            <span class="font-mono text-xs text-google-yellow font-bold tracking-wider">LEADERSHIP & MENTORSHIP</span>
+            <h4 class="text-lg font-bold text-on-surface font-display mt-0.5">Peer Team Architecture</h4>
+            <p class="text-xs text-on-surface-variant mt-1">Senior leads guiding sophomore and freshman developers on open-source roadmap.</p>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="gallery-card-trigger relative rounded-2xl overflow-hidden bg-surface-container aspect-video w-full group cursor-pointer shadow-xl border border-surface-container-highest/60">
+          <img alt="Hackathons & Build Nights" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/gallery_4.webp">
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/95 via-surface-container-lowest/30 to-transparent flex flex-col justify-end p-6">
+            <span class="font-mono text-xs text-google-red font-bold tracking-wider">HACKATHONS</span>
+            <h4 class="text-lg font-bold text-on-surface font-display mt-0.5">Competitive Build Sprints</h4>
+            <p class="text-xs text-on-surface-variant mt-1">Fast-paced coding marathons solving local problems with Google Cloud tools.</p>
+          </div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="gallery-card-trigger relative rounded-2xl overflow-hidden bg-surface-container aspect-video w-full group cursor-pointer shadow-xl border border-surface-container-highest/60">
+          <img alt="Tech Discussions & Mentorship" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/gallery_5.webp">
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/95 via-surface-container-lowest/30 to-transparent flex flex-col justify-end p-6">
+            <span class="font-mono text-xs text-google-blue font-bold tracking-wider">STUDY JAMS</span>
+            <h4 class="text-lg font-bold text-on-surface font-display mt-0.5">Cloud Study Jams</h4>
+            <p class="text-xs text-on-surface-variant mt-1">Unlocking Qwiklabs skill badges and certified Google Cloud credentials.</p>
+          </div>
+        </div>
+
+        <!-- Photo 6 -->
+        <div class="gallery-card-trigger relative rounded-2xl overflow-hidden bg-surface-container aspect-video w-full group cursor-pointer shadow-xl border border-surface-container-highest/60">
+          <img alt="Annual Chapter Launch" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/gallery_6.webp">
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/95 via-surface-container-lowest/30 to-transparent flex flex-col justify-end p-6">
+            <span class="font-mono text-xs text-secondary font-bold tracking-wider">COMMUNITY CELEBRATION</span>
+            <h4 class="text-lg font-bold text-on-surface font-display mt-0.5">Chapter Milestone Launch</h4>
+            <p class="text-xs text-on-surface-variant mt-1">Celebrating developer community growth and student impact across SOA ITER.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       DEVELOPER KNOWLEDGE BASE & FREQUENTLY ASKED QUESTIONS (ACCORDION)
+       ======================================================================== -->
+  <section class="w-full py-24 bg-surface border-t border-surface-container-highest/40 relative" id="faq">
+    <div class="max-w-4xl mx-auto px-6 lg:px-12">
+      
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-container font-mono text-xs text-primary mb-3 border border-surface-container-highest">
+          <span class="material-symbols-outlined text-[16px] text-google-blue">help</span>
+          <span>CHAPTER KNOWLEDGE BASE</span>
+        </div>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-on-surface font-display tracking-tight">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-sm md:text-base text-on-surface-variant mt-3">
+          Everything you need to know about joining and flourishing at GDG on Campus ITER.
+        </p>
+      </div>
+
+      <!-- FAQ Accordions -->
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-accordion-item active">
+          <div class="faq-accordion-header">
+            <span class="font-display text-base md:text-lg font-bold text-on-surface">Is membership in GDG on Campus ITER free?</span>
+            <span class="material-symbols-outlined faq-chevron text-[24px] text-on-surface-variant transition-transform">expand_more</span>
+          </div>
+          <div class="faq-accordion-content">
+            <p class="text-sm text-on-surface-variant leading-relaxed">
+              Yes, 100% free! All SOA ITER students from any branch, academic year, or background can join our community without any membership fees or registration charges.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-accordion-item">
+          <div class="faq-accordion-header">
+            <span class="font-display text-base md:text-lg font-bold text-on-surface">Do I need previous coding experience to join?</span>
+            <span class="material-symbols-outlined faq-chevron text-[24px] text-on-surface-variant transition-transform">expand_more</span>
+          </div>
+          <div class="faq-accordion-content">
+            <p class="text-sm text-on-surface-variant leading-relaxed">
+              Not at all. We welcome absolute beginners, hobbyists, and advanced engineers alike. Our curriculum ranges from zero-prerequisite bootcamps in Web and Android to advanced multimodal AI agent hackathons.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-accordion-item">
+          <div class="faq-accordion-header">
+            <span class="font-display text-base md:text-lg font-bold text-on-surface">What Google technologies and developer tracks will I explore?</span>
+            <span class="material-symbols-outlined faq-chevron text-[24px] text-on-surface-variant transition-transform">expand_more</span>
+          </div>
+          <div class="faq-accordion-content">
+            <p class="text-sm text-on-surface-variant leading-relaxed">
+              You will gain practical experience with Google Cloud Platform (GCP), Gemini 1.5 API, Android Jetpack Compose, Flutter, Firebase, TensorFlow, and open-source Docker/Kubernetes workflows.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-accordion-item">
+          <div class="faq-accordion-header">
+            <span class="font-display text-base md:text-lg font-bold text-on-surface">How can I earn official Google skill badges and certificates?</span>
+            <span class="material-symbols-outlined faq-chevron text-[24px] text-on-surface-variant transition-transform">expand_more</span>
+          </div>
+          <div class="faq-accordion-content">
+            <p class="text-sm text-on-surface-variant leading-relaxed">
+              By participating in Google Cloud Study Jams, completing Qwiklabs quests, and submitting real software builds to the global annual Google Solution Challenge. Verified credentials are digitally verifiable on LinkedIn.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-accordion-item">
+          <div class="faq-accordion-header">
+            <span class="font-display text-base md:text-lg font-bold text-on-surface">Where do regular event updates and workshop invites get posted?</span>
+            <span class="material-symbols-outlined faq-chevron text-[24px] text-on-surface-variant transition-transform">expand_more</span>
+          </div>
+          <div class="faq-accordion-content">
+            <p class="text-sm text-on-surface-variant leading-relaxed">
+              All immediate updates, RSVP links, and mentor hours are broadcast on our official WhatsApp Community and our Google Developer Chapter platform on gdgociter.in.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       JOIN CHAPTER / GET INVOLVED (ACCURATE INFORMATION FROM gdgociter.in)
+       ======================================================================== -->
+  <section class="w-full py-24 bg-surface-container-lowest relative overflow-hidden" id="join">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#13141a] via-surface-container to-[#0b0c10] p-8 sm:p-14 shadow-2xl border border-surface-container-highest/80 text-center">
+        <div class="absolute -right-24 -bottom-24 w-96 h-96 rounded-full bg-google-blue/15 blur-3xl pointer-events-none"></div>
+        <div class="absolute top-0 left-0 w-80 h-80 bg-google-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 font-mono text-xs text-primary mb-4 border border-primary/20">
+            <span class="material-symbols-outlined text-[16px]">bolt</span>
+            <span>GET INVOLVED</span>
+          </div>
+          
+          <!-- Exact Headline from gdgociter.in -->
+          <h2 class="text-3xl sm:text-5xl md:text-6xl font-black text-on-surface font-display tracking-tight leading-tight">
+            Ready to start your journey?
+          </h2>
+          
+          <!-- Exact Subtitle from gdgociter.in -->
+          <p class="text-base sm:text-lg text-on-surface-variant mt-4 mb-8 leading-relaxed max-w-2xl">
+            Join our community today to access exclusive events, workshops, and network with passionate developers.
+          </p>
+
+          <!-- Authentic Client Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-md">
+            <a href="https://chat.whatsapp.com/HsvMXSnPBqx7w7RLJCtUc8?mode=wwt" target="_blank" rel="noopener noreferrer" class="btn-magnetic w-full sm:w-auto px-8 py-4 rounded-full font-display text-sm font-bold text-white bg-gradient-to-r from-[#25D366] to-[#128C7E] shadow-[0_0_24px_rgba(37,211,102,0.4)] hover:scale-105 transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-[20px]">chat</span>
+              <span>Join the Chapter</span>
+            </a>
+            <a href="mailto:gdsciter@gmail.com" class="btn-magnetic w-full sm:w-auto px-8 py-4 rounded-full font-display text-sm font-semibold text-on-surface bg-surface-container-high hover:bg-surface-container-highest border border-surface-container-highest hover:border-primary/40 transition-all flex items-center justify-center gap-2 hover:scale-105">
+              <span class="material-symbols-outlined text-[20px]">mail</span>
+              <span>Contact Us</span>
+            </a>
+          </div>
+
+          <!-- Instant Student Newsletter / RSVP Box -->
+          <div class="mt-10 w-full max-w-md">
+            <form class="flex flex-col sm:flex-row gap-2" onsubmit="event.preventDefault(); document.getElementById('success-msg').classList.remove('hidden'); this.reset();">
+              <input class="flex-1 px-4 py-3 rounded-full bg-surface-container-lowest text-on-surface border border-surface-container-highest focus:outline-none focus:ring-2 focus:ring-primary text-xs shadow-inner" placeholder="Enter student email for newsletter" required type="email">
+              <button class="px-6 py-3 rounded-full font-display text-xs font-bold text-white bg-primary-container hover:bg-primary transition-all shrink-0" type="submit">
+                Subscribe
+              </button>
+            </form>
+            <div id="success-msg" class="hidden mt-3 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-tertiary-container/20 border border-tertiary/40 text-tertiary font-mono text-xs">
+              <span class="material-symbols-outlined text-[16px]">check_circle</span>
+              <span>Subscribed! Welcome to GDG on Campus ITER (gdgociter.in).</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER (AUTHENTIC INFORMATION FROM gdgociter.in)
+       ======================================================================== -->
+  <footer class="w-full bg-surface-container-lowest border-t border-surface-container-highest/40 text-on-surface-variant">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Col 1: Brand & Socials -->
+        <div class="space-y-4">
+          <a href="#hero" class="inline-block group" title="GDG on Campus SOA ITER">
+            <div class="h-14 px-3 py-1.5 rounded-xl bg-white/95 inline-flex items-center justify-center border border-white/20 shadow-md group-hover:scale-105 transition-transform">
+              <img src="assets/images/footer-logo.png" alt="GDG on Campus SOA ITER" class="h-10 w-auto object-contain">
+            </div>
+          </a>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            The student developer chapter at Institute of Technical Education and Research (ITER), Siksha 'O' Anusandhan, empowering aspiring engineers through Google technologies.
+          </p>
+          
+          <!-- Social Icons (Identical to gdgociter.in) -->
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.youtube.com/@gdgiter" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-red-500/15 text-google-red hover:bg-google-red hover:text-white flex items-center justify-center transition-all hover:scale-110 shadow-sm" title="YouTube">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+            </a>
+            <a href="https://github.com/GDGoC-ITER" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-surface-container text-on-surface hover:bg-primary-container hover:text-white flex items-center justify-center transition-all hover:scale-110 shadow-sm" title="GitHub">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
+            </a>
+            <a href="https://www.instagram.com/gdg_iter" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-pink-500/15 text-pink-400 hover:bg-pink-600 hover:text-white flex items-center justify-center transition-all hover:scale-110 shadow-sm" title="Instagram">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.451 4.635c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.825-.059.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.825-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/google-developer-student-club-iter" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-blue-500/15 text-google-blue hover:bg-google-blue hover:text-white flex items-center justify-center transition-all hover:scale-110 shadow-sm" title="LinkedIn">
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-display font-bold text-sm text-on-surface uppercase tracking-wider">Quick Links</h4>
+          <div class="h-0.5 bg-google-blue/40 w-10 mb-2"></div>
+          <ul class="space-y-2 text-xs font-medium">
+            <li><a class="hover:text-primary transition-colors" href="#hero">Home</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#about">About Us</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#events">Events</a></li>
+            <li><a class="hover:text-primary transition-colors" href="team.html">Our Team</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#timeline">Roadmap & Timeline</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#tracks">Tech Specializations</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Resources (From gdgociter.in) -->
+        <div class="space-y-3">
+          <h4 class="font-display font-bold text-sm text-on-surface uppercase tracking-wider">Resources</h4>
+          <div class="h-0.5 bg-google-yellow/40 w-10 mb-2"></div>
+          <ul class="space-y-2 text-xs font-medium">
+            <li><a class="hover:text-primary transition-colors" href="https://gdg.community.dev/gdg-on-campus-institute-of-technical-education-research-bhubaneswar-india/" target="_blank" rel="noopener noreferrer">Community Blog</a></li>
+            <li><a class="hover:text-primary transition-colors" href="https://gdg.community.dev/gdg-on-campus-institute-of-technical-education-research-bhubaneswar-india/" target="_blank" rel="noopener noreferrer">Community Guidelines</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#about">FAQ</a></li>
+            <li><a class="hover:text-primary transition-colors" href="https://chat.whatsapp.com/HsvMXSnPBqx7w7RLJCtUc8?mode=wwt" target="_blank" rel="noopener noreferrer">Join WhatsApp Community</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Campus Info (Exact from gdgociter.in) -->
+        <div class="space-y-3">
+          <h4 class="font-display font-bold text-sm text-on-surface uppercase tracking-wider">Contact & Campus</h4>
+          <div class="h-0.5 bg-google-green/40 w-10 mb-2"></div>
+          <div class="space-y-2.5 text-xs">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-google-red text-[18px] shrink-0">mail</span>
+              <a class="hover:text-primary transition-colors font-mono" href="mailto:gdsciter@gmail.com">gdsciter@gmail.com</a>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-google-blue text-[18px] shrink-0 mt-0.5">location_on</span>
+              <span class="leading-relaxed">ITER, Siksha 'O' Anusandhan Deemed to be University, Jagamara, Khandagiri, Bhubaneswar, Odisha 751030</span>
+            </div>
+            <div class="flex items-center gap-2 pt-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-google-blue"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-google-red"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-google-yellow"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-google-green"></span>
+              <span class="font-mono text-[11px] text-outline ml-1">Powered by Google</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Copyright Bar -->
+      <div class="pt-8 border-t border-surface-container-highest/40 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono">
+        <div>© 2026 GDG on Campus SOA ITER (<a href="https://gdgociter.in" target="_blank" class="text-primary hover:underline">gdgociter.in</a>). All rights reserved.</div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-on-surface transition-colors" href="#about">Guidelines</a>
+          <a class="hover:text-on-surface transition-colors" href="team.html">Team</a>
+          <a class="hover:text-on-surface transition-colors" href="#join">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL 1: MEMBER DETAIL MODAL
+       ======================================================================== -->
+  <div id="member-detail-modal" class="hidden fixed inset-0 z-50 modal-backdrop items-center justify-center p-4">
+    <div class="relative w-full max-w-lg bg-surface-container-low border border-surface-container-highest/80 rounded-3xl p-6 md:p-8 shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200">
+      <button id="close-member-modal" class="absolute top-4 right-4 p-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+        <div class="w-28 h-36 rounded-2xl overflow-hidden bg-surface-container-highest shrink-0 shadow-lg border border-surface-container-highest">
+          <img id="modal-member-img" alt="Member" class="w-full h-full object-cover">
+        </div>
+        <div class="flex-1 text-center sm:text-left space-y-2">
+          <span id="modal-member-tag" class="px-2.5 py-0.5 rounded-full text-xs font-mono font-bold uppercase">TEAM</span>
+          <h3 id="modal-member-name" class="text-2xl font-bold font-display text-on-surface">Member Name</h3>
+          <p id="modal-member-role" class="text-sm text-primary font-mono font-medium">Role Title</p>
+          <p class="text-xs text-on-surface-variant leading-relaxed pt-1">
+            Contributing to the GDG on Campus ITER engineering initiatives, student workshops, and technical events for the 2025-26 cycle.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-surface-container-highest/60 flex items-center justify-between">
+        <span class="text-xs font-mono text-outline">SOA ITER Chapter Member</span>
+        <div class="flex items-center gap-2">
+          <a href="#" class="p-2 rounded-xl bg-surface-container text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">terminal</span></a>
+          <a href="#" class="p-2 rounded-xl bg-surface-container text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">work</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 2: EVENT DETAIL MODAL
+       ======================================================================== -->
+  <div id="event-detail-modal" class="hidden fixed inset-0 z-50 modal-backdrop items-center justify-center p-4">
+    <div class="relative w-full max-w-lg bg-surface-container-low border border-surface-container-highest/80 rounded-3xl p-6 md:p-8 shadow-2xl overflow-hidden">
+      <button id="close-event-modal" class="absolute top-4 right-4 p-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <div class="space-y-4">
+        <!-- Event Poster Preview (Strict 16:9 Aspect Ratio) -->
+        <div class="w-full aspect-video rounded-2xl overflow-hidden border border-surface-container-highest bg-black/40">
+          <img id="modal-event-img" class="w-full h-full object-cover hidden" alt="Event Poster">
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span id="modal-event-badge" class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-mono text-xs font-semibold">Tech</span>
+          <span id="modal-event-date" class="text-xs font-mono text-on-surface-variant">Date</span>
+        </div>
+        <h3 id="modal-event-title" class="text-2xl font-bold font-display text-on-surface">Event Title</h3>
+        <p id="modal-event-desc" class="text-sm text-on-surface-variant leading-relaxed">Detailed event breakdown.</p>
+        
+        <div class="p-4 rounded-2xl bg-surface-container/60 border border-surface-container-highest/50 space-y-2 text-xs">
+          <div class="flex items-center justify-between">
+            <span class="text-outline">Platform / Venue:</span>
+            <span class="font-mono text-on-surface font-semibold">Official Google Bevy & Block D</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-outline">Eligibility:</span>
+            <span class="font-mono text-tertiary font-semibold">Open to all ITER students</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-outline">Recognition:</span>
+            <span class="font-mono text-primary font-semibold">Digital Certificate & Badges</span>
+          </div>
+        </div>
+
+        <div class="pt-4 flex items-center justify-end gap-3">
+          <button onclick="document.getElementById('close-event-modal').click();" class="px-4 py-2 rounded-full bg-surface-container text-xs font-semibold text-on-surface">Dismiss</button>
+          <a href="https://chat.whatsapp.com/HsvMXSnPBqx7w7RLJCtUc8?mode=wwt" target="_blank" rel="noopener noreferrer" class="px-5 py-2 rounded-full bg-gradient-to-r from-primary-container to-secondary-container text-xs font-bold text-white shadow-lg hover:scale-105 transition-all">Join WhatsApp & RSVP</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 3: GALLERY LIGHTBOX
+       ======================================================================== -->
+  <div id="gallery-lightbox" class="hidden fixed inset-0 z-50 modal-backdrop items-center justify-center p-4">
+    <div class="relative w-full max-w-4xl bg-surface-container-low border border-surface-container-highest/80 rounded-3xl p-4 md:p-6 shadow-2xl flex flex-col items-center">
+      <button id="close-lightbox" class="absolute top-4 right-4 p-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors z-10">
+        <span class="material-symbols-outlined text-[24px]">close</span>
+      </button>
+      <div class="w-full aspect-video rounded-2xl overflow-hidden bg-black flex items-center justify-center">
+        <img id="lightbox-img" class="max-w-full max-h-[75vh] object-contain" alt="Gallery Photo">
+      </div>
+      <p id="lightbox-caption" class="mt-4 font-mono text-xs text-on-surface-variant text-center"></p>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 4: WHATSAPP COMMUNITY & ECOSYSTEM JOIN MODAL
+       ======================================================================== -->
+  <div id="community-join-modal" class="hidden fixed inset-0 z-50 modal-backdrop items-center justify-center p-4">
+    <div class="relative w-full max-w-md bg-surface-container-low border border-surface-container-highest/90 rounded-3xl p-6 md:p-8 shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200">
+      
+      <!-- Ambient Gradient Light Glow -->
+      <div class="absolute -top-24 -right-24 w-48 h-48 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <button id="close-community-modal" class="absolute top-4 right-4 p-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors z-10" aria-label="Close Modal">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <div class="flex flex-col items-center text-center">
+        <!-- Logo & Status -->
+        <div class="w-14 h-14 rounded-2xl bg-white/95 flex items-center justify-center border border-white/20 shadow-lg mb-4">
+          <img src="assets/images/logo.png" alt="GDG Logo" class="w-10 h-10 object-contain">
+        </div>
+        
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-xs font-mono text-primary mb-2">
+          <span class="w-2 h-2 rounded-full bg-[#34A853] animate-pulse"></span>
+          <span>CAMPUS ECOSYSTEM // 2025-26</span>
+        </div>
+
+        <h3 class="text-2xl font-bold font-display text-on-surface mb-2">Join GDG on Campus ITER</h3>
+        <p class="text-xs text-on-surface-variant leading-relaxed max-w-sm mb-6">
+          Connect with 500+ student developers at SOA University. Get direct updates on workshops, Google Cloud events, and hackathon teams.
+        </p>
+
+        <!-- QR Code Display Card with 16:9 inner layout and Google Brackets -->
+        <div class="w-full max-w-xs p-5 rounded-2xl bg-surface-container border border-surface-container-highest flex flex-col items-center mb-6 shadow-inner relative group">
+          <div class="relative w-40 h-40 bg-white p-2.5 rounded-xl flex items-center justify-center shadow-md">
+            <!-- Stylized QR Code SVG -->
+            <svg viewBox="0 0 100 100" class="w-full h-full" fill="#121317">
+              <rect x="0" y="0" width="30" height="30" fill="#121317"/>
+              <rect x="5" y="5" width="20" height="20" fill="#ffffff"/>
+              <rect x="9" y="9" width="12" height="12" fill="#4285F4"/>
+              
+              <rect x="70" y="0" width="30" height="30" fill="#121317"/>
+              <rect x="75" y="5" width="20" height="20" fill="#ffffff"/>
+              <rect x="79" y="9" width="12" height="12" fill="#EA4335"/>
+              
+              <rect x="0" y="70" width="30" height="30" fill="#121317"/>
+              <rect x="5" y="75" width="20" height="20" fill="#ffffff"/>
+              <rect x="9" y="79" width="12" height="12" fill="#34A853"/>
+              
+              <rect x="36" y="8" width="8" height="8" fill="#121317"/>
+              <rect x="48" y="8" width="14" height="6" fill="#121317"/>
+              <rect x="36" y="22" width="6" height="14" fill="#121317"/>
+              <rect x="46" y="20" width="16" height="16" fill="#FBBC04"/>
+              <rect x="8" y="36" width="14" height="8" fill="#121317"/>
+              <rect x="8" y="50" width="8" height="14" fill="#121317"/>
+              <rect x="22" y="44" width="14" height="6" fill="#121317"/>
+              <rect x="24" y="56" width="6" height="8" fill="#121317"/>
+              
+              <rect x="36" y="42" width="28" height="20" fill="#121317"/>
+              <rect x="40" y="46" width="20" height="12" fill="#ffffff"/>
+              <circle cx="50" cy="52" r="4" fill="#4285F4"/>
+              
+              <rect x="70" y="36" width="8" height="18" fill="#121317"/>
+              <rect x="84" y="42" width="12" height="6" fill="#121317"/>
+              <rect x="76" y="58" width="18" height="8" fill="#121317"/>
+              <rect x="36" y="72" width="8" height="22" fill="#121317"/>
+              <rect x="50" y="68" width="14" height="8" fill="#121317"/>
+              <rect x="48" y="82" width="16" height="12" fill="#121317"/>
+              <rect x="70" y="72" width="24" height="8" fill="#121317"/>
+              <rect x="78" y="86" width="16" height="8" fill="#121317"/>
+            </svg>
+          </div>
+          <span class="text-[11px] font-mono text-on-surface-variant mt-2.5">Scan with phone camera or WhatsApp</span>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="w-full flex flex-col gap-2.5">
+          <a href="https://chat.whatsapp.com/HsvMXSnPBqx7w7RLJCtUc8?mode=wwt" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-6 rounded-2xl bg-gradient-to-r from-google-green to-[#278640] text-white font-display font-bold text-sm shadow-[0_0_20px_rgba(52,168,83,0.35)] hover:shadow-[0_0_25px_rgba(52,168,83,0.55)] transition-all flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-[20px]">forum</span>
+            <span>Open WhatsApp Community</span>
+          </a>
+
+          <button id="copy-invite-link-btn" class="w-full py-2.5 px-4 rounded-xl bg-surface-container border border-surface-container-highest text-on-surface text-xs font-mono font-medium hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-[16px]">content_copy</span>
+            <span>Copy Invite Link</span>
+          </button>
+          
+          <div id="copy-toast-msg" class="hidden text-xs text-google-green font-mono pt-1">
+            ✓ Invite link copied to clipboard!
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top-btn" class="opacity-0 pointer-events-none scale-90" title="Back to Top" aria-label="Back to Top">
+    <span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+  </button>
+
+  <!-- Main JavaScript App -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

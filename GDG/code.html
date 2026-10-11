@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html class="dark" lang="en" style=""><svg class="inline-defs-container" aria-hidden="true"
+  style="position:absolute;width:0;height:0;overflow:hidden"></svg>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap"
+    rel="stylesheet">
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main>:first-child {
+        margin-top: 0 !important;
+      }
+
+      main>:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script
+    id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-tint": "#b5c4ff", "on-error-container": "#ffdad6", "secondary-fixed-dim": "#d0bcff", "surface-container": "#1f1f24", "on-tertiary": "#003914", "on-secondary": "#3c0091", "primary-fixed": "#dbe1ff", "surface-container-high": "#292a2e", "on-secondary-container": "#c4abff", "on-background": "#e3e2e8", "surface-container-highest": "#343439", "on-primary": "#00297b", "primary-container": "#648aff", "secondary-container": "#571bc1", "surface-variant": "#343439", "on-tertiary-fixed-variant": "#005320", "error": "#ffb4ab", "on-secondary-fixed": "#23005c", "tertiary-fixed": "#89fa9b", "inverse-surface": "#e3e2e8", "error-container": "#93000a", "on-error": "#690005", "tertiary": "#6ddd81", "inverse-on-surface": "#2f3035", "on-tertiary-fixed": "#002108", "background": "#121317", "surface-bright": "#38393e", "surface-dim": "#121317", "outline-variant": "#434654", "on-surface": "#e3e2e8", "on-secondary-fixed-variant": "#5516be", "tertiary-container": "#30a550", "on-primary-fixed-variant": "#003cac", "surface": "#121317", "surface-container-low": "#1a1b20", "primary-fixed-dim": "#b5c4ff", "on-primary-container": "#00236c", "on-tertiary-container": "#003210", "inverse-primary": "#1953d6", "secondary-fixed": "#e9ddff", "primary": "#b5c4ff", "on-surface-variant": "#c3c5d7", "on-primary-fixed": "#00164d", "secondary": "#d0bcff", "outline": "#8d90a0", "surface-container-lowest": "#0d0e12", "tertiary-fixed-dim": "#6ddd81" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin": "3rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "space-md": "1rem", "space-sm": "0.5rem", "gutter": "1.5rem", "space-2xl": "4rem" }, "fontFamily": { "label-sm": ["Inter"], "body-md": ["Inter"], "label-code": ["JetBrains Mono"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "display-lg": ["Plus Jakarta Sans"] } } } };</script>
+</head>
+
+<body
+  class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+  <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-surface-container-highest/40">
+    <div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md">
+      <div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" href="#">
+          <div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center p-0.5"><img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpv-xC1_w0DiZaq74-KmkecotOXDFFoNQWrAFdEjSrNSz4xMzyex5ZoiXK8943mmOKziR1uvW8ozKKDP3yQB6g3CXvG_x4z-ZFUlmgfNttEERKQenarvHfwPTJQ_RaPpv1RKYVHzAo1bnEiY-OmafXvMsvKWZNjnUkAigbW9F6yKt-FkRrH5ca3XvzLFj15uQ02JzFc4Nk3l2O66olnS9z7DOxXurKjBQSrlhpdKrr_K6EX6pxeO73zg"
+              alt="GDG Logo" class="w-8 h-8 object-contain rounded-full"></div>
+          <div class="flex flex-col"><span
+              class="font-title-lg text-title-lg tracking-tight text-on-surface group-hover:text-primary transition-colors">GDG
+              ITER</span><span class="font-label-code text-[11px] text-on-surface-variant tracking-wider uppercase">SOA
+              University Chapter</span></div>
+        </a></div>
+      <nav
+        class="hidden lg:flex items-center gap-space-xs bg-surface-container-lowest/70 backdrop-blur-md px-space-sm py-1.5 rounded-full">
+        <a class="px-space-md py-1.5 transition-all bg-surface-container-high text-primary font-bold rounded-full"
+          href="#about">About</a><a
+          class="px-space-md py-1.5 rounded-full font-label-sm text-on-surface-variant hover:text-on-surface"
+          href="#timeline">Timeline</a><a
+          class="px-space-md py-1.5 rounded-full font-label-sm text-on-surface-variant hover:text-on-surface"
+          href="#events">Events</a><a
+          class="px-space-md py-1.5 rounded-full font-label-sm text-on-surface-variant hover:text-on-surface"
+          href="#tracks">Tech Tracks</a><a
+          class="px-space-md py-1.5 rounded-full font-label-sm text-on-surface-variant hover:text-on-surface"
+          href="#impact">Highlights</a></nav>
+      <div class="flex items-center gap-space-md"><a
+          class="px-space-lg py-2.5 rounded-full font-label-sm text-on-primary bg-gradient-to-r from-primary-container to-secondary-container shadow-[0_0_20px_rgba(100,138,255,0.4)]"
+          href="#join">Join Community</a></div>
+    </div>
+  </header>
+  <main class="w-full pt-20 bg-surface">
+    <div class="flex flex-col w-full">
+      <!-- HERO SECTION WITH BACKGROUND IMAGE & ORGANIC MASK BANNER -->
+      <section class="relative w-full overflow-hidden -mt-20 pt-32 pb-space-2xl bg-surface-container-lowest">
+        <div class="absolute inset-0 pointer-events-none overflow-hidden">
+          <div
+            class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(100,138,255,0.15),transparent_70%)]">
+          </div>
+          <div
+            class="absolute inset-0 bg-[linear-gradient(to_right,#43465415_1px,transparent_1px),linear-gradient(to_bottom,#43465415_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_35%,#000_50%,transparent_100%)]">
+          </div>
+          <div
+            class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[280px] bg-gradient-to-r from-[#4285F4]/20 via-[#EA4335]/15 to-[#34A853]/20 blur-3xl rounded-full opacity-60">
+          </div>
+          <div class="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-surface to-transparent"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-gutter flex flex-col items-center text-center z-10">
+          <div
+            class="inline-flex items-center gap-space-sm px-4 py-1.5 rounded-full bg-surface-container-high/80 border border-surface-container-highest/60 backdrop-blur-xl shadow-lg mb-6">
+            <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span
+              class="font-label-code text-[12px] text-primary tracking-wide">SOA University • Official Campus
+              Chapter</span></div>
+          <div class="relative my-4 flex flex-col items-center justify-center">
+            <!-- 3D PERSPECTIVE WRAPPER WITH INTERACTIVE GYROSCOPIC TILT -->
+            <div id="hero-emblem-3d-wrapper" class="relative p-1 md:p-3 select-none" style="perspective: 1200px;">
+              <!-- AMBIENT NEON GLOW AURORA BEHIND EMBLEM -->
+              <div
+                class="absolute inset-0 -inset-x-8 bg-gradient-to-r from-[#4285F4]/30 via-[#EA4335]/25 via-[#FBBC04]/25 to-[#34A853]/30 blur-2xl rounded-full opacity-70 pointer-events-none transform animate-pulse">
+              </div>
+
+              <!-- 3D RIG CARD (Transforms with cursor movement and ambient float) -->
+              <div id="hero-emblem-card"
+                class="relative flex flex-col md:flex-row items-center gap-6 md:gap-8 px-8 py-6 md:px-12 md:py-7 rounded-3xl border border-surface-container-highest/70 backdrop-blur-2xl transition-all duration-200 ease-out cursor-pointer group"
+                style="transform-style: preserve-3d; background: linear-gradient(135deg, rgba(31, 31, 36, 0.92) 0%, rgba(20, 20, 24, 0.95) 50%, rgba(26, 27, 32, 0.9) 100%); box-shadow: rgba(0, 0, 0, 0.8) 0px 25px 60px -12px, rgba(66, 133, 244, 0.22) 0px 0px 40px 2px, rgba(255, 255, 255, 0.15) 0px 1px 1px 0px inset; transform: rotateX(-2.13142deg) rotateY(3.92773deg) translateZ(-1.94645px);">
+
+                <!-- DYNAMIC LIGHT SHEEN / SHIMMER REFLECTION OVERLAY -->
+                <div id="hero-emblem-glare"
+                  class="absolute inset-0 rounded-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style="background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.12) 0%, transparent 65%); transform: translateZ(15px);">
+                </div>
+
+                <!-- 3D VOLUMETRIC GOOGLE BRACKETS LOGO < > -->
+                <div class="relative flex items-center justify-center shrink-0"
+                  style="transform-style: preserve-3d; transform: translateZ(45px);">
+                  <!-- Ambient Orbiting 4-Color Neon Particles -->
+                  <span
+                    class="absolute -top-2 -left-2 w-2 h-2 rounded-full bg-[#EA4335] shadow-[0_0_12px_#EA4335] animate-ping"></span>
+                  <span
+                    class="absolute -bottom-2 -left-1 w-2.5 h-2.5 rounded-full bg-[#4285F4] shadow-[0_0_12px_#4285F4] animate-pulse"></span>
+                  <span
+                    class="absolute -top-1 -right-2 w-2.5 h-2.5 rounded-full bg-[#34A853] shadow-[0_0_12px_#34A853] animate-pulse"></span>
+                  <span
+                    class="absolute -bottom-2 -right-1 w-2 h-2 rounded-full bg-[#FBBC04] shadow-[0_0_12px_#FBBC04] animate-ping"></span>
+
+                  <!-- Layered 3D Multi-Pass SVG Brackets -->
+                  <div class="relative w-20 h-20 md:w-24 md:h-24 flex items-center justify-center"
+                    style="filter: drop-shadow(0 14px 18px rgba(0,0,0,0.65)) drop-shadow(0 0 16px rgba(66,133,244,0.4)); transform: translateZ(35px);">
+                    <svg viewBox="0 0 160 160" class="w-full h-full drop-shadow-2xl" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" style="transform: translateZ(20px);">
+                      <defs>
+                        <filter id="volumetric-glow" x="-20%" y="-20%" width="140%" height="140%">
+                          <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.6">
+                          </feDropShadow>
+                        </filter>
+                        <linearGradient id="bracket-red-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stop-color="#FF5252"></stop>
+                          <stop offset="100%" stop-color="#D93025"></stop>
+                        </linearGradient>
+                        <linearGradient id="bracket-blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stop-color="#4285F4"></stop>
+                          <stop offset="100%" stop-color="#1A73E8"></stop>
+                        </linearGradient>
+                        <linearGradient id="bracket-green-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stop-color="#34A853"></stop>
+                          <stop offset="100%" stop-color="#188038"></stop>
+                        </linearGradient>
+                        <linearGradient id="bracket-yellow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stop-color="#FBBC04"></stop>
+                          <stop offset="100%" stop-color="#F29900"></stop>
+                        </linearGradient>
+                      </defs>
+                      <g filter="url(#volumetric-glow)">
+                        <path d="M68 36 L24 80 L68 124" stroke="url(#bracket-blue-grad)" stroke-width="18"
+                          stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M68 36 L44 60" stroke="url(#bracket-red-grad)" stroke-width="18"
+                          stroke-linecap="round"></path>
+                        <path d="M92 36 L136 80 L92 124" stroke="url(#bracket-yellow-grad)" stroke-width="18"
+                          stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M92 36 L116 60" stroke="url(#bracket-green-grad)" stroke-width="18"
+                          stroke-linecap="round"></path>
+                      </g>
+                      <path d="M68 36 L24 80 L68 124" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" opacity="0.35"></path>
+                      <path d="M92 36 L136 80 L92 124" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" opacity="0.35"></path>
+                    </svg></div>
+                </div>
+
+                <!-- 3D LAYERED TYPOGRAPHY WITH RELIEF DEPTH -->
+                <div class="flex flex-col items-center md:items-start text-center md:text-left"
+                  style="transform-style: preserve-3d; transform: translateZ(30px);">
+                  <!-- Top Chapter Label & Google Brand Colors Accent Indicator -->
+                  <div class="flex items-center gap-2 mb-1.5" style="transform: translateZ(10px);">
+                    <div
+                      class="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-highest/80 border border-surface-container-highest shadow-sm">
+                      <span class="w-2 h-2 rounded-full bg-[#4285F4]"></span>
+                      <span class="w-2 h-2 rounded-full bg-[#EA4335]"></span>
+                      <span class="w-2 h-2 rounded-full bg-[#FBBC04]"></span>
+                      <span class="w-2 h-2 rounded-full bg-[#34A853]"></span>
+                      <span
+                        class="font-label-code text-[11px] text-primary-fixed uppercase tracking-wider font-semibold ml-1">Google
+                        Developer Groups</span>
+                    </div>
+                  </div>
+
+                  <!-- Main Headline in 3D Relief -->
+                  <div class="flex items-center gap-2"
+                    style="transform: translateZ(25px); text-shadow: 0 4px 14px rgba(0,0,0,0.6);">
+                    <h2
+                      class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-on-surface tracking-tight font-display-lg">
+                      Google Developer Group
+                    </h2>
+                  </div>
+
+                  <!-- Subtitle & Campus Tagging -->
+                  <div class="flex flex-wrap items-center justify-center md:justify-start gap-2.5 mt-1.5"
+                    style="transform: translateZ(18px);">
+                    <span
+                      class="font-label-code text-[12px] px-2.5 py-0.5 rounded-full bg-primary-container/20 border border-primary/30 text-primary font-bold shadow-[0_0_12px_rgba(100,138,255,0.3)]">
+                      On Campus
+                    </span>
+                    <span class="font-label-code text-[13px] text-on-surface-variant font-medium tracking-wide">
+                      Institute of Technical Education and Research
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script>
+              (function setupHero3DEmblem() {
+                const wrapper = document.getElementById('hero-emblem-3d-wrapper');
+                const card = document.getElementById('hero-emblem-card');
+                const glare = document.getElementById('hero-emblem-glare');
+                if (!wrapper || !card) return;
+
+                let isHovered = false;
+                let floatTime = 0;
+
+                // Continuous smooth ambient floating when idle
+                function ambientFloat() {
+                  if (!isHovered) {
+                    floatTime += 0.03;
+                    const tiltY = Math.sin(floatTime) * 4;
+                    const tiltX = Math.cos(floatTime * 0.8) * 3;
+                    const liftZ = Math.sin(floatTime * 1.2) * 5;
+                    card.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateZ(${liftZ}px)`;
+                  }
+                  requestAnimationFrame(ambientFloat);
+                }
+                requestAnimationFrame(ambientFloat);
+
+                // Interactive cursor tracking 3D tilt response
+                wrapper.addEventListener('mouseenter', () => {
+                  isHovered = true;
+                  card.style.transition = 'transform 0.1s ease-out';
+                });
+
+                wrapper.addEventListener('mousemove', (e) => {
+                  const rect = wrapper.getBoundingClientRect();
+                  const x = e.clientX - rect.left; // x position within element.
+                  const y = e.clientY - rect.top;  // y position within element.
+
+                  const centerX = rect.width / 2;
+                  const centerY = rect.height / 2;
+
+                  const rotateX = -((y - centerY) / centerY) * 16; // Tilt up/down
+                  const rotateY = ((x - centerX) / centerX) * 18;  // Tilt left/right
+
+                  card.style.transform = `rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateZ(12px) scale(1.02)`;
+
+                  if (glare) {
+                    const glareX = (x / rect.width) * 100;
+                    const glareY = (y / rect.height) * 100;
+                    glare.style.background = `radial-gradient(circle at ${glareX}% ${glareY}%, rgba(255,255,255,0.18) 0%, transparent 60%)`;
+                  }
+                });
+
+                wrapper.addEventListener('mouseleave', () => {
+                  isHovered = false;
+                  card.style.transition = 'transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1)';
+                  card.style.transform = 'rotateX(0deg) rotateY(0deg) translateZ(0px) scale(1)';
+                });
+              })();
+            </script>
+          </div>
+          <h1 class="mt-6 font-display-lg text-4xl md:text-6xl font-extrabold text-on-surface tracking-tight max-w-4xl">
+            Connect. Learn. <span
+              class="bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent">Build
+              Together.</span></h1>
+          <p class="mt-space-md font-body-lg text-lg text-on-surface-variant max-w-2xl leading-relaxed">The premier
+            developer ecosystem at the Institute of Technical Education &amp; Research (SOA), empowering student
+            engineers through high-impact Google technologies.</p>
+          <div class="mt-space-xl flex flex-wrap items-center justify-center gap-space-md"><a
+              class="inline-flex items-center gap-2 px-space-xl py-3 rounded-full font-label-sm text-on-primary bg-gradient-to-r from-primary-container to-secondary-container shadow-lg"
+              href="#events"><span class="material-symbols-outlined text-[18px]">event_available</span><span
+                class="">Explore Upcoming Events</span></a><a
+              class="inline-flex items-center gap-2 px-space-xl py-3 rounded-full font-label-sm text-on-surface bg-surface-container-high/80 hover:bg-surface-container-highest backdrop-blur-md"
+              href="#join"><span class="material-symbols-outlined text-[18px]">groups</span><span class="">Join Discord
+                Community</span></a></div>
+          <div class="mt-space-2xl grid grid-cols-2 md:grid-cols-4 gap-space-md w-full max-w-5xl">
+            <div
+              class="flex flex-col items-center p-space-lg rounded-xl bg-surface-container/70 backdrop-blur-xl border border-surface-container-highest/40">
+              <span class="text-3xl md:text-4xl font-bold text-primary">1,500+</span><span
+                class="text-[12px] text-on-surface-variant mt-1 uppercase font-label-code">Active Members</span></div>
+            <div
+              class="flex flex-col items-center p-space-lg rounded-xl bg-surface-container/70 backdrop-blur-xl border border-surface-container-highest/40">
+              <span class="text-3xl md:text-4xl font-bold text-secondary">40+</span><span
+                class="text-[12px] text-on-surface-variant mt-1 uppercase font-label-code">Tech Workshops</span></div>
+            <div
+              class="flex flex-col items-center p-space-lg rounded-xl bg-surface-container/70 backdrop-blur-xl border border-surface-container-highest/40">
+              <span class="text-3xl md:text-4xl font-bold text-tertiary">12</span><span
+                class="text-[12px] text-on-surface-variant mt-1 uppercase font-label-code">Hackathons &amp;
+                Sprints</span></div>
+            <div
+              class="flex flex-col items-center p-space-lg rounded-xl bg-surface-container/70 backdrop-blur-xl border border-surface-container-highest/40">
+              <span class="text-3xl md:text-4xl font-bold text-primary-fixed">4</span><span
+                class="text-[12px] text-on-surface-variant mt-1 uppercase font-label-code">Cloud Mentors</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT GDG ITER SECTION -->
+      <section class="w-full py-space-2xl bg-surface" id="about">
+        <div class="max-w-7xl mx-auto px-gutter">
+          <div class="text-center max-w-3xl mx-auto mb-space-xl">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-code text-[12px] mb-space-sm">
+              <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>CHAPTER OVERVIEW • ACTIVE</div>
+            <h2 class="text-3xl md:text-4xl font-bold text-on-surface uppercase tracking-tight mb-space-sm">WHAT IS
+              GDGOC?</h2>
+            <p class="text-base md:text-lg text-on-surface-variant leading-relaxed">At GDG on Campus ITER, we are more
+              than just a community — we are a movement of dreamers, builders, and innovators. Powered by Google
+              Developers, we stand at the intersection of ideas and impact, bringing together students who dare to think
+              beyond the ordinary.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mb-space-2xl">
+            <div
+              class="p-space-xl rounded-2xl bg-surface-container-low border border-surface-container-highest/60 hover:border-primary/40 transition-all text-center">
+              <div
+                class="w-14 h-14 rounded-2xl bg-primary-container/20 mx-auto flex items-center justify-center text-primary mb-space-md">
+                <span class="material-symbols-outlined text-[30px]">terminal</span></div>
+              <h3 class="text-xl font-bold text-on-surface mb-2">Workshops</h3>
+              <p class="text-sm text-on-surface-variant">Hands-on workshops on various Google technologies like Web,
+                Android, Cloud, AI/ML, and more.</p>
+            </div>
+            <div
+              class="p-space-xl rounded-2xl bg-surface-container-low border border-surface-container-highest/60 hover:border-error/40 transition-all text-center">
+              <div
+                class="w-14 h-14 rounded-2xl bg-error/20 mx-auto flex items-center justify-center text-error mb-space-md">
+                <span class="material-symbols-outlined text-[30px]">groups</span></div>
+              <h3 class="text-xl font-bold text-on-surface mb-2">Community</h3>
+              <p class="text-sm text-on-surface-variant">Connect with like-minded students, share knowledge, and build a
+                strong professional network.</p>
+            </div>
+            <div
+              class="p-space-xl rounded-2xl bg-surface-container-low border border-surface-container-highest/60 hover:border-tertiary/40 transition-all text-center">
+              <div
+                class="w-14 h-14 rounded-2xl bg-tertiary-container/30 mx-auto flex items-center justify-center text-tertiary mb-space-md">
+                <span class="material-symbols-outlined text-[30px]">lightbulb</span></div>
+              <h3 class="text-xl font-bold text-on-surface mb-2">Projects</h3>
+              <p class="text-sm text-on-surface-variant">Apply your skills by working on real-world projects and
+                solutions for local community problems.</p>
+            </div>
+          </div>
+          <div
+            class="p-space-xl md:p-space-2xl rounded-2xl bg-surface-container-low border border-surface-container-highest/60 shadow-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+              <div class="lg:col-span-7 space-y-space-md">
+                <div
+                  class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-code text-[12px]">
+                  <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>DISCOVER BENEFITS</div>
+                <h3 class="text-2xl md:text-3xl font-bold text-on-surface">Why Join Us?</h3>
+                <ul class="space-y-space-sm pt-space-xs">
+                  <li class="flex items-center gap-space-sm"><span
+                      class="w-5 h-5 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center shrink-0"><span
+                        class="material-symbols-outlined text-[14px]">check</span></span><span
+                      class="text-sm text-on-surface">Access to Google Developer resources</span></li>
+                  <li class="flex items-center gap-space-sm"><span
+                      class="w-5 h-5 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center shrink-0"><span
+                        class="material-symbols-outlined text-[14px]">check</span></span><span
+                      class="text-sm text-on-surface">Hands-on coding workshops</span></li>
+                  <li class="flex items-center gap-space-sm"><span
+                      class="w-5 h-5 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center shrink-0"><span
+                        class="material-symbols-outlined text-[14px]">check</span></span><span
+                      class="text-sm text-on-surface">Career growth and mentorship</span></li>
+                  <li class="flex items-center gap-space-sm"><span
+                      class="w-5 h-5 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center shrink-0"><span
+                        class="material-symbols-outlined text-[14px]">check</span></span><span
+                      class="text-sm text-on-surface">Hackathons and coding competitions</span></li>
+                  <li class="flex items-center gap-space-sm"><span
+                      class="w-5 h-5 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center shrink-0"><span
+                        class="material-symbols-outlined text-[14px]">check</span></span><span
+                      class="text-sm text-on-surface">Global networking opportunities</span></li>
+                </ul>
+              </div>
+              <div class="lg:col-span-5">
+                <div
+                  class="relative rounded-xl overflow-hidden bg-surface-container border border-surface-container-highest/50 h-72">
+                  <img alt="GDG ITER Community Group Photo" class="w-full h-full object-cover object-center"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoI0qonvG_YMd3OCUWsjE8E2fgI9hwuGtSx3Sk2enPxr2zz8cQLyMW_Qc9W23F00pSPIgWTQD_fC7TgXSMaZP4lZQmkWuGh7XrVrhfNnyXAaNlt59pCtjcHxN11zWl0yqeNrTlzSfX2YFLzBENHeQIi-mBiqu_fXcC0SUThKOVxGZTh1UyNG_Wo1_cgqlzKXpEJ-uG36zpR4zzxeBAkUpIUtKRIWUoeoCg19--gUMUacoX8NvhceCLfA"
+                    style="filter: contrast(1.05) brightness(1.02);">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent flex items-end p-space-md">
+                    <span class="font-label-code text-[11px] text-on-surface uppercase">Official ITER Community
+                      Chapter</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4-STEP ZIG-ZAG TIMELINE WITH SCROLL-FLOWING 3D GDG LOGO RUNNER -->
+      <section
+        class="relative w-full py-space-2xl bg-surface border-y border-surface-container-highest/40 overflow-hidden"
+        id="timeline">
+        <div
+          class="absolute top-1/4 -left-40 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none">
+        </div>
+        <div
+          class="absolute bottom-1/4 -right-40 w-96 h-96 bg-tertiary-container/10 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-gutter relative z-10">
+          <div class="text-center mb-space-2xl">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high font-label-code text-[11px] text-primary uppercase tracking-widest mb-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+              Community Roadmap &amp; Milestones
+            </div>
+            <h2 class="text-4xl md:text-6xl font-extrabold text-on-surface uppercase tracking-widest">TIMELINE</h2>
+            <div
+              class="h-1 w-24 mx-auto mt-3 bg-gradient-to-r from-primary via-error via-secondary to-tertiary rounded-full">
+            </div>
+          </div>
+
+          <!-- Timeline Interactive Container -->
+          <div class="relative w-full max-w-5xl mx-auto" id="timeline-flow-wrapper" style="min-height: 1400px;">
+
+            <!-- Responsive SVG Zig-Zag Trace Path -->
+            <svg id="timeline-svg-canvas" class="absolute inset-0 w-full h-full pointer-events-none hidden md:block"
+              viewBox="0 0 900 1450" preserveAspectRatio="none" fill="none">
+              <defs>
+                <linearGradient id="solidTraceGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#4285F4"></stop>
+                  <stop offset="33%" stop-color="#EA4335"></stop>
+                  <stop offset="66%" stop-color="#FBBC04"></stop>
+                  <stop offset="100%" stop-color="#34A853"></stop>
+                </linearGradient>
+                <filter id="puckGlowFilter" x="-40%" y="-40%" width="180%" height="180%">
+                  <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+                  <feMerge>
+                    <feMergeNode in="blur"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- Base subtle guide dashed path connecting milestones 1 -> 2 -> 3 -> 4 -->
+              <path id="timeline-guide-path"
+                d="M 140 100 C 140 240, 260 380, 480 390 C 720 400, 780 500, 780 620 C 780 750, 480 780, 240 850 C 100 900, 120 1060, 240 1160 C 360 1260, 680 1220, 780 1340"
+                stroke="#434654" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 12" stroke-opacity="0.4"
+                fill="none"></path>
+
+              <!-- Dynamic Solid Traced Path (unfurls seamlessly as user scrolls) -->
+              <path id="timeline-active-path"
+                d="M 140 100 C 140 240, 260 380, 480 390 C 720 400, 780 500, 780 620 C 780 750, 480 780, 240 850 C 100 900, 120 1060, 240 1160 C 360 1260, 680 1220, 780 1340"
+                stroke="url(#solidTraceGradient)" stroke-width="5" stroke-linecap="round" fill="none"
+                style="filter: drop-shadow(rgba(66, 133, 244, 0.5) 0px 0px 10px); stroke-dasharray: 2499.92; stroke-dashoffset: 2499.92;">
+              </path>
+            </svg>
+
+            <!-- 3D FLOATING GDG LOGO RUNNER PUCK (Flows, tilts & slides down on scroll) -->
+            <div id="gdg-runner-puck"
+              class="hidden md:flex absolute z-30 top-0 left-0 items-center justify-center pointer-events-none will-change-transform"
+              style="transform: translate3d(110px, 70px, 0px); perspective: 800px;">
+              <div id="gdg-puck-card"
+                class="relative flex items-center justify-center p-3 rounded-2xl bg-surface-container-highest/95 border-2 border-primary/60 backdrop-blur-xl shadow-[0_12px_32px_rgba(0,0,0,0.8),0_0_24px_rgba(66,133,244,0.6)] transform transition-transform duration-75"
+                style="transform: rotate(22.3536deg) rotateX(15deg) rotateY(21.9989deg) scale(1);">
+                <div class="w-9 h-9 flex items-center justify-center"><img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4XkSyFsqxBMNuWHOLiCll_BtIj4WIvc0hfhQlJ3b3VLi2HXWrxBed1cnEBPVG_E4mhTiLt8RxE7uuNE4uNaceJ_ATSAoidUnfCs4w4WH9_0Ye4UeAv9bhdODEDyXJmgwE6njI-Cvr2jvT6hAaYFhmu7W1OOBeLp4lkx89CgDW4KcVdGv13KQaRG5ia6SBA4Y5l7UiH3kv30TOsg-pIPPDHmyjV0R61FoSmcdYETygDl9CeVY5uYEjyQ"
+                    alt="GDG Logo" class="w-full h-full object-contain"></div><span
+                  class="absolute -bottom-1 -right-1 w-3 h-3 rounded-full bg-tertiary shadow-[0_0_10px_#34A853] animate-pulse"></span>
+              </div>
+            </div>
+
+            <!-- TIMELINE MILESTONE 1 (Tech Adoption - Screenshot 5) -->
+            <div class="relative py-12 md:py-16 timeline-step z-10" data-step="1">
+              <div class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12">
+                <!-- Marker Illustration & Number '1' -->
+                <div class="flex items-center gap-4 shrink-0">
+                  <!-- Sketch pen marker illustration -->
+                  <svg class="w-12 h-16 text-on-surface transform -rotate-12 filter drop-shadow-lg" viewBox="0 0 40 60"
+                    fill="none">
+                    <rect x="13" y="4" width="14" height="28" rx="2" fill="#292A2E" stroke="#8D90A0" stroke-width="1.8">
+                    </rect>
+                    <rect x="15" y="8" width="10" height="20" rx="1" fill="#1F1F24"></rect>
+                    <line x1="16" y1="12" x2="24" y2="12" stroke="#434654" stroke-width="1.2"></line>
+                    <line x1="16" y1="18" x2="24" y2="18" stroke="#434654" stroke-width="1.2"></line>
+                    <line x1="16" y1="24" x2="24" y2="24" stroke="#434654" stroke-width="1.2"></line>
+                    <rect x="12" y="32" width="16" height="6" rx="1" fill="#4285F4"></rect>
+                    <path d="M 14 38 L 26 38 L 21 54 Z" fill="#8D90A0" stroke="#E3E2E8" stroke-width="1"></path>
+                    <polygon points="19,51 23,51 21,55" fill="#4285F4"></polygon>
+                  </svg>
+                  <span
+                    class="text-[90px] md:text-[130px] font-bold text-on-surface leading-none select-none tracking-tighter">1</span>
+                </div>
+                <!-- Content Block -->
+                <div
+                  class="flex-1 max-w-2xl bg-surface-container-low/80 md:bg-transparent p-6 md:p-0 rounded-2xl md:rounded-none border md:border-none border-surface-container-highest/60 backdrop-blur-sm">
+                  <h3 class="text-2xl md:text-4xl font-bold text-on-surface tracking-tight mb-2">Tech Adoption</h3>
+                  <div class="w-full border-b border-dashed border-outline-variant/70 mb-3"></div>
+                  <div class="text-[16px] md:text-[18px] text-primary font-medium tracking-wide mb-2">Google
+                    Technologies • Community Penetration</div>
+                  <p class="text-[15px] md:text-[16px] text-on-surface-variant leading-relaxed">Increase awareness and
+                    hands-on adoption of Google Cloud, Android, Web, and AI/ML technologies across the student
+                    community.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- TIMELINE MILESTONE 2 (Skill Building - Screenshot 4) -->
+            <div class="relative py-12 md:py-20 timeline-step z-10" data-step="2">
+              <div class="flex flex-col md:flex-row items-start md:items-center justify-end gap-6 md:gap-12">
+                <div class="md:ml-auto flex flex-col md:flex-row-reverse items-start md:items-center gap-6 md:gap-10">
+                  <div class="flex items-center gap-4 shrink-0">
+                    <span
+                      class="text-[90px] md:text-[130px] font-bold text-on-surface leading-none select-none tracking-tighter">2</span>
+                  </div>
+                  <!-- Content Block -->
+                  <div
+                    class="max-w-xl bg-surface-container-low/80 md:bg-transparent p-6 md:p-0 rounded-2xl md:rounded-none border md:border-none border-surface-container-highest/60 backdrop-blur-sm">
+                    <h3 class="text-2xl md:text-4xl font-bold text-on-surface tracking-tight mb-2">Skill Building</h3>
+                    <div class="w-full border-b border-dashed border-outline-variant/70 mb-3"></div>
+                    <div class="text-[16px] md:text-[18px] text-error font-medium tracking-wide mb-2">Workshops •
+                      Projects • Hackathons</div>
+                    <p class="text-[15px] md:text-[16px] text-on-surface-variant leading-relaxed">Equip students with
+                      practical, industry-relevant skills through guided workshops, study jams, real-world projects, and
+                      competitive hackathons.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TIMELINE MILESTONE 3 (Community & Network Growth - Screenshot 3) -->
+            <div class="relative py-12 md:py-20 timeline-step z-10" data-step="3">
+              <div class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12">
+                <div class="flex items-center gap-4 shrink-0">
+                  <span
+                    class="text-[90px] md:text-[130px] font-bold text-on-surface leading-none select-none tracking-tighter">3</span>
+                </div>
+                <!-- Content Block -->
+                <div
+                  class="flex-1 max-w-2xl bg-surface-container-low/80 md:bg-transparent p-6 md:p-0 rounded-2xl md:rounded-none border md:border-none border-surface-container-highest/60 backdrop-blur-sm">
+                  <h3 class="text-2xl md:text-4xl font-bold text-on-surface tracking-tight mb-2">Community &amp; Network
+                    Growth</h3>
+                  <div class="w-full border-b border-dashed border-outline-variant/70 mb-3"></div>
+                  <div class="text-[16px] md:text-[18px] text-secondary font-medium tracking-wide mb-2">Alumni •
+                    Industry • Students</div>
+                  <p class="text-[15px] md:text-[16px] text-on-surface-variant leading-relaxed">Build a strong ecosystem
+                    connecting students with alumni, industry mentors, and tech leaders to foster collaboration,
+                    mentorship, and long-term opportunities.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- TIMELINE MILESTONE 4 (Official Recognition & Impact - Screenshot 2) -->
+            <div class="relative py-12 md:py-20 timeline-step z-10" data-step="4">
+              <div class="flex flex-col md:flex-row items-start md:items-center justify-end gap-6 md:gap-12">
+                <div class="md:ml-auto flex flex-col md:flex-row-reverse items-start md:items-center gap-6 md:gap-10">
+                  <div class="flex items-center gap-4 shrink-0">
+                    <span
+                      class="text-[90px] md:text-[130px] font-bold text-on-surface leading-none select-none tracking-tighter">4</span>
+                  </div>
+                  <!-- Content Block -->
+                  <div
+                    class="max-w-xl bg-surface-container-low/80 md:bg-transparent p-6 md:p-0 rounded-2xl md:rounded-none border md:border-none border-surface-container-highest/60 backdrop-blur-sm">
+                    <h3 class="text-2xl md:text-4xl font-bold text-on-surface tracking-tight mb-2">Official Recognition
+                      &amp; Impact</h3>
+                    <div class="w-full border-b border-dashed border-outline-variant/70 mb-3"></div>
+                    <div class="text-[16px] md:text-[18px] text-tertiary font-medium tracking-wide mb-2">Institutional
+                      Value • Innovation Culture</div>
+                    <p class="text-[15px] md:text-[16px] text-on-surface-variant leading-relaxed">Establish GDG on
+                      Campus – ITER as a leading, innovation-driven community recognized for impactful events, developer
+                      growth, and contributions to campus tech culture.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH TRACKS -->
+      <section class="w-full py-space-2xl bg-surface-container-lowest" id="tracks">
+        <div class="max-w-7xl mx-auto px-gutter">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+            <div><span
+                class="font-label-code text-label-code text-primary uppercase tracking-widest block mb-2">Architectural
+                Domains</span>
+              <h2 class="text-3xl md:text-4xl font-bold text-on-surface">Tech Tracks &amp; Specializations</h2>
+            </div>
+            <p class="text-sm text-on-surface-variant max-w-md">Structured roadmaps guided by senior student engineers
+              and Google technologies.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+            <div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all"><span
+                class="w-3 h-3 rounded-full bg-primary-container inline-block mb-3 shadow-[0_0_10px_rgba(100,138,255,0.8)]"></span>
+              <h3 class="text-lg font-bold text-on-surface mb-2">Web &amp; Cloud Systems</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed">Scalable serverless microservices, Firebase
+                authentication, Next.js, and high-throughput GCP architecture.</p>
+            </div>
+            <div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all"><span
+                class="w-3 h-3 rounded-full bg-tertiary inline-block mb-3 shadow-[0_0_10px_rgba(109,221,129,0.8)]"></span>
+              <h3 class="text-lg font-bold text-on-surface mb-2">Mobile Engineering</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed">Crafting fluid native and multi-platform
+                experiences with Android Jetpack Compose, Flutter, and Material 3 design.</p>
+            </div>
+            <div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all"><span
+                class="w-3 h-3 rounded-full bg-error inline-block mb-3 shadow-[0_0_10px_rgba(255,180,171,0.8)]"></span>
+              <h3 class="text-lg font-bold text-on-surface mb-2">AI &amp; Machine Learning</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed">Fine-tuning generative multimodal agents via
+                Gemini API, TensorFlow, Keras, and local neural network pipelines.</p>
+            </div>
+            <div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all"><span
+                class="w-3 h-3 rounded-full bg-secondary-fixed inline-block mb-3 shadow-[0_0_10px_rgba(233,221,255,0.8)]"></span>
+              <h3 class="text-lg font-bold text-on-surface mb-2">Open Source &amp; DevOps</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed">Mastering distributed Git workflows, Docker
+                containerization, Kubernetes clusters, and automated CI/CD deployment pipelines.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERACTIVE CALENDAR & EVENTS RECORD -->
+      <section class="w-full py-space-2xl bg-surface" id="events">
+        <div class="max-w-7xl mx-auto px-gutter">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+            <div><span class="font-label-code text-label-code text-primary uppercase tracking-widest block mb-2">Event
+                Hub &amp; Schedule</span>
+              <h2 class="text-3xl md:text-4xl font-bold text-on-surface">Interactive Calendar &amp; All Events</h2>
+            </div>
+            <p class="text-sm text-on-surface-variant max-w-md">Explore campus workshops, hackathons, and our
+              authenticated past records.</p>
+          </div>
+          <div
+            class="mb-space-xl bg-surface-container-low border border-surface-container-highest/60 rounded-2xl p-space-md md:p-space-xl shadow-xl">
+            <div class="flex items-center justify-between pb-space-md border-b border-surface-container-highest/50">
+              <div class="flex items-center gap-space-sm"><span
+                  class="material-symbols-outlined text-primary text-[24px]">calendar_month</span><span
+                  class="text-xl font-bold text-on-surface">May 2026 Schedule</span></div><span
+                class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-label-code text-[12px]">Latest
+                Flagship Event Active</span>
+            </div>
+            <div
+              class="mt-space-md p-space-md rounded-xl bg-surface-container/70 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+              <div class="flex items-center gap-space-sm">
+                <div
+                  class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-bold font-label-code text-lg">
+                  15</div>
+                <div>
+                  <h4 class="text-base font-bold text-on-surface">May 15, 2026 — Decode the Tech</h4>
+                  <p class="text-xs text-on-surface-variant">Technical Trivia, Logic &amp; Cognitive Agility testing
+                    technical problem solving.</p>
+                </div>
+              </div><span
+                class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface text-xs font-label-code">On
+                Bevy Platform</span>
+            </div>
+          </div>
+          <div class="space-y-space-md">
+            <div
+              class="flex flex-col md:flex-row rounded-2xl overflow-hidden bg-surface-container-lowest border border-surface-container-highest/60 shadow-lg">
+              <div class="md:w-56 bg-[#2962ff] p-space-md text-white shrink-0"><span
+                  class="text-[11px] font-label-code uppercase">EVENT DATE</span>
+                <h3 class="text-2xl font-bold mt-1">May 15, 2026</h3>
+              </div>
+              <div class="flex-1 p-space-md bg-surface-container-low flex items-center justify-between">
+                <div><span class="text-xs font-label-code text-primary uppercase">PAST EVENT</span>
+                  <h4 class="text-lg font-bold text-on-surface">Decode the Tech</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">Technical Trivia, Logic &amp; Cognitive Agility
+                    testing technical knowledge and problem solving.</p>
+                </div><span
+                  class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-label-code text-xs">Tech</span>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row rounded-2xl overflow-hidden bg-surface-container-lowest border border-surface-container-highest/60 shadow-lg">
+              <div class="md:w-56 bg-[#d93025] p-space-md text-white shrink-0"><span
+                  class="text-[11px] font-label-code uppercase">EVENT DATE</span>
+                <h3 class="text-2xl font-bold mt-1">Apr 5, 2026</h3>
+              </div>
+              <div class="flex-1 p-space-md bg-surface-container-low flex items-center justify-between">
+                <div><span class="text-xs font-label-code text-error uppercase">PAST EVENT</span>
+                  <h4 class="text-lg font-bold text-on-surface">MayaVyuh: Prompt Engineering Arena</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">Generative AI &amp; Advanced Prompt Engineering
+                    competition.</p>
+                </div><span class="px-3 py-1 rounded-full bg-error/20 text-error font-label-code text-xs">GenAI</span>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row rounded-2xl overflow-hidden bg-surface-container-lowest border border-surface-container-highest/60 shadow-lg">
+              <div class="md:w-56 bg-[#f9ab00] p-space-md text-black shrink-0"><span
+                  class="text-[11px] font-label-code uppercase">EVENT DATE</span>
+                <h3 class="text-2xl font-bold mt-1">Apr 4, 2026</h3>
+              </div>
+              <div class="flex-1 p-space-md bg-surface-container-low flex items-center justify-between">
+                <div><span class="text-xs font-label-code text-secondary uppercase">PAST EVENT</span>
+                  <h4 class="text-lg font-bold text-on-surface">AI Treasure Hunt</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">Flagship fun event combining teamwork, campus
+                    exploration, and problem solving.</p>
+                </div><span
+                  class="px-3 py-1 rounded-full bg-secondary-fixed/20 text-secondary font-label-code text-xs">AI &amp;
+                  Campus</span>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row rounded-2xl overflow-hidden bg-surface-container-lowest border border-surface-container-highest/60 shadow-lg">
+              <div class="md:w-56 bg-[#1e8e3e] p-space-md text-white shrink-0"><span
+                  class="text-[11px] font-label-code uppercase">EVENT DATE</span>
+                <h3 class="text-2xl font-bold mt-1">Dec 20, 2025</h3>
+              </div>
+              <div class="flex-1 p-space-md bg-surface-container-low flex items-center justify-between">
+                <div><span class="text-xs font-label-code text-tertiary uppercase">PAST EVENT</span>
+                  <h4 class="text-lg font-bold text-on-surface">Algorithm Arena - DSA Sprint</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">Master Data Structures and Algorithms with hands-on
+                    problem solving.</p>
+                </div><span
+                  class="px-3 py-1 rounded-full bg-tertiary-container/30 text-tertiary font-label-code text-xs">DSA /
+                  CP</span>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row rounded-2xl overflow-hidden bg-surface-container-lowest border border-surface-container-highest/60 shadow-lg">
+              <div class="md:w-56 bg-[#2962ff] p-space-md text-white shrink-0"><span
+                  class="text-[11px] font-label-code uppercase">EVENT DATE</span>
+                <h3 class="text-2xl font-bold mt-1">Oct 23, 2025</h3>
+              </div>
+              <div class="flex-1 p-space-md bg-surface-container-low flex items-center justify-between">
+                <div><span class="text-xs font-label-code text-primary uppercase">PAST EVENT</span>
+                  <h4 class="text-lg font-bold text-on-surface">Orientation - Reigniting the Sparks</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">Reigniting the developers. This marks the beginning of
+                    a new chapter in the GDGoC journey.</p>
+                </div><span
+                  class="px-3 py-1 rounded-full bg-primary-container/20 text-primary font-label-code text-xs">Community</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REAL PHOTOS IMPACT GALLERY -->
+      <section class="w-full py-space-2xl bg-surface-container-lowest" id="impact">
+        <div class="max-w-7xl mx-auto px-gutter">
+          <div class="mb-space-xl"><span
+              class="font-label-code text-label-code text-primary uppercase tracking-widest block mb-2">Campus
+              Chronicles</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-on-surface">Community Impact in Action</h2>
+            <p class="text-sm text-on-surface-variant mt-2 max-w-xl">A glimpse into the energy, lab coding sprints,
+              speaker sessions, and campus celebrations.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+            <div class="relative rounded-xl overflow-hidden bg-surface-container h-80 group"><img alt="Lab coding"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkNkMjTiHljIJOnV4ayTblrm5j-ZcFUon_RisiMtUJg18KONpBIlvE9E5nrB3skVFvTq8IRa5dZdZ6O2zes4ZuVTOrcVfzsez_1KuIrwtCARNEOM7SYCKTw59e9wiZ_ehdxYCsuefR_-ZXVFTis7G9m8zE-kWV5I9MZLiAgeF0tTevHkSWbTfv4zlAIsj_IGWsJlmbeRi2AoF7VEH_F3VLvaeGz8PtC9Y7di4Xg4b1lUmZlctpnMgGrw">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent flex flex-col justify-end p-space-lg">
+                <span class="font-label-code text-[11px] text-primary">HACKATHONS</span>
+                <h4 class="text-lg font-bold text-on-surface">HackITER Arena</h4>
+                <p class="text-xs text-on-surface-variant">Active student developers shipping functional code together.
+                </p>
+              </div>
+            </div>
+            <div class="relative rounded-xl overflow-hidden bg-surface-container h-80 group"><img
+                alt="Community Team Photo"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQiMG3__mxksZc4oTKqy4CAL5m5DOa8twN7LJhuGYeYbE8SjJnzSWzOgwYoVkcwm0q6ZFR0ecV2uTOzC-jRs00wrYmgV_obP_DgfoYIpqvZdbPn9EozuuXXnFvNEaGHTp6xKboIu8baH8xWKz8w5a3DK38WVS-cPo9o_QaH6X0P0hLMldUfPDh_sWZ1fKsQ2EHlDGC82wotWDtIwoJ84qXSTX3XK8FD-icMCqqVeXITn_ZHhTIq8o7xQ">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent flex flex-col justify-end p-space-lg">
+                <span class="font-label-code text-[11px] text-tertiary">KEYNOTE</span>
+                <h4 class="text-lg font-bold text-on-surface">Community Team Meetups</h4>
+                <p class="text-xs text-on-surface-variant">Sharing insights, guidance, and next-gen technology stacks.
+                </p>
+              </div>
+            </div>
+            <div class="relative rounded-xl overflow-hidden bg-surface-container h-80 group"><img
+                alt="Celebration crowd"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB45IQ8BcUyGF9wCKlkwYXuoPfuwf5MymRasJIES89is_V6BdqQqQy4gja7Q638Dp3W8MsuPV3j6OyU4rPcJqf2yFbI_gE5ANEZSebGcEKMsrIdnBHzJWFuEGi-sqdQIjZ9t5OQDc1vWbfFDZzOzXfnxukvxvBW43VUoP9Peld31iARsBtKDgCkQowhYpButsJUBu_H8FYhgEPB1jvH94kd-bpFJRgl8S6pH21KV5tWS8PRtLKgGS7Djw">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent flex flex-col justify-end p-space-lg">
+                <span class="font-label-code text-[11px] text-secondary">CULTURE &amp; MERCH</span>
+                <h4 class="text-lg font-bold text-on-surface">Study Jams Showcase &amp; Swags</h4>
+                <p class="text-xs text-on-surface-variant">Celebrating milestone badge completions with certified Google
+                  Cloud swags.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CALL TO ACTION BANNER -->
+      <section class="w-full py-space-2xl bg-surface" id="join">
+        <div class="max-w-7xl mx-auto px-gutter">
+          <div
+            class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-surface-container-low via-surface-container to-surface-container-high p-space-xl md:p-space-2xl shadow-2xl">
+            <div class="relative z-10 max-w-3xl"><span
+                class="inline-block px-3 py-1 rounded-full bg-surface-container-highest text-primary font-label-code text-xs mb-3">GET
+                INVOLVED</span>
+              <h2 class="text-3xl md:text-4xl font-bold text-on-surface">Ready to accelerate your tech journey at ITER?
+              </h2>
+              <p class="text-base text-on-surface-variant mt-2 mb-6">Gain priority registrations for Google Cloud Study
+                Jams, hackathon team matching, exclusive swags, and direct networking.</p>
+              <form class="flex flex-col sm:flex-row gap-space-sm max-w-xl"
+                onsubmit="event.preventDefault(); document.getElementById('success-msg').classList.remove('hidden');">
+                <input
+                  class="flex-1 px-4 py-3 rounded-full bg-surface-container-lowest text-on-surface border border-surface-container-highest focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="Enter your SOA / ITER student email" required="" type="email"><button
+                  class="px-space-xl py-3 rounded-full font-label-sm text-on-primary bg-gradient-to-r from-primary-container to-secondary-container shadow-lg"
+                  type="submit">Join Chapter</button></form>
+              <div class="hidden mt-3 text-tertiary font-label-code text-sm" id="success-msg">Welcome to GDG ITER! Check
+                your student inbox for community onboarding.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="w-full bg-surface-container-lowest mt-space-2xl">
+    <div class="max-w-7xl mx-auto px-gutter py-space-xl">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-space-md text-xs text-on-surface-variant">
+        <div class="flex items-center gap-2"><img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBseQ4CXVk7JWV3GtDkjHrW6hZVr46thb9ua9jBFUIZnystY2OufW3UdsBA8Yo5_e0xwww_YNFTuNOfVQmnpq48hBeeLO0gSqM-xsTpFbzR0utPzONEH8yBlaLAXecq5u294ZyuT0_5osljjIXyFyPIGTU2K7UpufcFfPJBP_XfrNtnnNUYrG_6zS36zQ65GJsEwWD9wqWeKQ7NyAiObb4l9hCFAOiJLJrBHfgvm3LfbTp9lVSHMwrwNQ"
+            alt="GDG Logo" class="w-5 h-5 object-contain"><span class="">© 2026 Google Developer Group - ITER Chapter.
+            All rights reserved.</span></div>
+        <div class="flex items-center gap-space-md"><a class="hover:text-on-surface" href="#about">About</a><a
+            class="hover:text-on-surface" href="#timeline">Timeline</a><a class="hover:text-on-surface"
+            href="#events">Events</a><a class="hover:text-on-surface" href="#join">Discord</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT: DYNAMIC SCROLL ANIMATION FOR THE 3D GDG LOGO RUNNER ON THE ZIG-ZAG PATH -->
+  <script>
+    (function () {
+      const wrapper = document.getElementById('timeline-flow-wrapper');
+      const activePath = document.getElementById('timeline-active-path');
+      const puck = document.getElementById('gdg-runner-puck');
+      const puckCard = document.getElementById('gdg-puck-card');
+      if (!wrapper || !activePath || !puck) return;
+
+      const pathLength = activePath.getTotalLength();
+      activePath.style.strokeDasharray = pathLength;
+      activePath.style.strokeDashoffset = pathLength;
+
+      function updateTimelineRunner() {
+        const rect = wrapper.getBoundingClientRect();
+        const windowH = window.innerHeight;
+
+        // Calculate progress as the timeline scrolls through viewport
+        const startTrigger = windowH * 0.75;
+        const scrollableH = rect.height - windowH * 0.4;
+        const currentScroll = startTrigger - rect.top;
+        let progress = currentScroll / scrollableH;
+        progress = Math.max(0, Math.min(1, progress));
+
+        // Animate the path stroke line
+        const currentOffset = pathLength * (1 - progress);
+        activePath.style.strokeDashoffset = currentOffset;
+
+        // Get exact coordinate along SVG bezier path
+        const point = activePath.getPointAtLength(progress * pathLength);
+
+        // Calculate tangent direction vector for 3D banking / tilting
+        const forwardStep = Math.min(pathLength, progress * pathLength + 5);
+        const forwardPoint = activePath.getPointAtLength(forwardStep);
+        const dx = forwardPoint.x - point.x;
+        const dy = forwardPoint.y - point.y;
+        const angleRad = Math.atan2(dy, dx);
+        const angleDeg = angleRad * (180 / Math.PI);
+
+        // 3D gyroscopic banking angles
+        const tiltBank = Math.sin(angleRad) * 22;
+        const tiltPitch = Math.cos(progress * Math.PI * 3) * 15;
+        const dynamicScale = 1 + Math.sin(progress * Math.PI) * 0.18;
+
+        // Transform runner position
+        puck.style.transform = `translate3d(${point.x - 30}px, ${point.y - 30}px, 0)`;
+        if (puckCard) {
+          puckCard.style.transform = `rotate(${angleDeg * 0.25}deg) rotateX(${tiltPitch}deg) rotateY(${tiltBank}deg) scale(${dynamicScale})`;
+        }
+      }
+
+      window.addEventListener('scroll', updateTimelineRunner, { passive: true });
+      window.addEventListener('resize', updateTimelineRunner);
+      // Initial run
+      updateTimelineRunner();
+    })();
+  </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
